@@ -1,7 +1,43 @@
+"use client";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import AladinViewer from "@/components/AladinViewer";
+import HRDiagram from "@/components/HRDiagram";
+
+const exercises = [
+  { label: "Select Exercise...", value: "" },
+  { label: "HR Diagram", value: "HRDiagram" },
+];
+
 
 export default function Home() {
+  
+  const [selectedExercise, setSelectedExercise] = useState("");
+
+  const [showScroll, setShowScroll] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowScroll(true);
+      } else {
+        setShowScroll(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
+  const renderExerciseComponent = () => {
+    switch (selectedExercise) {
+      case "HRDiagram":
+        return <HRDiagram />;
+      default:
+        return null;
+    }
+  };
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
@@ -24,6 +60,21 @@ export default function Home() {
           </li>
           <li>Follow the lab guides after selecting exercises.</li>
         </ol>
+
+        {/* Exercises */}
+        <select
+          className="rounded border border-black/[.08] dark:border-white/[.145] bg-white dark:bg-black px-4 py-2 text-sm sm:text-base"
+          value={selectedExercise}
+          onChange={(e) => setSelectedExercise(e.target.value)}
+        >
+          {exercises.map((exercise) => (
+            <option key={exercise.value} value={exercise.value}>
+              {exercise.label}
+            </option>
+          ))}
+        </select>
+
+        {renderExerciseComponent()}
 
         {/* AladinViewer */}
         <div className="w-full flex justify-center">
@@ -103,6 +154,14 @@ export default function Home() {
           Go to nextjs.org →
         </a> */}
       </footer>
+      {showScroll && (
+        <button
+          className="fixed bottom-10 right-10 bg-gray-700 text-white p-3 rounded-full shadow-lg hover:bg-gray-600"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          Back to Top ▲
+        </button>
+      )}
     </div>
   );
 }

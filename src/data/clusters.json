@@ -1,0 +1,4043 @@
+[
+  {
+    "id": "bas11a",
+    "name": "Basel 11a",
+    "star_count": 2,
+    "E(B-V)": 0.0,
+    "[Fe/H]": null,
+    "Dist": 1520,
+    "Age": 8.3
+  },
+  {
+    "id": "bas19",
+    "name": "Basel 19",
+    "star_count": 14,
+    "E(B-V)": null,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": null
+  },
+  {
+    "id": "be011",
+    "name": "Berkeley 11",
+    "star_count": 22,
+    "E(B-V)": 0.95,
+    "[Fe/H]": 0.01,
+    "Dist": 2200,
+    "Age": 8.041
+  },
+  {
+    "id": "be019",
+    "name": "Berkeley 19",
+    "star_count": 19,
+    "E(B-V)": 0.32,
+    "[Fe/H]": -0.5,
+    "Dist": 7870,
+    "Age": 9.4
+  },
+  {
+    "id": "be021",
+    "name": "Berkeley 21",
+    "star_count": 20,
+    "E(B-V)": 0.76,
+    "[Fe/H]": -0.835,
+    "Dist": 5000,
+    "Age": 9.34
+  },
+  {
+    "id": "be028",
+    "name": "Berkeley 28",
+    "star_count": 4,
+    "E(B-V)": 0.761,
+    "[Fe/H]": null,
+    "Dist": 2557,
+    "Age": 7.846
+  },
+  {
+    "id": "be058",
+    "name": "Berkeley 58",
+    "star_count": 38,
+    "E(B-V)": 0.72,
+    "[Fe/H]": null,
+    "Dist": 2700,
+    "Age": 8.47
+  },
+  {
+    "id": "be059",
+    "name": "Berkeley 59",
+    "star_count": 21,
+    "E(B-V)": 1.241,
+    "[Fe/H]": null,
+    "Dist": 1000,
+    "Age": 6.1
+  },
+  {
+    "id": "be062",
+    "name": "Berkeley 62",
+    "star_count": 14,
+    "E(B-V)": 0.85,
+    "[Fe/H]": null,
+    "Dist": 2320,
+    "Age": 7.2
+  },
+  {
+    "id": "be082",
+    "name": "Berkeley 82",
+    "star_count": 20,
+    "E(B-V)": 1.021,
+    "[Fe/H]": null,
+    "Dist": 860,
+    "Age": 7.493
+  },
+  {
+    "id": "be086",
+    "name": "Berkeley 86",
+    "star_count": 40,
+    "E(B-V)": 0.898,
+    "[Fe/H]": null,
+    "Dist": 1112,
+    "Age": 7.116
+  },
+  {
+    "id": "be087",
+    "name": "Berkeley 87",
+    "star_count": 40,
+    "E(B-V)": 1.369,
+    "[Fe/H]": null,
+    "Dist": 633,
+    "Age": 7.152
+  },
+  {
+    "id": "be094",
+    "name": "Berkeley 94",
+    "star_count": 12,
+    "E(B-V)": 0.608,
+    "[Fe/H]": null,
+    "Dist": 2630,
+    "Age": 6.996
+  },
+  {
+    "id": "be096",
+    "name": "Berkeley 96",
+    "star_count": 10,
+    "E(B-V)": 0.54,
+    "[Fe/H]": null,
+    "Dist": 3180,
+    "Age": 7.6
+  },
+  {
+    "id": "bh099",
+    "name": "vdB-Hagen 99",
+    "star_count": 36,
+    "E(B-V)": 0.055,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": 7.605
+  },
+  {
+    "id": "biu02",
+    "name": "Biurakan 2",
+    "star_count": 20,
+    "E(B-V)": 0.36,
+    "[Fe/H]": null,
+    "Dist": 1106,
+    "Age": 7.011
+  },
+  {
+    "id": "bl01",
+    "name": "Blanco 1",
+    "star_count": 132,
+    "E(B-V)": 0.01,
+    "[Fe/H]": 0.04,
+    "Dist": 269,
+    "Age": 7.796
+  },
+  {
+    "id": "bo01",
+    "name": "Bochum 1",
+    "star_count": 9,
+    "E(B-V)": 0.502,
+    "[Fe/H]": null,
+    "Dist": 2803,
+    "Age": 6.686
+  },
+  {
+    "id": "bo02",
+    "name": "Bochum 2",
+    "star_count": 8,
+    "E(B-V)": 0.831,
+    "[Fe/H]": null,
+    "Dist": 2661,
+    "Age": 6.665
+  },
+  {
+    "id": "bo03",
+    "name": "Bochum 3",
+    "star_count": 8,
+    "E(B-V)": 0.24,
+    "[Fe/H]": null,
+    "Dist": 1762,
+    "Age": 7.89
+  },
+  {
+    "id": "bo04",
+    "name": "Bochum 4",
+    "star_count": 30,
+    "E(B-V)": 0.63,
+    "[Fe/H]": null,
+    "Dist": 2291,
+    "Age": 7.0
+  },
+  {
+    "id": "bo06",
+    "name": "Bochum 6",
+    "star_count": 5,
+    "E(B-V)": 0.7,
+    "[Fe/H]": null,
+    "Dist": 3981,
+    "Age": 7.0
+  },
+  {
+    "id": "bo07",
+    "name": "Bochum 7",
+    "star_count": 13,
+    "E(B-V)": 0.86,
+    "[Fe/H]": null,
+    "Dist": 5754,
+    "Age": 7.0
+  },
+  {
+    "id": "bo08",
+    "name": "Bochum 8",
+    "star_count": 8,
+    "E(B-V)": null,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": null
+  },
+  {
+    "id": "bo09",
+    "name": "Bochum 9",
+    "star_count": 22,
+    "E(B-V)": 0.11,
+    "[Fe/H]": null,
+    "Dist": 710,
+    "Age": 8.38
+  },
+  {
+    "id": "bo10",
+    "name": "Bochum 10",
+    "star_count": 53,
+    "E(B-V)": 0.306,
+    "[Fe/H]": null,
+    "Dist": 2027,
+    "Age": 6.857
+  },
+  {
+    "id": "bo11",
+    "name": "Bochum 11",
+    "star_count": 17,
+    "E(B-V)": 0.576,
+    "[Fe/H]": null,
+    "Dist": 2412,
+    "Age": 6.764
+  },
+  {
+    "id": "bo12",
+    "name": "Bochum 12",
+    "star_count": 12,
+    "E(B-V)": 0.24,
+    "[Fe/H]": null,
+    "Dist": 2218,
+    "Age": 7.61
+  },
+  {
+    "id": "bo13",
+    "name": "Bochum 13",
+    "star_count": 13,
+    "E(B-V)": 0.854,
+    "[Fe/H]": null,
+    "Dist": 1077,
+    "Age": 6.823
+  },
+  {
+    "id": "bo14",
+    "name": "Bochum 14",
+    "star_count": 11,
+    "E(B-V)": 1.508,
+    "[Fe/H]": null,
+    "Dist": 578,
+    "Age": 6.996
+  },
+  {
+    "id": "bo15",
+    "name": "Bochum 15",
+    "star_count": 33,
+    "E(B-V)": 0.576,
+    "[Fe/H]": null,
+    "Dist": 2806,
+    "Age": 6.742
+  },
+  {
+    "id": "cr069",
+    "name": "Collinder 69",
+    "star_count": 61,
+    "E(B-V)": 0.12,
+    "[Fe/H]": null,
+    "Dist": 400,
+    "Age": 6.7
+  },
+  {
+    "id": "cr096",
+    "name": "Collinder 96",
+    "star_count": 14,
+    "E(B-V)": 0.51,
+    "[Fe/H]": null,
+    "Dist": 962,
+    "Age": 7.031
+  },
+  {
+    "id": "cr097",
+    "name": "Collinder 97",
+    "star_count": 17,
+    "E(B-V)": 0.0,
+    "[Fe/H]": null,
+    "Dist": 630,
+    "Age": 8.0
+  },
+  {
+    "id": "cr121",
+    "name": "Collinder 121",
+    "star_count": 47,
+    "E(B-V)": 0.04,
+    "[Fe/H]": null,
+    "Dist": 1100,
+    "Age": 7.08
+  },
+  {
+    "id": "cr132",
+    "name": "Collinder 132",
+    "star_count": 35,
+    "E(B-V)": 0.037,
+    "[Fe/H]": null,
+    "Dist": 472,
+    "Age": 7.08
+  },
+  {
+    "id": "cr135",
+    "name": "Collinder 135",
+    "star_count": 77,
+    "E(B-V)": 0.032,
+    "[Fe/H]": -0.219,
+    "Dist": 316,
+    "Age": 7.407
+  },
+  {
+    "id": "cr140",
+    "name": "Collinder 140",
+    "star_count": 80,
+    "E(B-V)": 0.03,
+    "[Fe/H]": -0.1,
+    "Dist": 405,
+    "Age": 7.548
+  },
+  {
+    "id": "cr197",
+    "name": "Collinder 197",
+    "star_count": 21,
+    "E(B-V)": 0.548,
+    "[Fe/H]": null,
+    "Dist": 838,
+    "Age": 7.128
+  },
+  {
+    "id": "cr205",
+    "name": "Collinder 205",
+    "star_count": 18,
+    "E(B-V)": 0.75,
+    "[Fe/H]": null,
+    "Dist": 1853,
+    "Age": 7.2
+  },
+  {
+    "id": "cr223",
+    "name": "Collinder 223",
+    "star_count": 110,
+    "E(B-V)": 0.25,
+    "[Fe/H]": -0.217,
+    "Dist": 2820,
+    "Age": 8.0
+  },
+  {
+    "id": "cr228",
+    "name": "Collinder 228",
+    "star_count": 114,
+    "E(B-V)": 0.342,
+    "[Fe/H]": null,
+    "Dist": 2201,
+    "Age": 6.83
+  },
+  {
+    "id": "cr232",
+    "name": "Collinder 232",
+    "star_count": 9,
+    "E(B-V)": 0.48,
+    "[Fe/H]": null,
+    "Dist": 2300,
+    "Age": 6.3
+  },
+  {
+    "id": "cr258",
+    "name": "Collinder 258",
+    "star_count": 36,
+    "E(B-V)": 0.16,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": 8.032
+  },
+  {
+    "id": "cr268",
+    "name": "Collinder 268",
+    "star_count": 22,
+    "E(B-V)": 0.308,
+    "[Fe/H]": null,
+    "Dist": 1963,
+    "Age": 8.759
+  },
+  {
+    "id": "cr271",
+    "name": "Collinder 271",
+    "star_count": 10,
+    "E(B-V)": 0.287,
+    "[Fe/H]": null,
+    "Dist": 1169,
+    "Age": 8.322
+  },
+  {
+    "id": "cr307",
+    "name": "Collinder 307",
+    "star_count": 12,
+    "E(B-V)": 0.83,
+    "[Fe/H]": null,
+    "Dist": 1551,
+    "Age": 8.4
+  },
+  {
+    "id": "cr347",
+    "name": "Collinder 347",
+    "star_count": 20,
+    "E(B-V)": 1.16,
+    "[Fe/H]": null,
+    "Dist": 1514,
+    "Age": 7.08
+  },
+  {
+    "id": "cr359",
+    "name": "Collinder 359",
+    "star_count": 13,
+    "E(B-V)": 0.193,
+    "[Fe/H]": null,
+    "Dist": 249,
+    "Age": 7.506
+  },
+  {
+    "id": "cr394",
+    "name": "Collinder 394",
+    "star_count": 62,
+    "E(B-V)": 0.235,
+    "[Fe/H]": null,
+    "Dist": 690,
+    "Age": 7.803
+  },
+  {
+    "id": "cr399",
+    "name": "Collinder 399",
+    "star_count": 8,
+    "E(B-V)": 0.377,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": 8.205
+  },
+  {
+    "id": "cr463",
+    "name": "Collinder 463",
+    "star_count": 82,
+    "E(B-V)": 0.259,
+    "[Fe/H]": null,
+    "Dist": 702,
+    "Age": 8.373
+  },
+  {
+    "id": "do24",
+    "name": "Dolidze 24",
+    "star_count": 8,
+    "E(B-V)": 0.146,
+    "[Fe/H]": null,
+    "Dist": 1261,
+    "Age": 8.45
+  },
+  {
+    "id": "do25",
+    "name": "Dolidze 25",
+    "star_count": 23,
+    "E(B-V)": 0.8,
+    "[Fe/H]": null,
+    "Dist": 6800,
+    "Age": 6.8
+  },
+  {
+    "id": "do42",
+    "name": "Dolidze 42",
+    "star_count": 37,
+    "E(B-V)": 0.571,
+    "[Fe/H]": null,
+    "Dist": 972,
+    "Age": 7.542
+  },
+  {
+    "id": "fei01",
+    "name": "Feinstein 1",
+    "star_count": 27,
+    "E(B-V)": 0.4,
+    "[Fe/H]": null,
+    "Dist": 1159,
+    "Age": 7.0
+  },
+  {
+    "id": "ha20",
+    "name": "Harvard 20",
+    "star_count": 28,
+    "E(B-V)": 0.229,
+    "[Fe/H]": null,
+    "Dist": 1604,
+    "Age": 8.05
+  },
+  {
+    "id": "haf08",
+    "name": "Haffner 8",
+    "star_count": 13,
+    "E(B-V)": 0.032,
+    "[Fe/H]": 0.06,
+    "Dist": 2380,
+    "Age": 8.5
+  },
+  {
+    "id": "haf14",
+    "name": "Haffner 14",
+    "star_count": 25,
+    "E(B-V)": 0.6,
+    "[Fe/H]": null,
+    "Dist": 3483,
+    "Age": 8.35
+  },
+  {
+    "id": "haf15",
+    "name": "Haffner 15",
+    "star_count": 13,
+    "E(B-V)": 1.05,
+    "[Fe/H]": null,
+    "Dist": 3500,
+    "Age": 7.3
+  },
+  {
+    "id": "haf16",
+    "name": "Haffner 16",
+    "star_count": 15,
+    "E(B-V)": 0.175,
+    "[Fe/H]": -0.111,
+    "Dist": 3165,
+    "Age": 7.078
+  },
+  {
+    "id": "haf18",
+    "name": "Haffner 18",
+    "star_count": 25,
+    "E(B-V)": 0.611,
+    "[Fe/H]": null,
+    "Dist": 6028,
+    "Age": 6.893
+  },
+  {
+    "id": "haf19",
+    "name": "Haffner 19",
+    "star_count": 24,
+    "E(B-V)": 0.38,
+    "[Fe/H]": null,
+    "Dist": 6400,
+    "Age": 6.65
+  },
+  {
+    "id": "hm01",
+    "name": "Havlen-Moffat 1",
+    "star_count": 24,
+    "E(B-V)": 1.85,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": null
+  },
+  {
+    "id": "ho09",
+    "name": "Hogg 9",
+    "star_count": 9,
+    "E(B-V)": 0.38,
+    "[Fe/H]": null,
+    "Dist": 3049,
+    "Age": 7.45
+  },
+  {
+    "id": "ho10",
+    "name": "Hogg 10",
+    "star_count": 24,
+    "E(B-V)": 0.46,
+    "[Fe/H]": null,
+    "Dist": 1776,
+    "Age": 6.784
+  },
+  {
+    "id": "ho11",
+    "name": "Hogg 11",
+    "star_count": 6,
+    "E(B-V)": 0.32,
+    "[Fe/H]": null,
+    "Dist": 2270,
+    "Age": 7.08
+  },
+  {
+    "id": "ho12",
+    "name": "Hogg 12",
+    "star_count": 11,
+    "E(B-V)": 0.4,
+    "[Fe/H]": null,
+    "Dist": 2000,
+    "Age": 7.48
+  },
+  {
+    "id": "ho14",
+    "name": "Hogg 14",
+    "star_count": 11,
+    "E(B-V)": 0.229,
+    "[Fe/H]": null,
+    "Dist": 969,
+    "Age": 8.099
+  },
+  {
+    "id": "ho15",
+    "name": "Hogg 15",
+    "star_count": 37,
+    "E(B-V)": 1.3,
+    "[Fe/H]": null,
+    "Dist": 3200,
+    "Age": 6.6
+  },
+  {
+    "id": "ho16",
+    "name": "Hogg 16",
+    "star_count": 68,
+    "E(B-V)": 0.411,
+    "[Fe/H]": null,
+    "Dist": 1585,
+    "Age": 7.047
+  },
+  {
+    "id": "ho18",
+    "name": "Hogg 18",
+    "star_count": 16,
+    "E(B-V)": 0.503,
+    "[Fe/H]": null,
+    "Dist": 1535,
+    "Age": 7.759
+  },
+  {
+    "id": "ho22",
+    "name": "Hogg 22",
+    "star_count": 30,
+    "E(B-V)": 0.647,
+    "[Fe/H]": null,
+    "Dist": 1216,
+    "Age": 6.78
+  },
+  {
+    "id": "ic0166",
+    "name": "IC 0166",
+    "star_count": 20,
+    "E(B-V)": 1.05,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": 8.629
+  },
+  {
+    "id": "ic0348",
+    "name": "IC 0348",
+    "star_count": 22,
+    "E(B-V)": 0.929,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": 7.641
+  },
+  {
+    "id": "ic0361",
+    "name": "IC 0361",
+    "star_count": 19,
+    "E(B-V)": 1.117,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": 7.718
+  },
+  {
+    "id": "ic1590",
+    "name": "IC 1590",
+    "star_count": 36,
+    "E(B-V)": 0.32,
+    "[Fe/H]": null,
+    "Dist": 2940,
+    "Age": 6.54
+  },
+  {
+    "id": "ic1795",
+    "name": "IC 1795",
+    "star_count": 55,
+    "E(B-V)": null,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": null
+  },
+  {
+    "id": "ic1805",
+    "name": "IC 1805",
+    "star_count": 192,
+    "E(B-V)": 0.87,
+    "[Fe/H]": null,
+    "Dist": 2344,
+    "Age": 6.48
+  },
+  {
+    "id": "ic1848",
+    "name": "IC 1848",
+    "star_count": 19,
+    "E(B-V)": 0.66,
+    "[Fe/H]": null,
+    "Dist": 2200,
+    "Age": 6.7
+  },
+  {
+    "id": "ic2157",
+    "name": "IC 2157",
+    "star_count": 12,
+    "E(B-V)": 0.548,
+    "[Fe/H]": null,
+    "Dist": 2040,
+    "Age": 7.8
+  },
+  {
+    "id": "ic2391",
+    "name": "IC 2391",
+    "star_count": 84,
+    "E(B-V)": 0.008,
+    "[Fe/H]": -0.01,
+    "Dist": 175,
+    "Age": 7.661
+  },
+  {
+    "id": "ic2395",
+    "name": "IC 2395",
+    "star_count": 279,
+    "E(B-V)": 0.09,
+    "[Fe/H]": 0.0,
+    "Dist": 800,
+    "Age": 6.8
+  },
+  {
+    "id": "ic2488",
+    "name": "IC 2488",
+    "star_count": 145,
+    "E(B-V)": 0.231,
+    "[Fe/H]": 0.1,
+    "Dist": 1134,
+    "Age": 8.113
+  },
+  {
+    "id": "ic2581",
+    "name": "IC 2581",
+    "star_count": 65,
+    "E(B-V)": 0.415,
+    "[Fe/H]": -0.34,
+    "Dist": 2446,
+    "Age": 7.142
+  },
+  {
+    "id": "ic2602",
+    "name": "IC 2602",
+    "star_count": 99,
+    "E(B-V)": 0.024,
+    "[Fe/H]": 0.0,
+    "Dist": 161,
+    "Age": 7.507
+  },
+  {
+    "id": "ic2714",
+    "name": "IC 2714",
+    "star_count": 205,
+    "E(B-V)": 0.341,
+    "[Fe/H]": 0.01,
+    "Dist": 1238,
+    "Age": 8.542
+  },
+  {
+    "id": "ic2944",
+    "name": "IC 2944",
+    "star_count": 138,
+    "E(B-V)": 0.32,
+    "[Fe/H]": null,
+    "Dist": 1794,
+    "Age": 6.818
+  },
+  {
+    "id": "ic4651",
+    "name": "IC 4651",
+    "star_count": 105,
+    "E(B-V)": 0.116,
+    "[Fe/H]": 0.15,
+    "Dist": 888,
+    "Age": 9.057
+  },
+  {
+    "id": "ic4665",
+    "name": "IC 4665",
+    "star_count": 68,
+    "E(B-V)": 0.174,
+    "[Fe/H]": -0.03,
+    "Dist": 352,
+    "Age": 7.634
+  },
+  {
+    "id": "ic4725",
+    "name": "IC 4725",
+    "star_count": 159,
+    "E(B-V)": 0.476,
+    "[Fe/H]": 0.17,
+    "Dist": 620,
+    "Age": 7.965
+  },
+  {
+    "id": "ic4756",
+    "name": "IC 4756",
+    "star_count": 118,
+    "E(B-V)": 0.192,
+    "[Fe/H]": -0.01,
+    "Dist": 484,
+    "Age": 8.699
+  },
+  {
+    "id": "ic4996",
+    "name": "IC 4996",
+    "star_count": 33,
+    "E(B-V)": 0.71,
+    "[Fe/H]": null,
+    "Dist": 2398,
+    "Age": 6.87
+  },
+  {
+    "id": "ic5146",
+    "name": "IC 5146",
+    "star_count": 36,
+    "E(B-V)": 0.593,
+    "[Fe/H]": null,
+    "Dist": 852,
+    "Age": 6.0
+  },
+  {
+    "id": "kas01",
+    "name": "Kastner 1",
+    "star_count": 20,
+    "E(B-V)": null,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": null
+  },
+  {
+    "id": "ki08",
+    "name": "King 8",
+    "star_count": 14,
+    "E(B-V)": 0.58,
+    "[Fe/H]": -0.46,
+    "Dist": 6403,
+    "Age": 8.618
+  },
+  {
+    "id": "ki12",
+    "name": "King 12",
+    "star_count": 31,
+    "E(B-V)": 0.51,
+    "[Fe/H]": null,
+    "Dist": 2490,
+    "Age": 7.85
+  },
+  {
+    "id": "ki14",
+    "name": "King 14",
+    "star_count": 2,
+    "E(B-V)": 0.34,
+    "[Fe/H]": null,
+    "Dist": 2960,
+    "Age": 7.9
+  },
+  {
+    "id": "ki21",
+    "name": "King 21",
+    "star_count": 26,
+    "E(B-V)": 0.886,
+    "[Fe/H]": 0.06,
+    "Dist": 2103,
+    "Age": 7.163
+  },
+  {
+    "id": "lod0807",
+    "name": "Loden 807",
+    "star_count": 3,
+    "E(B-V)": 0.2,
+    "[Fe/H]": -0.19,
+    "Dist": 925,
+    "Age": 8.3
+  },
+  {
+    "id": "lod0915",
+    "name": "Loden 915",
+    "star_count": 36,
+    "E(B-V)": 0.15,
+    "[Fe/H]": null,
+    "Dist": 500,
+    "Age": 8.44
+  },
+  {
+    "id": "ly01",
+    "name": "Lynga 1",
+    "star_count": 24,
+    "E(B-V)": 0.45,
+    "[Fe/H]": 0.04,
+    "Dist": 1900,
+    "Age": 8.0
+  },
+  {
+    "id": "ly02",
+    "name": "Lynga 2",
+    "star_count": 32,
+    "E(B-V)": 0.22,
+    "[Fe/H]": null,
+    "Dist": 900,
+    "Age": 7.95
+  },
+  {
+    "id": "ly04",
+    "name": "Lynga 4",
+    "star_count": 6,
+    "E(B-V)": 0.7,
+    "[Fe/H]": null,
+    "Dist": 1100,
+    "Age": 9.11
+  },
+  {
+    "id": "ly06",
+    "name": "Lynga 6",
+    "star_count": 39,
+    "E(B-V)": 1.25,
+    "[Fe/H]": null,
+    "Dist": 1600,
+    "Age": 7.43
+  },
+  {
+    "id": "ly07",
+    "name": "Lynga 7",
+    "star_count": 19,
+    "E(B-V)": 0.273,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": 7.93
+  },
+  {
+    "id": "ly14",
+    "name": "Lynga 14",
+    "star_count": 16,
+    "E(B-V)": 1.428,
+    "[Fe/H]": null,
+    "Dist": 881,
+    "Age": 6.712
+  },
+  {
+    "id": "ma18",
+    "name": "Markarian 18",
+    "star_count": 18,
+    "E(B-V)": null,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": null
+  },
+  {
+    "id": "ma38",
+    "name": "Markarian 38",
+    "star_count": 16,
+    "E(B-V)": 0.405,
+    "[Fe/H]": 0.18,
+    "Dist": 1471,
+    "Age": 6.882
+  },
+  {
+    "id": "ma50",
+    "name": "Markarian 50",
+    "star_count": 21,
+    "E(B-V)": 0.81,
+    "[Fe/H]": null,
+    "Dist": 2114,
+    "Age": 7.095
+  },
+  {
+    "id": "mam01",
+    "name": "Mamajek 1",
+    "star_count": 1,
+    "E(B-V)": 0.0,
+    "[Fe/H]": null,
+    "Dist": 97,
+    "Age": 6.9
+  },
+  {
+    "id": "mel020",
+    "name": "Alpha Per",
+    "star_count": 321,
+    "E(B-V)": 0.09,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": 7.854
+  },
+  {
+    "id": "mel022",
+    "name": "Pleiades",
+    "star_count": 415,
+    "E(B-V)": 0.03,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": 8.131
+  },
+  {
+    "id": "mel025",
+    "name": "Hyades",
+    "star_count": 606,
+    "E(B-V)": 0.01,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": 8.896
+  },
+  {
+    "id": "mel066",
+    "name": "Melotte 66",
+    "star_count": 66,
+    "E(B-V)": 0.15,
+    "[Fe/H]": -0.33,
+    "Dist": 4700,
+    "Age": 9.53
+  },
+  {
+    "id": "mel071",
+    "name": "Melotte 71",
+    "star_count": 30,
+    "E(B-V)": 0.113,
+    "[Fe/H]": -0.32,
+    "Dist": 3154,
+    "Age": 8.371
+  },
+  {
+    "id": "mel101",
+    "name": "Melotte 101",
+    "star_count": 22,
+    "E(B-V)": 0.48,
+    "[Fe/H]": null,
+    "Dist": 1995,
+    "Age": 7.89
+  },
+  {
+    "id": "mel105",
+    "name": "Melotte 105",
+    "star_count": 8,
+    "E(B-V)": 0.83,
+    "[Fe/H]": 0.08,
+    "Dist": 1715,
+    "Age": 8.55
+  },
+  {
+    "id": "mel111",
+    "name": "Coma Ber",
+    "star_count": 417,
+    "E(B-V)": 0.013,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": 8.652
+  },
+  {
+    "id": "mof01",
+    "name": "Moffat 1",
+    "star_count": 14,
+    "E(B-V)": 1.0,
+    "[Fe/H]": null,
+    "Dist": 2100,
+    "Age": 7.0
+  },
+  {
+    "id": "ngc0103",
+    "name": "NGC 103",
+    "star_count": 45,
+    "E(B-V)": 0.406,
+    "[Fe/H]": null,
+    "Dist": 3026,
+    "Age": 8.126
+  },
+  {
+    "id": "ngc0129",
+    "name": "NGC 129",
+    "star_count": 57,
+    "E(B-V)": 0.548,
+    "[Fe/H]": null,
+    "Dist": 1625,
+    "Age": 7.886
+  },
+  {
+    "id": "ngc0188",
+    "name": "NGC 188",
+    "star_count": 167,
+    "E(B-V)": 0.036,
+    "[Fe/H]": 0.12,
+    "Dist": 1714,
+    "Age": 9.88
+  },
+  {
+    "id": "ngc0225",
+    "name": "NGC 225",
+    "star_count": 31,
+    "E(B-V)": 0.274,
+    "[Fe/H]": null,
+    "Dist": 657,
+    "Age": 8.114
+  },
+  {
+    "id": "ngc0381",
+    "name": "NGC 381",
+    "star_count": 39,
+    "E(B-V)": 0.4,
+    "[Fe/H]": 0.07,
+    "Dist": 1148,
+    "Age": 8.505
+  },
+  {
+    "id": "ngc0436",
+    "name": "NGC 436",
+    "star_count": 35,
+    "E(B-V)": 0.4,
+    "[Fe/H]": -0.55,
+    "Dist": 2400,
+    "Age": 8.26
+  },
+  {
+    "id": "ngc0457",
+    "name": "NGC 457",
+    "star_count": 97,
+    "E(B-V)": 0.472,
+    "[Fe/H]": null,
+    "Dist": 2429,
+    "Age": 7.324
+  },
+  {
+    "id": "ngc0559",
+    "name": "NGC 559",
+    "star_count": 29,
+    "E(B-V)": 0.82,
+    "[Fe/H]": -0.25,
+    "Dist": 2430,
+    "Age": 8.35
+  },
+  {
+    "id": "ngc0581",
+    "name": "NGC 581",
+    "star_count": 82,
+    "E(B-V)": 0.382,
+    "[Fe/H]": null,
+    "Dist": 2194,
+    "Age": 7.336
+  },
+  {
+    "id": "ngc0609",
+    "name": "NGC 609",
+    "star_count": 7,
+    "E(B-V)": 0.35,
+    "[Fe/H]": null,
+    "Dist": 3981,
+    "Age": 9.232
+  },
+  {
+    "id": "ngc0637",
+    "name": "NGC 637",
+    "star_count": 27,
+    "E(B-V)": 0.64,
+    "[Fe/H]": null,
+    "Dist": 2500,
+    "Age": 7.0
+  },
+  {
+    "id": "ngc0654",
+    "name": "NGC 654",
+    "star_count": 98,
+    "E(B-V)": 0.82,
+    "[Fe/H]": null,
+    "Dist": 2410,
+    "Age": 7.0
+  },
+  {
+    "id": "ngc0659",
+    "name": "NGC 659",
+    "star_count": 26,
+    "E(B-V)": 0.652,
+    "[Fe/H]": null,
+    "Dist": 1938,
+    "Age": 7.548
+  },
+  {
+    "id": "ngc0663",
+    "name": "NGC 663",
+    "star_count": 40,
+    "E(B-V)": 0.8,
+    "[Fe/H]": null,
+    "Dist": 2420,
+    "Age": 7.4
+  },
+  {
+    "id": "ngc0744",
+    "name": "NGC 744",
+    "star_count": 34,
+    "E(B-V)": 0.384,
+    "[Fe/H]": null,
+    "Dist": 1207,
+    "Age": 8.248
+  },
+  {
+    "id": "ngc0752",
+    "name": "NGC 752",
+    "star_count": 102,
+    "E(B-V)": 0.034,
+    "[Fe/H]": 0.01,
+    "Dist": 457,
+    "Age": 9.16
+  },
+  {
+    "id": "ngc0869",
+    "name": "NGC 869",
+    "star_count": 84,
+    "E(B-V)": 0.575,
+    "[Fe/H]": -0.3,
+    "Dist": 2079,
+    "Age": 7.069
+  },
+  {
+    "id": "ngc0884",
+    "name": "NGC 884",
+    "star_count": 83,
+    "E(B-V)": 0.56,
+    "[Fe/H]": -0.3,
+    "Dist": 2940,
+    "Age": 7.1
+  },
+  {
+    "id": "ngc0957",
+    "name": "NGC 957",
+    "star_count": 29,
+    "E(B-V)": 0.71,
+    "[Fe/H]": null,
+    "Dist": 2200,
+    "Age": 7.0
+  },
+  {
+    "id": "ngc1027",
+    "name": "NGC 1027",
+    "star_count": 26,
+    "E(B-V)": 0.41,
+    "[Fe/H]": null,
+    "Dist": 1030,
+    "Age": 8.4
+  },
+  {
+    "id": "ngc1039",
+    "name": "NGC 1039",
+    "star_count": 77,
+    "E(B-V)": 0.07,
+    "[Fe/H]": 0.07,
+    "Dist": 499,
+    "Age": 8.249
+  },
+  {
+    "id": "ngc1245",
+    "name": "NGC 1245",
+    "star_count": 32,
+    "E(B-V)": 0.24,
+    "[Fe/H]": -0.04,
+    "Dist": 2818,
+    "Age": 9.03
+  },
+  {
+    "id": "ngc1252",
+    "name": "NGC 1252",
+    "star_count": 37,
+    "E(B-V)": 0.0,
+    "[Fe/H]": null,
+    "Dist": 790,
+    "Age": 9.45
+  },
+  {
+    "id": "ngc1342",
+    "name": "NGC 1342",
+    "star_count": 36,
+    "E(B-V)": 0.319,
+    "[Fe/H]": -0.16,
+    "Dist": 665,
+    "Age": 8.655
+  },
+  {
+    "id": "ngc1444",
+    "name": "NGC 1444",
+    "star_count": 24,
+    "E(B-V)": 0.712,
+    "[Fe/H]": null,
+    "Dist": 1199,
+    "Age": 7.964
+  },
+  {
+    "id": "ngc1496",
+    "name": "NGC 1496",
+    "star_count": 22,
+    "E(B-V)": 0.45,
+    "[Fe/H]": null,
+    "Dist": 1230,
+    "Age": 8.8
+  },
+  {
+    "id": "ngc1502",
+    "name": "NGC 1502",
+    "star_count": 38,
+    "E(B-V)": 0.7,
+    "[Fe/H]": null,
+    "Dist": 1000,
+    "Age": 7.0
+  },
+  {
+    "id": "ngc1513",
+    "name": "NGC 1513",
+    "star_count": 31,
+    "E(B-V)": 0.67,
+    "[Fe/H]": null,
+    "Dist": 1320,
+    "Age": 8.11
+  },
+  {
+    "id": "ngc1528",
+    "name": "NGC 1528",
+    "star_count": 70,
+    "E(B-V)": 0.26,
+    "[Fe/H]": null,
+    "Dist": 1090,
+    "Age": 8.6
+  },
+  {
+    "id": "ngc1545",
+    "name": "NGC 1545",
+    "star_count": 25,
+    "E(B-V)": 0.303,
+    "[Fe/H]": -0.13,
+    "Dist": 711,
+    "Age": 8.448
+  },
+  {
+    "id": "ngc1624",
+    "name": "NGC 1624",
+    "star_count": 14,
+    "E(B-V)": 0.92,
+    "[Fe/H]": null,
+    "Dist": 6000,
+    "Age": 6.6
+  },
+  {
+    "id": "ngc1647",
+    "name": "NGC 1647",
+    "star_count": 52,
+    "E(B-V)": 0.37,
+    "[Fe/H]": null,
+    "Dist": 540,
+    "Age": 8.158
+  },
+  {
+    "id": "ngc1662",
+    "name": "NGC 1662",
+    "star_count": 35,
+    "E(B-V)": 0.304,
+    "[Fe/H]": -0.095,
+    "Dist": 437,
+    "Age": 8.625
+  },
+  {
+    "id": "ngc1664",
+    "name": "NGC 1664",
+    "star_count": 48,
+    "E(B-V)": 0.254,
+    "[Fe/H]": null,
+    "Dist": 1199,
+    "Age": 8.465
+  },
+  {
+    "id": "ngc1778",
+    "name": "NGC 1778",
+    "star_count": 78,
+    "E(B-V)": 0.336,
+    "[Fe/H]": null,
+    "Dist": 1469,
+    "Age": 8.155
+  },
+  {
+    "id": "ngc1807",
+    "name": "NGC 1807",
+    "star_count": 14,
+    "E(B-V)": null,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": null
+  },
+  {
+    "id": "ngc1817",
+    "name": "NGC 1817",
+    "star_count": 83,
+    "E(B-V)": 0.334,
+    "[Fe/H]": -0.16,
+    "Dist": 1972,
+    "Age": 8.612
+  },
+  {
+    "id": "ngc1857",
+    "name": "NGC 1857",
+    "star_count": 33,
+    "E(B-V)": 0.47,
+    "[Fe/H]": -0.36,
+    "Dist": 2490,
+    "Age": 8.5
+  },
+  {
+    "id": "ngc1893",
+    "name": "NGC 1893",
+    "star_count": 72,
+    "E(B-V)": 0.56,
+    "[Fe/H]": null,
+    "Dist": 3500,
+    "Age": 6.18
+  },
+  {
+    "id": "ngc1901",
+    "name": "NGC 1901",
+    "star_count": 23,
+    "E(B-V)": 0.03,
+    "[Fe/H]": -0.018,
+    "Dist": 460,
+    "Age": 8.78
+  },
+  {
+    "id": "ngc1907",
+    "name": "NGC 1907",
+    "star_count": 55,
+    "E(B-V)": 0.52,
+    "[Fe/H]": null,
+    "Dist": 1800,
+    "Age": 8.5
+  },
+  {
+    "id": "ngc1912",
+    "name": "NGC 1912",
+    "star_count": 32,
+    "E(B-V)": 0.25,
+    "[Fe/H]": -0.38,
+    "Dist": 1400,
+    "Age": 8.5
+  },
+  {
+    "id": "ngc1931",
+    "name": "NGC 1931",
+    "star_count": 27,
+    "E(B-V)": 0.74,
+    "[Fe/H]": null,
+    "Dist": 2300,
+    "Age": 6.3
+  },
+  {
+    "id": "ngc1960",
+    "name": "NGC 1960",
+    "star_count": 53,
+    "E(B-V)": 0.22,
+    "[Fe/H]": null,
+    "Dist": 1330,
+    "Age": 7.4
+  },
+  {
+    "id": "ngc1976",
+    "name": "NGC 1976",
+    "star_count": 605,
+    "E(B-V)": 0.05,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": 7.11
+  },
+  {
+    "id": "ngc2099",
+    "name": "NGC 2099",
+    "star_count": 124,
+    "E(B-V)": 0.302,
+    "[Fe/H]": 0.089,
+    "Dist": 1383,
+    "Age": 8.54
+  },
+  {
+    "id": "ngc2112",
+    "name": "NGC 2112",
+    "star_count": 19,
+    "E(B-V)": 0.6,
+    "[Fe/H]": 0.16,
+    "Dist": 940,
+    "Age": 9.25
+  },
+  {
+    "id": "ngc2129",
+    "name": "NGC 2129",
+    "star_count": 29,
+    "E(B-V)": 0.8,
+    "[Fe/H]": null,
+    "Dist": 2200,
+    "Age": 7.0
+  },
+  {
+    "id": "ngc2141",
+    "name": "NGC 2141",
+    "star_count": 33,
+    "E(B-V)": 0.25,
+    "[Fe/H]": -0.18,
+    "Dist": 4033,
+    "Age": 9.231
+  },
+  {
+    "id": "ngc2158",
+    "name": "NGC 2158",
+    "star_count": 30,
+    "E(B-V)": 0.36,
+    "[Fe/H]": -0.28,
+    "Dist": 5071,
+    "Age": 9.023
+  },
+  {
+    "id": "ngc2168",
+    "name": "NGC 2168",
+    "star_count": 113,
+    "E(B-V)": 0.2,
+    "[Fe/H]": -0.16,
+    "Dist": 912,
+    "Age": 8.25
+  },
+  {
+    "id": "ngc2169",
+    "name": "NGC 2169",
+    "star_count": 34,
+    "E(B-V)": 0.199,
+    "[Fe/H]": null,
+    "Dist": 1052,
+    "Age": 7.067
+  },
+  {
+    "id": "ngc2175",
+    "name": "NGC 2175",
+    "star_count": 77,
+    "E(B-V)": 0.598,
+    "[Fe/H]": null,
+    "Dist": 1627,
+    "Age": 6.953
+  },
+  {
+    "id": "ngc2186",
+    "name": "NGC 2186",
+    "star_count": 23,
+    "E(B-V)": 0.27,
+    "[Fe/H]": null,
+    "Dist": 2700,
+    "Age": 8.3
+  },
+  {
+    "id": "ngc2204",
+    "name": "NGC 2204",
+    "star_count": 32,
+    "E(B-V)": 0.085,
+    "[Fe/H]": -0.23,
+    "Dist": 2629,
+    "Age": 8.896
+  },
+  {
+    "id": "ngc2215",
+    "name": "NGC 2215",
+    "star_count": 16,
+    "E(B-V)": 0.26,
+    "[Fe/H]": -0.4,
+    "Dist": 790,
+    "Age": 8.85
+  },
+  {
+    "id": "ngc2232",
+    "name": "NGC 2232",
+    "star_count": 43,
+    "E(B-V)": 0.03,
+    "[Fe/H]": 0.32,
+    "Dist": 359,
+    "Age": 7.727
+  },
+  {
+    "id": "ngc2236",
+    "name": "NGC 2236",
+    "star_count": 13,
+    "E(B-V)": 0.479,
+    "[Fe/H]": -0.3,
+    "Dist": 2930,
+    "Age": 8.538
+  },
+  {
+    "id": "ngc2243",
+    "name": "NGC 2243",
+    "star_count": 25,
+    "E(B-V)": 0.051,
+    "[Fe/H]": -0.42,
+    "Dist": 4458,
+    "Age": 9.032
+  },
+  {
+    "id": "ngc2244",
+    "name": "NGC 2244",
+    "star_count": 106,
+    "E(B-V)": 0.47,
+    "[Fe/H]": null,
+    "Dist": 1660,
+    "Age": 6.28
+  },
+  {
+    "id": "ngc2251",
+    "name": "NGC 2251",
+    "star_count": 35,
+    "E(B-V)": 0.186,
+    "[Fe/H]": -0.1,
+    "Dist": 1329,
+    "Age": 8.427
+  },
+  {
+    "id": "ngc2264",
+    "name": "NGC 2264",
+    "star_count": 272,
+    "E(B-V)": 0.051,
+    "[Fe/H]": -0.15,
+    "Dist": 667,
+    "Age": 6.954
+  },
+  {
+    "id": "ngc2269",
+    "name": "NGC 2269",
+    "star_count": 12,
+    "E(B-V)": 0.398,
+    "[Fe/H]": null,
+    "Dist": 1687,
+    "Age": 8.416
+  },
+  {
+    "id": "ngc2281",
+    "name": "NGC 2281",
+    "star_count": 110,
+    "E(B-V)": 0.063,
+    "[Fe/H]": 0.13,
+    "Dist": 558,
+    "Age": 8.554
+  },
+  {
+    "id": "ngc2286",
+    "name": "NGC 2286",
+    "star_count": 1,
+    "E(B-V)": 0.66,
+    "[Fe/H]": null,
+    "Dist": 2600,
+    "Age": 8.3
+  },
+  {
+    "id": "ngc2287",
+    "name": "NGC 2287",
+    "star_count": 174,
+    "E(B-V)": 0.01,
+    "[Fe/H]": -0.23,
+    "Dist": 710,
+    "Age": 8.4
+  },
+  {
+    "id": "ngc2301",
+    "name": "NGC 2301",
+    "star_count": 48,
+    "E(B-V)": 0.03,
+    "[Fe/H]": 0.06,
+    "Dist": 870,
+    "Age": 8.2
+  },
+  {
+    "id": "ngc2302",
+    "name": "NGC 2302",
+    "star_count": 16,
+    "E(B-V)": 0.23,
+    "[Fe/H]": null,
+    "Dist": 1500,
+    "Age": 7.08
+  },
+  {
+    "id": "ngc2323",
+    "name": "NGC 2323",
+    "star_count": 182,
+    "E(B-V)": 0.2,
+    "[Fe/H]": null,
+    "Dist": 950,
+    "Age": 8.0
+  },
+  {
+    "id": "ngc2324",
+    "name": "NGC 2324",
+    "star_count": 46,
+    "E(B-V)": 0.25,
+    "[Fe/H]": -0.17,
+    "Dist": 3800,
+    "Age": 8.65
+  },
+  {
+    "id": "ngc2335",
+    "name": "NGC 2335",
+    "star_count": 63,
+    "E(B-V)": 0.393,
+    "[Fe/H]": -0.18,
+    "Dist": 1417,
+    "Age": 8.21
+  },
+  {
+    "id": "ngc2343",
+    "name": "NGC 2343",
+    "star_count": 56,
+    "E(B-V)": 0.118,
+    "[Fe/H]": -0.3,
+    "Dist": 1056,
+    "Age": 7.104
+  },
+  {
+    "id": "ngc2345",
+    "name": "NGC 2345",
+    "star_count": 64,
+    "E(B-V)": 0.616,
+    "[Fe/H]": null,
+    "Dist": 2251,
+    "Age": 7.853
+  },
+  {
+    "id": "ngc2353",
+    "name": "NGC 2353",
+    "star_count": 51,
+    "E(B-V)": 0.1,
+    "[Fe/H]": null,
+    "Dist": 1170,
+    "Age": 8.1
+  },
+  {
+    "id": "ngc2354",
+    "name": "NGC 2354",
+    "star_count": 29,
+    "E(B-V)": 0.18,
+    "[Fe/H]": -0.3,
+    "Dist": 1750,
+    "Age": 9.18
+  },
+  {
+    "id": "ngc2360",
+    "name": "NGC 2360",
+    "star_count": 101,
+    "E(B-V)": 0.01,
+    "[Fe/H]": -0.03,
+    "Dist": 1120,
+    "Age": 8.8
+  },
+  {
+    "id": "ngc2362",
+    "name": "NGC 2362",
+    "star_count": 69,
+    "E(B-V)": 0.1,
+    "[Fe/H]": null,
+    "Dist": 1480,
+    "Age": 6.7
+  },
+  {
+    "id": "ngc2367",
+    "name": "NGC 2367",
+    "star_count": 18,
+    "E(B-V)": 0.05,
+    "[Fe/H]": null,
+    "Dist": 1400,
+    "Age": 6.7
+  },
+  {
+    "id": "ngc2374",
+    "name": "NGC 2374",
+    "star_count": 25,
+    "E(B-V)": 0.09,
+    "[Fe/H]": null,
+    "Dist": 1468,
+    "Age": 8.463
+  },
+  {
+    "id": "ngc2383",
+    "name": "NGC 2383",
+    "star_count": 11,
+    "E(B-V)": 0.33,
+    "[Fe/H]": null,
+    "Dist": 3400,
+    "Age": 8.45
+  },
+  {
+    "id": "ngc2384",
+    "name": "NGC 2384",
+    "star_count": 15,
+    "E(B-V)": 0.31,
+    "[Fe/H]": null,
+    "Dist": 3070,
+    "Age": 7.15
+  },
+  {
+    "id": "ngc2414",
+    "name": "NGC 2414",
+    "star_count": 12,
+    "E(B-V)": 0.508,
+    "[Fe/H]": null,
+    "Dist": 3455,
+    "Age": 6.976
+  },
+  {
+    "id": "ngc2420",
+    "name": "NGC 2420",
+    "star_count": 44,
+    "E(B-V)": 0.04,
+    "[Fe/H]": -0.38,
+    "Dist": 2480,
+    "Age": 9.3
+  },
+  {
+    "id": "ngc2421",
+    "name": "NGC 2421",
+    "star_count": 28,
+    "E(B-V)": 0.42,
+    "[Fe/H]": null,
+    "Dist": 2200,
+    "Age": 7.9
+  },
+  {
+    "id": "ngc2422",
+    "name": "NGC 2422",
+    "star_count": 41,
+    "E(B-V)": 0.07,
+    "[Fe/H]": 0.11,
+    "Dist": 490,
+    "Age": 7.861
+  },
+  {
+    "id": "ngc2423",
+    "name": "NGC 2423",
+    "star_count": 11,
+    "E(B-V)": 0.097,
+    "[Fe/H]": 0.14,
+    "Dist": 766,
+    "Age": 8.867
+  },
+  {
+    "id": "ngc2425",
+    "name": "NGC 2425",
+    "star_count": 1,
+    "E(B-V)": 0.21,
+    "[Fe/H]": -0.15,
+    "Dist": 3550,
+    "Age": 9.34
+  },
+  {
+    "id": "ngc2437",
+    "name": "NGC 2437",
+    "star_count": 14,
+    "E(B-V)": 0.1,
+    "[Fe/H]": 0.059,
+    "Dist": 1510,
+    "Age": 8.4
+  },
+  {
+    "id": "ngc2439",
+    "name": "NGC 2439",
+    "star_count": 67,
+    "E(B-V)": 0.37,
+    "[Fe/H]": null,
+    "Dist": 1300,
+    "Age": 7.0
+  },
+  {
+    "id": "ngc2447",
+    "name": "NGC 2447",
+    "star_count": 23,
+    "E(B-V)": 0.046,
+    "[Fe/H]": -0.1,
+    "Dist": 1037,
+    "Age": 8.588
+  },
+  {
+    "id": "ngc2451",
+    "name": "NGC 2451",
+    "star_count": 213,
+    "E(B-V)": 0.055,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": 7.648
+  },
+  {
+    "id": "ngc2451A",
+    "name": "NGC 2451A",
+    "star_count": 29,
+    "E(B-V)": 0.01,
+    "[Fe/H]": 0.0,
+    "Dist": 189,
+    "Age": 7.78
+  },
+  {
+    "id": "ngc2451B",
+    "name": "NGC 2451B",
+    "star_count": 35,
+    "E(B-V)": 0.055,
+    "[Fe/H]": -0.45,
+    "Dist": 302,
+    "Age": 7.648
+  },
+  {
+    "id": "ngc2453",
+    "name": "NGC 2453",
+    "star_count": 22,
+    "E(B-V)": 0.446,
+    "[Fe/H]": null,
+    "Dist": 2150,
+    "Age": 7.187
+  },
+  {
+    "id": "ngc2467",
+    "name": "NGC 2467",
+    "star_count": 100,
+    "E(B-V)": 0.338,
+    "[Fe/H]": null,
+    "Dist": 1355,
+    "Age": 7.103
+  },
+  {
+    "id": "ngc2477",
+    "name": "NGC 2477",
+    "star_count": 195,
+    "E(B-V)": 0.31,
+    "[Fe/H]": 0.07,
+    "Dist": 1341,
+    "Age": 8.85
+  },
+  {
+    "id": "ngc2482",
+    "name": "NGC 2482",
+    "star_count": 41,
+    "E(B-V)": 0.094,
+    "[Fe/H]": -0.07,
+    "Dist": 1194,
+    "Age": 8.65
+  },
+  {
+    "id": "ngc2483",
+    "name": "NGC 2483",
+    "star_count": 17,
+    "E(B-V)": 0.303,
+    "[Fe/H]": null,
+    "Dist": 1659,
+    "Age": 7.089
+  },
+  {
+    "id": "ngc2489",
+    "name": "NGC 2489",
+    "star_count": 6,
+    "E(B-V)": 0.374,
+    "[Fe/H]": 0.08,
+    "Dist": 3957,
+    "Age": 7.264
+  },
+  {
+    "id": "ngc2506",
+    "name": "NGC 2506",
+    "star_count": 39,
+    "E(B-V)": 0.1,
+    "[Fe/H]": -0.2,
+    "Dist": 3750,
+    "Age": 9.0
+  },
+  {
+    "id": "ngc2516",
+    "name": "NGC 2516",
+    "star_count": 210,
+    "E(B-V)": 0.101,
+    "[Fe/H]": 0.06,
+    "Dist": 409,
+    "Age": 8.052
+  },
+  {
+    "id": "ngc2527",
+    "name": "NGC 2527",
+    "star_count": 25,
+    "E(B-V)": 0.038,
+    "[Fe/H]": -0.1,
+    "Dist": 601,
+    "Age": 8.649
+  },
+  {
+    "id": "ngc2533",
+    "name": "NGC 2533",
+    "star_count": 22,
+    "E(B-V)": 0.14,
+    "[Fe/H]": null,
+    "Dist": 1700,
+    "Age": 8.84
+  },
+  {
+    "id": "ngc2539",
+    "name": "NGC 2539",
+    "star_count": 354,
+    "E(B-V)": 0.082,
+    "[Fe/H]": 0.13,
+    "Dist": 1363,
+    "Age": 8.57
+  },
+  {
+    "id": "ngc2546",
+    "name": "NGC 2546",
+    "star_count": 46,
+    "E(B-V)": 0.134,
+    "[Fe/H]": 0.12,
+    "Dist": 919,
+    "Age": 7.874
+  },
+  {
+    "id": "ngc2547",
+    "name": "NGC 2547",
+    "star_count": 119,
+    "E(B-V)": 0.186,
+    "[Fe/H]": -0.16,
+    "Dist": 361,
+    "Age": 7.585
+  },
+  {
+    "id": "ngc2548",
+    "name": "NGC 2548",
+    "star_count": 45,
+    "E(B-V)": 0.03,
+    "[Fe/H]": 0.08,
+    "Dist": 770,
+    "Age": 8.6
+  },
+  {
+    "id": "ngc2567",
+    "name": "NGC 2567",
+    "star_count": 165,
+    "E(B-V)": 0.128,
+    "[Fe/H]": 0.0,
+    "Dist": 1677,
+    "Age": 8.469
+  },
+  {
+    "id": "ngc2571",
+    "name": "NGC 2571",
+    "star_count": 49,
+    "E(B-V)": 0.137,
+    "[Fe/H]": 0.05,
+    "Dist": 1342,
+    "Age": 7.488
+  },
+  {
+    "id": "ngc2632",
+    "name": "Praesepe",
+    "star_count": 413,
+    "E(B-V)": 0.009,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": 8.863
+  },
+  {
+    "id": "ngc2635",
+    "name": "NGC 2635",
+    "star_count": 6,
+    "E(B-V)": 0.35,
+    "[Fe/H]": -0.61,
+    "Dist": 4000,
+    "Age": 8.78
+  },
+  {
+    "id": "ngc2645",
+    "name": "NGC 2645",
+    "star_count": 48,
+    "E(B-V)": 0.38,
+    "[Fe/H]": null,
+    "Dist": 1668,
+    "Age": 7.283
+  },
+  {
+    "id": "ngc2660",
+    "name": "NGC 2660",
+    "star_count": 44,
+    "E(B-V)": 0.313,
+    "[Fe/H]": 0.04,
+    "Dist": 2826,
+    "Age": 9.033
+  },
+  {
+    "id": "ngc2669",
+    "name": "NGC 2669",
+    "star_count": 31,
+    "E(B-V)": 0.18,
+    "[Fe/H]": null,
+    "Dist": 1046,
+    "Age": 7.927
+  },
+  {
+    "id": "ngc2670",
+    "name": "NGC 2670",
+    "star_count": 4,
+    "E(B-V)": 0.43,
+    "[Fe/H]": null,
+    "Dist": 1188,
+    "Age": 7.69
+  },
+  {
+    "id": "ngc2682",
+    "name": "NGC 2682",
+    "star_count": 497,
+    "E(B-V)": 0.03,
+    "[Fe/H]": 0.03,
+    "Dist": 808,
+    "Age": 9.45
+  },
+  {
+    "id": "ngc2818",
+    "name": "NGC 2818",
+    "star_count": 38,
+    "E(B-V)": 0.121,
+    "[Fe/H]": -0.17,
+    "Dist": 1855,
+    "Age": 8.626
+  },
+  {
+    "id": "ngc2866",
+    "name": "NGC 2866",
+    "star_count": 23,
+    "E(B-V)": 0.66,
+    "[Fe/H]": null,
+    "Dist": 2600,
+    "Age": 8.3
+  },
+  {
+    "id": "ngc2910",
+    "name": "NGC 2910",
+    "star_count": 10,
+    "E(B-V)": 0.336,
+    "[Fe/H]": null,
+    "Dist": 2607,
+    "Age": 8.203
+  },
+  {
+    "id": "ngc2925",
+    "name": "NGC 2925",
+    "star_count": 2,
+    "E(B-V)": 0.08,
+    "[Fe/H]": null,
+    "Dist": 774,
+    "Age": 7.85
+  },
+  {
+    "id": "ngc2972",
+    "name": "NGC 2972",
+    "star_count": 14,
+    "E(B-V)": 0.343,
+    "[Fe/H]": -0.073,
+    "Dist": 2062,
+    "Age": 7.968
+  },
+  {
+    "id": "ngc3033",
+    "name": "NGC 3033",
+    "star_count": 19,
+    "E(B-V)": 0.327,
+    "[Fe/H]": null,
+    "Dist": 922,
+    "Age": 7.845
+  },
+  {
+    "id": "ngc3105",
+    "name": "NGC 3105",
+    "star_count": 34,
+    "E(B-V)": 0.95,
+    "[Fe/H]": null,
+    "Dist": 8530,
+    "Age": 7.3
+  },
+  {
+    "id": "ngc3114",
+    "name": "NGC 3114",
+    "star_count": 80,
+    "E(B-V)": 0.069,
+    "[Fe/H]": 0.02,
+    "Dist": 911,
+    "Age": 8.093
+  },
+  {
+    "id": "ngc3228",
+    "name": "NGC 3228",
+    "star_count": 26,
+    "E(B-V)": 0.028,
+    "[Fe/H]": 0.03,
+    "Dist": 544,
+    "Age": 7.932
+  },
+  {
+    "id": "ngc3255",
+    "name": "NGC 3255",
+    "star_count": 8,
+    "E(B-V)": 0.25,
+    "[Fe/H]": null,
+    "Dist": 1445,
+    "Age": 8.3
+  },
+  {
+    "id": "ngc3293",
+    "name": "NGC 3293",
+    "star_count": 105,
+    "E(B-V)": 0.263,
+    "[Fe/H]": null,
+    "Dist": 2327,
+    "Age": 7.014
+  },
+  {
+    "id": "ngc3324",
+    "name": "NGC 3324",
+    "star_count": 45,
+    "E(B-V)": 0.438,
+    "[Fe/H]": -0.474,
+    "Dist": 2317,
+    "Age": 6.754
+  },
+  {
+    "id": "ngc3330",
+    "name": "NGC 3330",
+    "star_count": 8,
+    "E(B-V)": 0.05,
+    "[Fe/H]": null,
+    "Dist": 894,
+    "Age": 8.229
+  },
+  {
+    "id": "ngc3496",
+    "name": "NGC 3496",
+    "star_count": 15,
+    "E(B-V)": 0.469,
+    "[Fe/H]": null,
+    "Dist": 990,
+    "Age": 8.471
+  },
+  {
+    "id": "ngc3532",
+    "name": "NGC 3532",
+    "star_count": 234,
+    "E(B-V)": 0.028,
+    "[Fe/H]": 0.02,
+    "Dist": 492,
+    "Age": 8.477
+  },
+  {
+    "id": "ngc3572",
+    "name": "NGC 3572",
+    "star_count": 30,
+    "E(B-V)": 0.389,
+    "[Fe/H]": null,
+    "Dist": 1995,
+    "Age": 6.891
+  },
+  {
+    "id": "ngc3576",
+    "name": "NGC 3576",
+    "star_count": 1,
+    "E(B-V)": 23.0,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": null
+  },
+  {
+    "id": "ngc3590",
+    "name": "NGC 3590",
+    "star_count": 45,
+    "E(B-V)": 0.449,
+    "[Fe/H]": null,
+    "Dist": 1651,
+    "Age": 7.231
+  },
+  {
+    "id": "ngc3603",
+    "name": "NGC 3603",
+    "star_count": 28,
+    "E(B-V)": 1.338,
+    "[Fe/H]": null,
+    "Dist": 6900,
+    "Age": 6.0
+  },
+  {
+    "id": "ngc3680",
+    "name": "NGC 3680",
+    "star_count": 90,
+    "E(B-V)": 0.066,
+    "[Fe/H]": -0.19,
+    "Dist": 938,
+    "Age": 9.077
+  },
+  {
+    "id": "ngc3766",
+    "name": "NGC 3766",
+    "star_count": 38,
+    "E(B-V)": 0.2,
+    "[Fe/H]": null,
+    "Dist": 2218,
+    "Age": 7.32
+  },
+  {
+    "id": "ngc3960",
+    "name": "NGC 3960",
+    "star_count": 98,
+    "E(B-V)": 0.29,
+    "[Fe/H]": 0.02,
+    "Dist": 1850,
+    "Age": 9.1
+  },
+  {
+    "id": "ngc4103",
+    "name": "NGC 4103",
+    "star_count": 42,
+    "E(B-V)": 0.294,
+    "[Fe/H]": null,
+    "Dist": 1632,
+    "Age": 7.393
+  },
+  {
+    "id": "ngc4337",
+    "name": "NGC 4337",
+    "star_count": 18,
+    "E(B-V)": 0.23,
+    "[Fe/H]": 0.12,
+    "Dist": 2600,
+    "Age": 9.2
+  },
+  {
+    "id": "ngc4349",
+    "name": "NGC 4349",
+    "star_count": 21,
+    "E(B-V)": 0.384,
+    "[Fe/H]": -0.12,
+    "Dist": 2176,
+    "Age": 8.315
+  },
+  {
+    "id": "ngc4439",
+    "name": "NGC 4439",
+    "star_count": 24,
+    "E(B-V)": 0.348,
+    "[Fe/H]": null,
+    "Dist": 1785,
+    "Age": 7.909
+  },
+  {
+    "id": "ngc4463",
+    "name": "NGC 4463",
+    "star_count": 20,
+    "E(B-V)": 0.434,
+    "[Fe/H]": null,
+    "Dist": 1050,
+    "Age": 7.505
+  },
+  {
+    "id": "ngc4609",
+    "name": "NGC 4609",
+    "star_count": 52,
+    "E(B-V)": 0.37,
+    "[Fe/H]": 0.05,
+    "Dist": 1320,
+    "Age": 7.7
+  },
+  {
+    "id": "ngc4755",
+    "name": "NGC 4755",
+    "star_count": 90,
+    "E(B-V)": 0.388,
+    "[Fe/H]": null,
+    "Dist": 1976,
+    "Age": 7.216
+  },
+  {
+    "id": "ngc4815",
+    "name": "NGC 4815",
+    "star_count": 9,
+    "E(B-V)": 0.808,
+    "[Fe/H]": -0.01,
+    "Dist": 3079,
+    "Age": 8.369
+  },
+  {
+    "id": "ngc5120",
+    "name": "NGC 5120",
+    "star_count": 3,
+    "E(B-V)": null,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": null
+  },
+  {
+    "id": "ngc5138",
+    "name": "NGC 5138",
+    "star_count": 50,
+    "E(B-V)": 0.262,
+    "[Fe/H]": 0.12,
+    "Dist": 1986,
+    "Age": 7.986
+  },
+  {
+    "id": "ngc5168",
+    "name": "NGC 5168",
+    "star_count": 13,
+    "E(B-V)": 0.431,
+    "[Fe/H]": null,
+    "Dist": 1777,
+    "Age": 8.001
+  },
+  {
+    "id": "ngc5281",
+    "name": "NGC 5281",
+    "star_count": 18,
+    "E(B-V)": 0.225,
+    "[Fe/H]": 0.0,
+    "Dist": 1108,
+    "Age": 7.146
+  },
+  {
+    "id": "ngc5316",
+    "name": "NGC 5316",
+    "star_count": 42,
+    "E(B-V)": 0.267,
+    "[Fe/H]": -0.02,
+    "Dist": 1215,
+    "Age": 8.202
+  },
+  {
+    "id": "ngc5367",
+    "name": "NGC 5367",
+    "star_count": 10,
+    "E(B-V)": null,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": null
+  },
+  {
+    "id": "ngc5460",
+    "name": "NGC 5460",
+    "star_count": 158,
+    "E(B-V)": 0.092,
+    "[Fe/H]": -0.06,
+    "Dist": 700,
+    "Age": 8.2
+  },
+  {
+    "id": "ngc5606",
+    "name": "NGC 5606",
+    "star_count": 56,
+    "E(B-V)": 0.474,
+    "[Fe/H]": null,
+    "Dist": 1805,
+    "Age": 7.075
+  },
+  {
+    "id": "ngc5617",
+    "name": "NGC 5617",
+    "star_count": 47,
+    "E(B-V)": 0.48,
+    "[Fe/H]": -0.18,
+    "Dist": 2000,
+    "Age": 7.9
+  },
+  {
+    "id": "ngc5662",
+    "name": "NGC 5662",
+    "star_count": 245,
+    "E(B-V)": 0.311,
+    "[Fe/H]": -0.03,
+    "Dist": 666,
+    "Age": 7.968
+  },
+  {
+    "id": "ngc5749",
+    "name": "NGC 5749",
+    "star_count": 112,
+    "E(B-V)": 0.376,
+    "[Fe/H]": null,
+    "Dist": 1031,
+    "Age": 7.728
+  },
+  {
+    "id": "ngc5822",
+    "name": "NGC 5822",
+    "star_count": 180,
+    "E(B-V)": 0.103,
+    "[Fe/H]": 0.05,
+    "Dist": 933,
+    "Age": 8.95
+  },
+  {
+    "id": "ngc5823",
+    "name": "NGC 5823",
+    "star_count": 80,
+    "E(B-V)": 0.09,
+    "[Fe/H]": null,
+    "Dist": 1192,
+    "Age": 8.9
+  },
+  {
+    "id": "ngc5999",
+    "name": "NGC 5999",
+    "star_count": 27,
+    "E(B-V)": 0.45,
+    "[Fe/H]": 0.0,
+    "Dist": 2050,
+    "Age": 8.6
+  },
+  {
+    "id": "ngc6005",
+    "name": "NGC 6005",
+    "star_count": 6,
+    "E(B-V)": 0.45,
+    "[Fe/H]": null,
+    "Dist": 2690,
+    "Age": 9.08
+  },
+  {
+    "id": "ngc6025",
+    "name": "NGC 6025",
+    "star_count": 78,
+    "E(B-V)": 0.159,
+    "[Fe/H]": 0.19,
+    "Dist": 756,
+    "Age": 7.889
+  },
+  {
+    "id": "ngc6031",
+    "name": "NGC 6031",
+    "star_count": 15,
+    "E(B-V)": 0.371,
+    "[Fe/H]": 0.02,
+    "Dist": 1823,
+    "Age": 8.069
+  },
+  {
+    "id": "ngc6067",
+    "name": "NGC 6067",
+    "star_count": 82,
+    "E(B-V)": 0.38,
+    "[Fe/H]": 0.138,
+    "Dist": 1417,
+    "Age": 8.076
+  },
+  {
+    "id": "ngc6087",
+    "name": "NGC 6087",
+    "star_count": 96,
+    "E(B-V)": 0.175,
+    "[Fe/H]": -0.01,
+    "Dist": 891,
+    "Age": 7.976
+  },
+  {
+    "id": "ngc6124",
+    "name": "NGC 6124",
+    "star_count": 56,
+    "E(B-V)": 0.75,
+    "[Fe/H]": null,
+    "Dist": 512,
+    "Age": 8.147
+  },
+  {
+    "id": "ngc6134",
+    "name": "NGC 6134",
+    "star_count": 35,
+    "E(B-V)": 0.35,
+    "[Fe/H]": 0.15,
+    "Dist": 1260,
+    "Age": 8.95
+  },
+  {
+    "id": "ngc6167",
+    "name": "NGC 6167",
+    "star_count": 48,
+    "E(B-V)": 0.779,
+    "[Fe/H]": null,
+    "Dist": 1108,
+    "Age": 7.887
+  },
+  {
+    "id": "ngc6169",
+    "name": "NGC 6169",
+    "star_count": 4,
+    "E(B-V)": 0.729,
+    "[Fe/H]": null,
+    "Dist": 1007,
+    "Age": 7.5
+  },
+  {
+    "id": "ngc6178",
+    "name": "NGC 6178",
+    "star_count": 19,
+    "E(B-V)": 0.219,
+    "[Fe/H]": null,
+    "Dist": 1014,
+    "Age": 7.248
+  },
+  {
+    "id": "ngc6192",
+    "name": "NGC 6192",
+    "star_count": 43,
+    "E(B-V)": 0.637,
+    "[Fe/H]": 0.12,
+    "Dist": 1547,
+    "Age": 8.13
+  },
+  {
+    "id": "ngc6193",
+    "name": "NGC 6193",
+    "star_count": 52,
+    "E(B-V)": 0.475,
+    "[Fe/H]": null,
+    "Dist": 1155,
+    "Age": 6.775
+  },
+  {
+    "id": "ngc6200",
+    "name": "NGC 6200",
+    "star_count": 15,
+    "E(B-V)": 0.581,
+    "[Fe/H]": null,
+    "Dist": 2054,
+    "Age": 6.928
+  },
+  {
+    "id": "ngc6204",
+    "name": "NGC 6204",
+    "star_count": 68,
+    "E(B-V)": 0.46,
+    "[Fe/H]": -1.053,
+    "Dist": 1200,
+    "Age": 7.9
+  },
+  {
+    "id": "ngc6208",
+    "name": "NGC 6208",
+    "star_count": 31,
+    "E(B-V)": 0.21,
+    "[Fe/H]": -0.03,
+    "Dist": 939,
+    "Age": 9.069
+  },
+  {
+    "id": "ngc6231",
+    "name": "NGC 6231",
+    "star_count": 74,
+    "E(B-V)": 0.439,
+    "[Fe/H]": null,
+    "Dist": 1243,
+    "Age": 6.843
+  },
+  {
+    "id": "ngc6242",
+    "name": "NGC 6242",
+    "star_count": 23,
+    "E(B-V)": 0.377,
+    "[Fe/H]": null,
+    "Dist": 1131,
+    "Age": 7.608
+  },
+  {
+    "id": "ngc6249",
+    "name": "NGC 6249",
+    "star_count": 15,
+    "E(B-V)": 0.443,
+    "[Fe/H]": null,
+    "Dist": 981,
+    "Age": 7.386
+  },
+  {
+    "id": "ngc6250",
+    "name": "NGC 6250",
+    "star_count": 37,
+    "E(B-V)": 0.35,
+    "[Fe/H]": null,
+    "Dist": 865,
+    "Age": 7.415
+  },
+  {
+    "id": "ngc6259",
+    "name": "NGC 6259",
+    "star_count": 40,
+    "E(B-V)": 0.498,
+    "[Fe/H]": 0.02,
+    "Dist": 1031,
+    "Age": 8.336
+  },
+  {
+    "id": "ngc6268",
+    "name": "NGC 6268",
+    "star_count": 7,
+    "E(B-V)": 0.4,
+    "[Fe/H]": null,
+    "Dist": 1080,
+    "Age": 7.6
+  },
+  {
+    "id": "ngc6281",
+    "name": "NGC 6281",
+    "star_count": 85,
+    "E(B-V)": 0.148,
+    "[Fe/H]": 0.0,
+    "Dist": 479,
+    "Age": 8.497
+  },
+  {
+    "id": "ngc6322",
+    "name": "NGC 6322",
+    "star_count": 39,
+    "E(B-V)": 0.59,
+    "[Fe/H]": null,
+    "Dist": 996,
+    "Age": 7.058
+  },
+  {
+    "id": "ngc6383",
+    "name": "NGC 6383",
+    "star_count": 107,
+    "E(B-V)": 0.298,
+    "[Fe/H]": null,
+    "Dist": 985,
+    "Age": 6.962
+  },
+  {
+    "id": "ngc6396",
+    "name": "NGC 6396",
+    "star_count": 22,
+    "E(B-V)": 0.926,
+    "[Fe/H]": null,
+    "Dist": 1192,
+    "Age": 7.506
+  },
+  {
+    "id": "ngc6405",
+    "name": "NGC 6405",
+    "star_count": 192,
+    "E(B-V)": 0.144,
+    "[Fe/H]": 0.06,
+    "Dist": 487,
+    "Age": 7.974
+  },
+  {
+    "id": "ngc6416",
+    "name": "NGC 6416",
+    "star_count": 11,
+    "E(B-V)": 0.251,
+    "[Fe/H]": -0.613,
+    "Dist": 741,
+    "Age": 8.087
+  },
+  {
+    "id": "ngc6425",
+    "name": "NGC 6425",
+    "star_count": 30,
+    "E(B-V)": 0.399,
+    "[Fe/H]": 0.09,
+    "Dist": 778,
+    "Age": 7.347
+  },
+  {
+    "id": "ngc6475",
+    "name": "NGC 6475",
+    "star_count": 56,
+    "E(B-V)": 0.103,
+    "[Fe/H]": 0.14,
+    "Dist": 301,
+    "Age": 8.475
+  },
+  {
+    "id": "ngc6494",
+    "name": "NGC 6494",
+    "star_count": 193,
+    "E(B-V)": 0.356,
+    "[Fe/H]": 0.04,
+    "Dist": 628,
+    "Age": 8.477
+  },
+  {
+    "id": "ngc6514",
+    "name": "NGC 6514",
+    "star_count": 72,
+    "E(B-V)": 0.19,
+    "[Fe/H]": null,
+    "Dist": 816,
+    "Age": 7.368
+  },
+  {
+    "id": "ngc6520",
+    "name": "NGC 6520",
+    "star_count": 1,
+    "E(B-V)": 0.42,
+    "[Fe/H]": null,
+    "Dist": 1900,
+    "Age": 8.18
+  },
+  {
+    "id": "ngc6530",
+    "name": "NGC 6530",
+    "star_count": 182,
+    "E(B-V)": 0.333,
+    "[Fe/H]": null,
+    "Dist": 1330,
+    "Age": 6.867
+  },
+  {
+    "id": "ngc6531",
+    "name": "NGC 6531",
+    "star_count": 61,
+    "E(B-V)": 0.281,
+    "[Fe/H]": null,
+    "Dist": 1205,
+    "Age": 7.07
+  },
+  {
+    "id": "ngc6546",
+    "name": "NGC 6546",
+    "star_count": 52,
+    "E(B-V)": 0.491,
+    "[Fe/H]": -0.334,
+    "Dist": 938,
+    "Age": 7.849
+  },
+  {
+    "id": "ngc6604",
+    "name": "NGC 6604",
+    "star_count": 31,
+    "E(B-V)": 0.97,
+    "[Fe/H]": null,
+    "Dist": 1696,
+    "Age": 6.81
+  },
+  {
+    "id": "ngc6611",
+    "name": "NGC 6611",
+    "star_count": 127,
+    "E(B-V)": 0.8,
+    "[Fe/H]": null,
+    "Dist": 1800,
+    "Age": 6.11
+  },
+  {
+    "id": "ngc6613",
+    "name": "NGC 6613",
+    "star_count": 17,
+    "E(B-V)": 0.45,
+    "[Fe/H]": null,
+    "Dist": 1296,
+    "Age": 7.223
+  },
+  {
+    "id": "ngc6618",
+    "name": "NGC 6618",
+    "star_count": 105,
+    "E(B-V)": 1.51,
+    "[Fe/H]": 0.132,
+    "Dist": 1300,
+    "Age": 6.0
+  },
+  {
+    "id": "ngc6633",
+    "name": "NGC 6633",
+    "star_count": 171,
+    "E(B-V)": 0.182,
+    "[Fe/H]": 0.06,
+    "Dist": 376,
+    "Age": 8.629
+  },
+  {
+    "id": "ngc6649",
+    "name": "NGC 6649",
+    "star_count": 95,
+    "E(B-V)": 1.201,
+    "[Fe/H]": null,
+    "Dist": 1369,
+    "Age": 7.566
+  },
+  {
+    "id": "ngc6664",
+    "name": "NGC 6664",
+    "star_count": 32,
+    "E(B-V)": 0.709,
+    "[Fe/H]": null,
+    "Dist": 1164,
+    "Age": 7.162
+  },
+  {
+    "id": "ngc6694",
+    "name": "NGC 6694",
+    "star_count": 30,
+    "E(B-V)": 0.51,
+    "[Fe/H]": -0.09,
+    "Dist": 1660,
+    "Age": 8.26
+  },
+  {
+    "id": "ngc6704",
+    "name": "NGC 6704",
+    "star_count": 6,
+    "E(B-V)": 0.717,
+    "[Fe/H]": null,
+    "Dist": 2974,
+    "Age": 7.863
+  },
+  {
+    "id": "ngc6705",
+    "name": "NGC 6705",
+    "star_count": 73,
+    "E(B-V)": 0.428,
+    "[Fe/H]": 0.0,
+    "Dist": 1877,
+    "Age": 8.4
+  },
+  {
+    "id": "ngc6709",
+    "name": "NGC 6709",
+    "star_count": 30,
+    "E(B-V)": 0.304,
+    "[Fe/H]": null,
+    "Dist": 1075,
+    "Age": 8.178
+  },
+  {
+    "id": "ngc6716",
+    "name": "NGC 6716",
+    "star_count": 36,
+    "E(B-V)": 0.22,
+    "[Fe/H]": -0.31,
+    "Dist": 789,
+    "Age": 7.961
+  },
+  {
+    "id": "ngc6755",
+    "name": "NGC 6755",
+    "star_count": 23,
+    "E(B-V)": 0.826,
+    "[Fe/H]": null,
+    "Dist": 1421,
+    "Age": 7.719
+  },
+  {
+    "id": "ngc6791",
+    "name": "NGC 6791",
+    "star_count": 64,
+    "E(B-V)": 0.16,
+    "[Fe/H]": 0.42,
+    "Dist": 5035,
+    "Age": 9.92
+  },
+  {
+    "id": "ngc6802",
+    "name": "NGC 6802",
+    "star_count": 25,
+    "E(B-V)": 0.84,
+    "[Fe/H]": 0.03,
+    "Dist": 1778,
+    "Age": 8.98
+  },
+  {
+    "id": "ngc6811",
+    "name": "NGC 6811",
+    "star_count": 124,
+    "E(B-V)": 0.16,
+    "[Fe/H]": -0.02,
+    "Dist": 1215,
+    "Age": 8.799
+  },
+  {
+    "id": "ngc6819",
+    "name": "NGC 6819",
+    "star_count": 60,
+    "E(B-V)": 0.16,
+    "[Fe/H]": -0.02,
+    "Dist": 2403,
+    "Age": 9.36
+  },
+  {
+    "id": "ngc6823",
+    "name": "NGC 6823",
+    "star_count": 79,
+    "E(B-V)": 0.854,
+    "[Fe/H]": null,
+    "Dist": 3176,
+    "Age": 6.5
+  },
+  {
+    "id": "ngc6830",
+    "name": "NGC 6830",
+    "star_count": 28,
+    "E(B-V)": 0.501,
+    "[Fe/H]": 0.24,
+    "Dist": 1639,
+    "Age": 7.572
+  },
+  {
+    "id": "ngc6834",
+    "name": "NGC 6834",
+    "star_count": 30,
+    "E(B-V)": 0.708,
+    "[Fe/H]": null,
+    "Dist": 2067,
+    "Age": 7.883
+  },
+  {
+    "id": "ngc6866",
+    "name": "NGC 6866",
+    "star_count": 25,
+    "E(B-V)": 0.074,
+    "[Fe/H]": -0.013,
+    "Dist": 1189,
+    "Age": 8.91
+  },
+  {
+    "id": "ngc6871",
+    "name": "NGC 6871",
+    "star_count": 35,
+    "E(B-V)": 0.443,
+    "[Fe/H]": null,
+    "Dist": 1574,
+    "Age": 6.958
+  },
+  {
+    "id": "ngc6882",
+    "name": "NGC 6882",
+    "star_count": 76,
+    "E(B-V)": 0.062,
+    "[Fe/H]": -0.02,
+    "Dist": 432,
+    "Age": 8.2
+  },
+  {
+    "id": "ngc6883",
+    "name": "NGC 6883",
+    "star_count": 9,
+    "E(B-V)": 0.3,
+    "[Fe/H]": null,
+    "Dist": 1380,
+    "Age": null
+  },
+  {
+    "id": "ngc6910",
+    "name": "NGC 6910",
+    "star_count": 32,
+    "E(B-V)": 0.971,
+    "[Fe/H]": null,
+    "Dist": 1139,
+    "Age": 7.127
+  },
+  {
+    "id": "ngc6913",
+    "name": "NGC 6913",
+    "star_count": 122,
+    "E(B-V)": 1.03,
+    "[Fe/H]": null,
+    "Dist": 1540,
+    "Age": 6.7
+  },
+  {
+    "id": "ngc6939",
+    "name": "NGC 6939",
+    "star_count": 42,
+    "E(B-V)": 0.33,
+    "[Fe/H]": 0.0,
+    "Dist": 1800,
+    "Age": 9.2
+  },
+  {
+    "id": "ngc6940",
+    "name": "NGC 6940",
+    "star_count": 137,
+    "E(B-V)": 0.214,
+    "[Fe/H]": 0.013,
+    "Dist": 770,
+    "Age": 8.858
+  },
+  {
+    "id": "ngc7031",
+    "name": "NGC 7031",
+    "star_count": 29,
+    "E(B-V)": 0.854,
+    "[Fe/H]": null,
+    "Dist": 900,
+    "Age": 8.138
+  },
+  {
+    "id": "ngc7039",
+    "name": "NGC 7039",
+    "star_count": 34,
+    "E(B-V)": 0.131,
+    "[Fe/H]": null,
+    "Dist": 951,
+    "Age": 7.82
+  },
+  {
+    "id": "ngc7062",
+    "name": "NGC 7062",
+    "star_count": 27,
+    "E(B-V)": 0.43,
+    "[Fe/H]": 0.08,
+    "Dist": 1910,
+    "Age": 8.85
+  },
+  {
+    "id": "ngc7063",
+    "name": "NGC 7063",
+    "star_count": 33,
+    "E(B-V)": 0.091,
+    "[Fe/H]": null,
+    "Dist": 689,
+    "Age": 7.977
+  },
+  {
+    "id": "ngc7067",
+    "name": "NGC 7067",
+    "star_count": 29,
+    "E(B-V)": 0.75,
+    "[Fe/H]": null,
+    "Dist": 3600,
+    "Age": 8.0
+  },
+  {
+    "id": "ngc7086",
+    "name": "NGC 7086",
+    "star_count": 30,
+    "E(B-V)": 0.807,
+    "[Fe/H]": null,
+    "Dist": 1298,
+    "Age": 8.142
+  },
+  {
+    "id": "ngc7092",
+    "name": "NGC 7092",
+    "star_count": 88,
+    "E(B-V)": 0.013,
+    "[Fe/H]": 0.01,
+    "Dist": 326,
+    "Age": 8.445
+  },
+  {
+    "id": "ngc7128",
+    "name": "NGC 7128",
+    "star_count": 25,
+    "E(B-V)": 1.018,
+    "[Fe/H]": null,
+    "Dist": 2307,
+    "Age": 7.254
+  },
+  {
+    "id": "ngc7129",
+    "name": "NGC 7129",
+    "star_count": 40,
+    "E(B-V)": 0.97,
+    "[Fe/H]": null,
+    "Dist": 1070,
+    "Age": 8.08
+  },
+  {
+    "id": "ngc7142",
+    "name": "NGC 7142",
+    "star_count": 35,
+    "E(B-V)": 0.35,
+    "[Fe/H]": 0.08,
+    "Dist": 2100,
+    "Age": 9.55
+  },
+  {
+    "id": "ngc7160",
+    "name": "NGC 7160",
+    "star_count": 48,
+    "E(B-V)": 0.375,
+    "[Fe/H]": 0.16,
+    "Dist": 789,
+    "Age": 7.278
+  },
+  {
+    "id": "ngc7209",
+    "name": "NGC 7209",
+    "star_count": 34,
+    "E(B-V)": 0.168,
+    "[Fe/H]": -0.12,
+    "Dist": 1168,
+    "Age": 8.617
+  },
+  {
+    "id": "ngc7235",
+    "name": "NGC 7235",
+    "star_count": 36,
+    "E(B-V)": 0.9,
+    "[Fe/H]": null,
+    "Dist": 3330,
+    "Age": 6.9
+  },
+  {
+    "id": "ngc7243",
+    "name": "NGC 7243",
+    "star_count": 59,
+    "E(B-V)": 0.22,
+    "[Fe/H]": 0.06,
+    "Dist": 808,
+    "Age": 8.058
+  },
+  {
+    "id": "ngc7261",
+    "name": "NGC 7261",
+    "star_count": 31,
+    "E(B-V)": 0.88,
+    "[Fe/H]": null,
+    "Dist": 2830,
+    "Age": 8.2
+  },
+  {
+    "id": "ngc7380",
+    "name": "NGC 7380",
+    "star_count": 35,
+    "E(B-V)": 0.602,
+    "[Fe/H]": null,
+    "Dist": 2222,
+    "Age": 7.077
+  },
+  {
+    "id": "ngc7419",
+    "name": "NGC 7419",
+    "star_count": 27,
+    "E(B-V)": 2.02,
+    "[Fe/H]": null,
+    "Dist": 2300,
+    "Age": 7.15
+  },
+  {
+    "id": "ngc7510",
+    "name": "NGC 7510",
+    "star_count": 23,
+    "E(B-V)": 0.9,
+    "[Fe/H]": null,
+    "Dist": 3480,
+    "Age": 7.35
+  },
+  {
+    "id": "ngc7654",
+    "name": "NGC 7654",
+    "star_count": 92,
+    "E(B-V)": 0.57,
+    "[Fe/H]": null,
+    "Dist": 1400,
+    "Age": 8.2
+  },
+  {
+    "id": "ngc7686",
+    "name": "NGC 7686",
+    "star_count": 39,
+    "E(B-V)": 0.2,
+    "[Fe/H]": null,
+    "Dist": 1534,
+    "Age": 9.3
+  },
+  {
+    "id": "ngc7762",
+    "name": "NGC 7762",
+    "star_count": 18,
+    "E(B-V)": 0.66,
+    "[Fe/H]": null,
+    "Dist": 780,
+    "Age": 9.3
+  },
+  {
+    "id": "ngc7788",
+    "name": "NGC 7788",
+    "star_count": 5,
+    "E(B-V)": 0.49,
+    "[Fe/H]": null,
+    "Dist": 2750,
+    "Age": 8.2
+  },
+  {
+    "id": "ngc7789",
+    "name": "NGC 7789",
+    "star_count": 84,
+    "E(B-V)": 0.28,
+    "[Fe/H]": 0.02,
+    "Dist": 1795,
+    "Age": 9.15
+  },
+  {
+    "id": "ngc7790",
+    "name": "NGC 7790",
+    "star_count": 50,
+    "E(B-V)": 0.531,
+    "[Fe/H]": null,
+    "Dist": 2944,
+    "Age": 7.749
+  },
+  {
+    "id": "pis01",
+    "name": "Pismis 1",
+    "star_count": 12,
+    "E(B-V)": 0.578,
+    "[Fe/H]": null,
+    "Dist": 5907,
+    "Age": 7.928
+  },
+  {
+    "id": "pis04",
+    "name": "Pismis 4",
+    "star_count": 16,
+    "E(B-V)": 0.013,
+    "[Fe/H]": -0.2,
+    "Dist": 593,
+    "Age": 7.533
+  },
+  {
+    "id": "pis05",
+    "name": "Pismis 5",
+    "star_count": 9,
+    "E(B-V)": 0.421,
+    "[Fe/H]": null,
+    "Dist": 869,
+    "Age": 7.197
+  },
+  {
+    "id": "pis08",
+    "name": "Pismis 8",
+    "star_count": 16,
+    "E(B-V)": 0.706,
+    "[Fe/H]": null,
+    "Dist": 1312,
+    "Age": 7.427
+  },
+  {
+    "id": "pis11",
+    "name": "Pismis 11",
+    "star_count": 17,
+    "E(B-V)": 1.2,
+    "[Fe/H]": null,
+    "Dist": 3600,
+    "Age": 7.0
+  },
+  {
+    "id": "pis12",
+    "name": "Pismis 12",
+    "star_count": 17,
+    "E(B-V)": 0.27,
+    "[Fe/H]": null,
+    "Dist": 1714,
+    "Age": 9.4
+  },
+  {
+    "id": "pis16",
+    "name": "Pismis 16",
+    "star_count": 9,
+    "E(B-V)": 0.557,
+    "[Fe/H]": null,
+    "Dist": 1824,
+    "Age": 7.839
+  },
+  {
+    "id": "pis17",
+    "name": "Pismis 17",
+    "star_count": 9,
+    "E(B-V)": 0.471,
+    "[Fe/H]": -0.145,
+    "Dist": 3504,
+    "Age": 7.023
+  },
+  {
+    "id": "pis18",
+    "name": "Pismis 18",
+    "star_count": 6,
+    "E(B-V)": 0.5,
+    "[Fe/H]": null,
+    "Dist": 2240,
+    "Age": 9.08
+  },
+  {
+    "id": "pis20",
+    "name": "Pismis 20",
+    "star_count": 16,
+    "E(B-V)": 1.28,
+    "[Fe/H]": null,
+    "Dist": 3272,
+    "Age": 6.864
+  },
+  {
+    "id": "pis21",
+    "name": "Pismis 21",
+    "star_count": 11,
+    "E(B-V)": 0.625,
+    "[Fe/H]": null,
+    "Dist": 1174,
+    "Age": 8.11
+  },
+  {
+    "id": "pis22",
+    "name": "Pismis 22",
+    "star_count": 9,
+    "E(B-V)": 2.0,
+    "[Fe/H]": null,
+    "Dist": 1000,
+    "Age": 7.6
+  },
+  {
+    "id": "pis24",
+    "name": "Pismis 24",
+    "star_count": 17,
+    "E(B-V)": 1.72,
+    "[Fe/H]": null,
+    "Dist": 1995,
+    "Age": 7.0
+  },
+  {
+    "id": "pl01",
+    "name": "Platais 1",
+    "star_count": 32,
+    "E(B-V)": 0.357,
+    "[Fe/H]": null,
+    "Dist": 1268,
+    "Age": 8.244
+  },
+  {
+    "id": "ros03",
+    "name": "Roslund 3",
+    "star_count": 13,
+    "E(B-V)": 0.348,
+    "[Fe/H]": null,
+    "Dist": 1467,
+    "Age": 8.036
+  },
+  {
+    "id": "ros04",
+    "name": "Roslund 4",
+    "star_count": 14,
+    "E(B-V)": 0.91,
+    "[Fe/H]": null,
+    "Dist": 2000,
+    "Age": 6.6
+  },
+  {
+    "id": "ros05",
+    "name": "Roslund 5",
+    "star_count": 46,
+    "E(B-V)": 0.098,
+    "[Fe/H]": null,
+    "Dist": 389,
+    "Age": 7.832
+  },
+  {
+    "id": "ru018",
+    "name": "Ruprecht 18",
+    "star_count": 20,
+    "E(B-V)": 0.7,
+    "[Fe/H]": -0.01,
+    "Dist": 1056,
+    "Age": 7.648
+  },
+  {
+    "id": "ru020",
+    "name": "Ruprecht 20",
+    "star_count": 11,
+    "E(B-V)": 0.1,
+    "[Fe/H]": -0.29,
+    "Dist": 1208,
+    "Age": 8.5
+  },
+  {
+    "id": "ru032",
+    "name": "Ruprecht 32",
+    "star_count": 16,
+    "E(B-V)": 0.5,
+    "[Fe/H]": null,
+    "Dist": 5346,
+    "Age": 7.08
+  },
+  {
+    "id": "ru034",
+    "name": "Ruprecht 34",
+    "star_count": 17,
+    "E(B-V)": 0.0,
+    "[Fe/H]": null,
+    "Dist": 2630,
+    "Age": 9.0
+  },
+  {
+    "id": "ru036",
+    "name": "Ruprecht 36",
+    "star_count": 9,
+    "E(B-V)": 0.166,
+    "[Fe/H]": null,
+    "Dist": 1681,
+    "Age": 7.606
+  },
+  {
+    "id": "ru044",
+    "name": "Ruprecht 44",
+    "star_count": 39,
+    "E(B-V)": 0.619,
+    "[Fe/H]": null,
+    "Dist": 4730,
+    "Age": 6.941
+  },
+  {
+    "id": "ru046",
+    "name": "Ruprecht 46",
+    "star_count": 9,
+    "E(B-V)": 0.07,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": 9.6
+  },
+  {
+    "id": "ru047",
+    "name": "Ruprecht 47",
+    "star_count": 10,
+    "E(B-V)": 0.28,
+    "[Fe/H]": null,
+    "Dist": 3006,
+    "Age": 7.89
+  },
+  {
+    "id": "ru049",
+    "name": "Ruprecht 49",
+    "star_count": 9,
+    "E(B-V)": 0.259,
+    "[Fe/H]": null,
+    "Dist": 1823,
+    "Age": 7.93
+  },
+  {
+    "id": "ru055",
+    "name": "Ruprecht 55",
+    "star_count": 29,
+    "E(B-V)": 0.45,
+    "[Fe/H]": null,
+    "Dist": 4600,
+    "Age": 7.0
+  },
+  {
+    "id": "ru059",
+    "name": "Ruprecht 59",
+    "star_count": 21,
+    "E(B-V)": 0.088,
+    "[Fe/H]": null,
+    "Dist": 874,
+    "Age": 7.727
+  },
+  {
+    "id": "ru067",
+    "name": "Ruprecht 67",
+    "star_count": 27,
+    "E(B-V)": 0.432,
+    "[Fe/H]": null,
+    "Dist": 1504,
+    "Age": 8.256
+  },
+  {
+    "id": "ru076",
+    "name": "Ruprecht 76",
+    "star_count": 7,
+    "E(B-V)": 0.376,
+    "[Fe/H]": null,
+    "Dist": 1262,
+    "Age": 7.734
+  },
+  {
+    "id": "ru079",
+    "name": "Ruprecht 79",
+    "star_count": 50,
+    "E(B-V)": 0.717,
+    "[Fe/H]": null,
+    "Dist": 1979,
+    "Age": 7.093
+  },
+  {
+    "id": "ru091",
+    "name": "Ruprecht 91",
+    "star_count": 84,
+    "E(B-V)": 0.01,
+    "[Fe/H]": null,
+    "Dist": 900,
+    "Age": 8.63
+  },
+  {
+    "id": "ru097",
+    "name": "Ruprecht 97",
+    "star_count": 51,
+    "E(B-V)": 0.229,
+    "[Fe/H]": -0.03,
+    "Dist": 1357,
+    "Age": 8.343
+  },
+  {
+    "id": "ru098",
+    "name": "Ruprecht 98",
+    "star_count": 16,
+    "E(B-V)": 0.162,
+    "[Fe/H]": null,
+    "Dist": 494,
+    "Age": 8.508
+  },
+  {
+    "id": "ru107",
+    "name": "Ruprecht 107",
+    "star_count": 17,
+    "E(B-V)": 0.458,
+    "[Fe/H]": null,
+    "Dist": 1442,
+    "Age": 7.478
+  },
+  {
+    "id": "ru108",
+    "name": "Ruprecht 108",
+    "star_count": 11,
+    "E(B-V)": 0.136,
+    "[Fe/H]": null,
+    "Dist": 901,
+    "Age": 8.424
+  },
+  {
+    "id": "ru118",
+    "name": "Ruprecht 118",
+    "star_count": 7,
+    "E(B-V)": 0.41,
+    "[Fe/H]": null,
+    "Dist": 1343,
+    "Age": 8.11
+  },
+  {
+    "id": "ru119",
+    "name": "Ruprecht 119",
+    "star_count": 13,
+    "E(B-V)": 0.57,
+    "[Fe/H]": null,
+    "Dist": 956,
+    "Age": 6.853
+  },
+  {
+    "id": "ru127",
+    "name": "Ruprecht 127",
+    "star_count": 18,
+    "E(B-V)": 0.99,
+    "[Fe/H]": null,
+    "Dist": 1466,
+    "Age": 7.351
+  },
+  {
+    "id": "ru166",
+    "name": "Ruprecht 166",
+    "star_count": 3,
+    "E(B-V)": null,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": null
+  },
+  {
+    "id": "ru175",
+    "name": "Ruprecht 175",
+    "star_count": 52,
+    "E(B-V)": 0.521,
+    "[Fe/H]": null,
+    "Dist": 4431,
+    "Age": 9.0
+  },
+  {
+    "id": "sho01",
+    "name": "Shorlin 1",
+    "star_count": 12,
+    "E(B-V)": null,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": null
+  },
+  {
+    "id": "st01",
+    "name": "Stock 1",
+    "star_count": 18,
+    "E(B-V)": 0.16,
+    "[Fe/H]": null,
+    "Dist": 318,
+    "Age": 8.48
+  },
+  {
+    "id": "st02",
+    "name": "Stock 2",
+    "star_count": 173,
+    "E(B-V)": 0.38,
+    "[Fe/H]": -0.14,
+    "Dist": 303,
+    "Age": 8.23
+  },
+  {
+    "id": "st07",
+    "name": "Stock 7",
+    "star_count": 9,
+    "E(B-V)": 0.606,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": 7.214
+  },
+  {
+    "id": "st08",
+    "name": "Stock 8",
+    "star_count": 23,
+    "E(B-V)": 0.4,
+    "[Fe/H]": null,
+    "Dist": 2005,
+    "Age": 6.3
+  },
+  {
+    "id": "st13",
+    "name": "Stock 13",
+    "star_count": 23,
+    "E(B-V)": 0.218,
+    "[Fe/H]": null,
+    "Dist": 1577,
+    "Age": 7.222
+  },
+  {
+    "id": "st14",
+    "name": "Stock 14",
+    "star_count": 65,
+    "E(B-V)": 0.21,
+    "[Fe/H]": null,
+    "Dist": 2399,
+    "Age": 7.3
+  },
+  {
+    "id": "st16",
+    "name": "Stock 16",
+    "star_count": 35,
+    "E(B-V)": 0.52,
+    "[Fe/H]": null,
+    "Dist": 1810,
+    "Age": 6.9
+  },
+  {
+    "id": "st17",
+    "name": "Stock 17",
+    "star_count": 10,
+    "E(B-V)": 0.736,
+    "[Fe/H]": null,
+    "Dist": 2144,
+    "Age": 6.775
+  },
+  {
+    "id": "ste01",
+    "name": "Stephenson 1",
+    "star_count": 75,
+    "E(B-V)": 0.04,
+    "[Fe/H]": null,
+    "Dist": 390,
+    "Age": 7.731
+  },
+  {
+    "id": "to01",
+    "name": "Tombaugh 1",
+    "star_count": 25,
+    "E(B-V)": 0.303,
+    "[Fe/H]": null,
+    "Dist": 4169,
+    "Age": 8.98
+  },
+  {
+    "id": "tr01",
+    "name": "Trumpler 1",
+    "star_count": 43,
+    "E(B-V)": 0.68,
+    "[Fe/H]": null,
+    "Dist": 2469,
+    "Age": 7.3
+  },
+  {
+    "id": "tr02",
+    "name": "Trumpler 2",
+    "star_count": 30,
+    "E(B-V)": 0.4,
+    "[Fe/H]": null,
+    "Dist": 725,
+    "Age": 7.95
+  },
+  {
+    "id": "tr07",
+    "name": "Trumpler 7",
+    "star_count": 16,
+    "E(B-V)": 0.266,
+    "[Fe/H]": null,
+    "Dist": 1474,
+    "Age": 7.43
+  },
+  {
+    "id": "tr09",
+    "name": "Trumpler 9",
+    "star_count": 34,
+    "E(B-V)": 0.248,
+    "[Fe/H]": null,
+    "Dist": 2289,
+    "Age": 8.001
+  },
+  {
+    "id": "tr10",
+    "name": "Trumpler 10",
+    "star_count": 30,
+    "E(B-V)": 0.034,
+    "[Fe/H]": -0.13,
+    "Dist": 424,
+    "Age": 7.542
+  },
+  {
+    "id": "tr12",
+    "name": "Trumpler 12",
+    "star_count": 3,
+    "E(B-V)": 0.05,
+    "[Fe/H]": null,
+    "Dist": 1300,
+    "Age": 8.81
+  },
+  {
+    "id": "tr14",
+    "name": "Trumpler 14",
+    "star_count": 60,
+    "E(B-V)": 0.36,
+    "[Fe/H]": null,
+    "Dist": 2900,
+    "Age": 6.0
+  },
+  {
+    "id": "tr15",
+    "name": "Trumpler 15",
+    "star_count": 37,
+    "E(B-V)": 0.434,
+    "[Fe/H]": null,
+    "Dist": 1853,
+    "Age": 6.926
+  },
+  {
+    "id": "tr16",
+    "name": "Trumpler 16",
+    "star_count": 147,
+    "E(B-V)": 0.36,
+    "[Fe/H]": null,
+    "Dist": 2900,
+    "Age": 6.0
+  },
+  {
+    "id": "tr17",
+    "name": "Trumpler 17",
+    "star_count": 6,
+    "E(B-V)": 0.605,
+    "[Fe/H]": null,
+    "Dist": 2189,
+    "Age": 7.706
+  },
+  {
+    "id": "tr18",
+    "name": "Trumpler 18",
+    "star_count": 128,
+    "E(B-V)": 0.315,
+    "[Fe/H]": null,
+    "Dist": 1358,
+    "Age": 7.194
+  },
+  {
+    "id": "tr21",
+    "name": "Trumpler 21",
+    "star_count": 24,
+    "E(B-V)": 0.197,
+    "[Fe/H]": null,
+    "Dist": 1263,
+    "Age": 7.696
+  },
+  {
+    "id": "tr24",
+    "name": "Trumpler 24",
+    "star_count": 40,
+    "E(B-V)": 0.418,
+    "[Fe/H]": null,
+    "Dist": 1138,
+    "Age": 6.919
+  },
+  {
+    "id": "tr26",
+    "name": "Trumpler 26",
+    "star_count": 45,
+    "E(B-V)": 0.35,
+    "[Fe/H]": null,
+    "Dist": 1000,
+    "Age": 8.85
+  },
+  {
+    "id": "tr27",
+    "name": "Trumpler 27",
+    "star_count": 39,
+    "E(B-V)": 1.194,
+    "[Fe/H]": -0.193,
+    "Dist": 1211,
+    "Age": 7.063
+  },
+  {
+    "id": "tr28",
+    "name": "Trumpler 28",
+    "star_count": 8,
+    "E(B-V)": 0.733,
+    "[Fe/H]": 0.326,
+    "Dist": 1343,
+    "Age": 7.29
+  },
+  {
+    "id": "tr33",
+    "name": "Trumpler 33",
+    "star_count": 1,
+    "E(B-V)": 0.357,
+    "[Fe/H]": -1.544,
+    "Dist": 1755,
+    "Age": 7.685
+  },
+  {
+    "id": "tr35",
+    "name": "Trumpler 35",
+    "star_count": 21,
+    "E(B-V)": 1.218,
+    "[Fe/H]": null,
+    "Dist": 1206,
+    "Age": 7.862
+  },
+  {
+    "id": "tr37",
+    "name": "Trumpler 37",
+    "star_count": 161,
+    "E(B-V)": 0.47,
+    "[Fe/H]": null,
+    "Dist": 835,
+    "Age": 7.054
+  },
+  {
+    "id": "tu01",
+    "name": "Turner 1",
+    "star_count": 20,
+    "E(B-V)": 0.476,
+    "[Fe/H]": null,
+    "Dist": 1675,
+    "Age": 7.46
+  },
+  {
+    "id": "tu09",
+    "name": "Turner 9",
+    "star_count": 11,
+    "E(B-V)": null,
+    "[Fe/H]": null,
+    "Dist": 852,
+    "Age": 8.2
+  },
+  {
+    "id": "up01",
+    "name": "Upgren 1",
+    "star_count": 7,
+    "E(B-V)": null,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": null
+  },
+  {
+    "id": "vdb001",
+    "name": "vdBergh 1",
+    "star_count": 44,
+    "E(B-V)": 0.71,
+    "[Fe/H]": null,
+    "Dist": 1687,
+    "Age": 8.025
+  },
+  {
+    "id": "wat01",
+    "name": "Waterloo 1",
+    "star_count": 9,
+    "E(B-V)": 0.91,
+    "[Fe/H]": null,
+    "Dist": 4400,
+    "Age": 8.6
+  },
+  {
+    "id": "wat02",
+    "name": "Waterloo 2",
+    "star_count": 6,
+    "E(B-V)": 0.171,
+    "[Fe/H]": null,
+    "Dist": 550,
+    "Age": 8.33
+  },
+  {
+    "id": "wat03",
+    "name": "Waterloo 3",
+    "star_count": 7,
+    "E(B-V)": 0.34,
+    "[Fe/H]": null,
+    "Dist": 5200,
+    "Age": null
+  },
+  {
+    "id": "wat06",
+    "name": "Waterloo 6",
+    "star_count": 8,
+    "E(B-V)": 0.243,
+    "[Fe/H]": null,
+    "Dist": null,
+    "Age": 7.671
+  },
+  {
+    "id": "wat07",
+    "name": "Waterloo 7",
+    "star_count": 10,
+    "E(B-V)": 0.42,
+    "[Fe/H]": null,
+    "Dist": 2800,
+    "Age": null
+  },
+  {
+    "id": "wes01",
+    "name": "Westerlund 1",
+    "star_count": 1,
+    "E(B-V)": 4.35,
+    "[Fe/H]": null,
+    "Dist": 5500,
+    "Age": 6.7
+  },
+  {
+    "id": "wes02",
+    "name": "Westerlund 2",
+    "star_count": 9,
+    "E(B-V)": 1.65,
+    "[Fe/H]": null,
+    "Dist": 2850,
+    "Age": 6.3
+  }
+]

@@ -6,9 +6,9 @@ const AladinContext = createContext();
 export function AladinProvider({ children }) {
     const [settings, setSettings] = useState({
         survey: "P/DSS2/color",
-        fov: 60,
+        fov: 5,
         cooFrame: "ICRS",
-        target: "M42"
+        target: "Pleiades"
     });
 
     return (
