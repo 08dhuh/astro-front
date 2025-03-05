@@ -1,6 +1,6 @@
 import { createContext, useContext, useState } from "react";
 
-const PlotContext = createContext();
+const HRPlotContext = createContext();
 
 export function PlotProvider({ children }) {
     const [plotSettings, setPlotSettings] = useState({
@@ -10,12 +10,12 @@ export function PlotProvider({ children }) {
     });
 
     return (
-        <PlotContext.Provider value={{ plotSettings, setPlotSettings }}>
+        <HRPlotContext.Provider value={{ plotSettings, setPlotSettings }}>
             {children}
-        </PlotContext.Provider>
+        </HRPlotContext.Provider>
     );
 }
 
-export function usePlot() {
-    return useContext(PlotContext);
+export function useHRPlot() {
+    return useContext(HRPlotContext);
 }
