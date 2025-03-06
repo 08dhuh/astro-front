@@ -25,7 +25,7 @@ const HRDiagramPlot = () => {
       b_v: point.b_v + b_vOffset, // X-Axis
       Mv: point.Mv + MvOffset, // Y-Axis
     })),
-    [b_vOffset, MvOffset] 
+    [b_vOffset, MvOffset]
   );
 
   const shiftedIsochrone = useMemo(() =>
@@ -44,7 +44,7 @@ const HRDiagramPlot = () => {
       {/*should be replaced by sliders*/}
       <div className="flex gap-4 mb-4">
         <div>
-          <label className="block text-sm">B-V Offset:</label>
+          <label className="block text-sm">E(B-V):</label>
           <input
             type="number"
             step="0.1"
@@ -70,10 +70,12 @@ const HRDiagramPlot = () => {
         <ComposedChart margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
 
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis type="number" dataKey="b_v" name="B-V Color Index" />
-          <YAxis type="number" dataKey="Mv" name="Vmag" reversed />
+          <XAxis type="number" dataKey="b_v" name="B-V Color Index"
+            label={{ value: "B-V", position: "insideBottom", dy: 20 }} />
+          <YAxis type="number" dataKey="Mv" name="Vmag" label={"V"} reversed />
           <Tooltip cursor={{ strokeDasharray: "3 3" }} />
-          <Legend />
+          <Legend verticalAlign="bottom" align="right" wrapperStyle={{ paddingTop: 10 }}/>
+
 
 
           <Scatter
@@ -96,7 +98,7 @@ const HRDiagramPlot = () => {
 
           {/*ZAMS Line Graph*/}
           <Line
-          name="ZAMS"
+            name="ZAMS"
             type="monotone"
             dataKey="Mv"
             data={shiftedZams}
@@ -107,7 +109,7 @@ const HRDiagramPlot = () => {
 
           {/*Isochrone Line Graph*/}
           <Line
-          name="Isochrones"
+            name="Isochrones"
             type="monotone"
             dataKey="Mv"
             data={shiftedIsochrone}
