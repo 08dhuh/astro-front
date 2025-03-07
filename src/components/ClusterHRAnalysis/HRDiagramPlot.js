@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import {
   ComposedChart,
   Scatter,
@@ -10,14 +10,24 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import { useHRPlot } from "@/context/HRPlotContext";
 //Data imports - should be replaced later
 import zamsData from "@/data/zams.json";
 import isochroneData from "@/data/isochrone_sample.json";
-import pleiadesData from "@/data/pleiades_uvb.json";
+import clusterData from "@/data/pleiades_uvb.json";
 
 const HRDiagramPlot = () => {
+
+  const {selectedCluster, plotSettings, setPlotSettings} = useHRPlot();
+
   const [b_vOffset, setB_VOffset] = useState(0);
   const [MvOffset, setMvOffset] = useState(0);
+
+  useEffect(() => {
+    if (selectedCluster) {
+      setB_VOffset(selectedCluster["E(B-V)"] ?? 0);
+    }
+  }, [selectedCluster]); 
 
   //accessibility
   const [isHighContrast, setIsHighContrast] = useState(false);
@@ -27,7 +37,18 @@ const HRDiagramPlot = () => {
     ? { clusters: "#E69F00", zams: "#CC79A7", isochrones: "#0072B2" }
     : { clusters: "green", zams: "red", isochrones: "blue" };
 
-  //Shifts to ZAMS & Isochrone
+
+
+
+  //Shifts to data
+  const shiftedCluster = useMemo(()=>
+    clusterData.map((point) => ({
+      ...point,
+      b_v: point.b_v + b_vOffset
+    })),
+    [b_vOffset]
+  );
+
   const shiftedZams = useMemo(() =>
     zamsData.map((point) => ({
       b_v: point.b_v + b_vOffset, // X-Axis
@@ -43,6 +64,10 @@ const HRDiagramPlot = () => {
     })),
     [b_vOffset, MvOffset]
   );
+
+  const clusterDataLabel = (cluster) => {
+    return cluster? cluster.name : "No Cluster Selected"
+  }
 
   return (
     <div className={`p-4 bg-black text-white rounded-lg`}>
@@ -102,8 +127,8 @@ const HRDiagramPlot = () => {
 
 
           <Scatter
-            name="Pleiades UVB"
-            data={pleiadesData}
+            name={clusterDataLabel(selectedCluster)}
+            data={shiftedCluster}
             strokeWidth={1}
             fill={colourScheme.clusters}
 

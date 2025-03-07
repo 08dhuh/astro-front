@@ -1,12 +1,14 @@
 "use client";
 
-import { useState } from "react";
+//import { useState } from "react";
+import { useHRPlot } from "@/context/HRPlotContext";
 import HRDiagramPlot from "./HRDiagramPlot";
 import ClusterTable from "./ClusterTable";
 
-function HRDiagram() {
-  const [selectedCluster, setSelectedCluster] = useState(null);
-
+function HRDiagramMain() {
+  //const [selectedCluster, setSelectedCluster] = useState(null);
+  const {selectedCluster, setSelectedCluster} = useHRPlot();
+  
   return (
     <div>      
       <ClusterTable selectedCluster={selectedCluster} setSelectedCluster={setSelectedCluster} />
@@ -33,4 +35,4 @@ function HRDiagram() {
 
 
 
-export default HRDiagram;
+export default HRDiagramMain;

@@ -2,7 +2,9 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import AladinViewer from "@/components/AladinViewer";
-import HRDiagram from "@/components/ClusterHRAnalysis/HRDiagramMain";
+import HRDiagramMain from "@/components/ClusterHRAnalysis/HRDiagramMain";
+import { HRPlotProvider } from "@/context/HRPlotContext";
+
 
 const exercises = [
   { label: "Select Exercise...", value: "" },
@@ -11,7 +13,7 @@ const exercises = [
 
 
 export default function Home() {
-  
+
   const [selectedExercise, setSelectedExercise] = useState("");
 
   const [showScroll, setShowScroll] = useState(false);
@@ -33,7 +35,11 @@ export default function Home() {
   const renderExerciseComponent = () => {
     switch (selectedExercise) {
       case "HRDiagram":
-        return <HRDiagram />;
+        return (
+          <HRPlotProvider>
+            <HRDiagramMain />
+          </HRPlotProvider>
+        );
       default:
         return null;
     }
@@ -117,7 +123,7 @@ export default function Home() {
           />
           Examples
         </a>
-       
+
       </footer>
       {showScroll && (
         <button
