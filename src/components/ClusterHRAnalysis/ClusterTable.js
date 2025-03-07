@@ -4,19 +4,55 @@ import clusters from "@/data/clusters.json";
 export default function ClusterTable({ selectedCluster, setSelectedCluster }) {
   const [isOpen, setIsOpen] = useState(true);
   const [searchQuery, setSearchQuery] = useState("");
+  const [sortConfig, setSortConfig] = useState({ key: "name", direction: "asc" });
+
 
   //search for clusters
   const filteredClusters = clusters.filter(cluster =>
     cluster.name.toLowerCase().includes(searchQuery.toLowerCase())
   )
 
+  //cluster sorting logics
+  const sortedFilteredClusters = [...filteredClusters].sort((a, b) => {
+    if (sortConfig.key === "name") {
+      return sortConfig.direction === "asc"
+        ? a.name.localeCompare(b.name)
+        : b.name.localeCompare(a.name);
+    } else if (sortConfig.key === "star_count") {
+      return sortConfig.direction === "asc"
+        ? a.star_count - b.star_count
+        : b.star_count - a.star_count;
+    }
+    return 0;
+  });
+
+  const handleSort = (key) => {
+    setSortConfig((prev) => ({
+      key,
+      direction: prev.key === key && prev.direction === "asc" ? "desc" : "asc",
+    }));
+  };
+
+  const getSortIndicator = (key) => {
+    if (sortConfig.key !== key) return "⬍";
+    return sortConfig.direction === "asc" ? "▲" : "▼";
+  };
+
   const clusterTableHeader = () => {
     return (
       <thead>
         <tr className="bg-gray-700">
           <th className="border border-gray-300 px-4 py-2">ID</th>
-          <th className="border border-gray-300 px-4 py-2">Name</th>
-          <th className="border border-gray-300 px-4 py-2">Star Count</th>
+          <th className="border border-gray-300 px-4 py-2 cursor-pointer"
+            onClick={() => handleSort("name")}>
+            Name {getSortIndicator("name")}
+          </th>
+          <th
+            className="border border-gray-300 px-4 py-2 cursor-pointer"
+            onClick={() => handleSort("star_count")}
+          >
+            Star Count {getSortIndicator("star_count")}
+          </th>
           <th className="border border-gray-300 px-4 py-2">E(B-V)</th>
           <th className="border border-gray-300 px-4 py-2">[Fe/H]</th>
           {/* <th className="border border-gray-300 px-4 py-2">Distance (pc)</th>
@@ -25,6 +61,7 @@ export default function ClusterTable({ selectedCluster, setSelectedCluster }) {
       </thead>
     )
   }
+
 
   const createClusterTable = clusterGroup => {
     return clusterGroup.map((cluster, index) => (
@@ -71,20 +108,9 @@ export default function ClusterTable({ selectedCluster, setSelectedCluster }) {
           )}
 
           <table className="w-full border-collapse border border-gray-300 bg-black text-white">
-          {clusterTableHeader()}
+            {clusterTableHeader()}
             <tbody>
-              {
-                filteredClusters.length > 0 ? (                  
-                    
-                    createClusterTable(filteredClusters)
-)
-                  : (
-
-                      createClusterTable(clusters)
-
-                  )
-               
-              }
+            {createClusterTable(sortedFilteredClusters)}
             </tbody>
 
           </table>
