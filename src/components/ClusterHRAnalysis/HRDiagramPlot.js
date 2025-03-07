@@ -19,6 +19,14 @@ const HRDiagramPlot = () => {
   const [b_vOffset, setB_VOffset] = useState(0);
   const [MvOffset, setMvOffset] = useState(0);
 
+  //accessibility
+  const [isHighContrast, setIsHighContrast] = useState(false);
+  const [isBGDarkMode, setIsBGDarkMode] = useState(false);
+
+  const colourScheme = isHighContrast
+    ? { clusters: "#E69F00", zams: "#CC79A7", isochrones: "#0072B2" }
+    : { clusters: "green", zams: "red", isochrones: "blue" };
+
   //Shifts to ZAMS & Isochrone
   const shiftedZams = useMemo(() =>
     zamsData.map((point) => ({
@@ -37,7 +45,7 @@ const HRDiagramPlot = () => {
   );
 
   return (
-    <div className="p-4 bg-black text-white rounded-lg">
+    <div className={`p-4 bg-black text-white rounded-lg`}>
       <h2 className="text-lg font-semibold mb-4">HR Diagram</h2>
 
       {/*Offset Controls*/}
@@ -66,15 +74,30 @@ const HRDiagramPlot = () => {
       </div>
 
       {/* Chart */}
-      <ResponsiveContainer width="100%" height={400}>
+      <div className={`p-4 rounded-lg ${isBGDarkMode ? "bg-black" : "bg-white"}`}>
+      <ResponsiveContainer  width="100%" height={400}>
         <ComposedChart margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
 
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis type="number" dataKey="b_v" name="B-V Color Index"
+          <XAxis
+            type="number"
+            dataKey="b_v"
+            name="B-V Color Index"
+            domain={[-0.5, 2.5]}
+            tickCount={6}
+            allowDataOverflow={true}
             label={{ value: "B-V", position: "insideBottom", dy: 20 }} />
-          <YAxis type="number" dataKey="Mv" name="Vmag" label={"V"} reversed />
+          <YAxis
+            type="number"
+            dataKey="Mv"
+            name="Vmag"
+            domain={[0, 21]}
+            tickCount={8}
+            allowDataOverflow={true}
+            label={"V"}
+            reversed />
           <Tooltip cursor={{ strokeDasharray: "3 3" }} />
-          <Legend verticalAlign="bottom" align="right" wrapperStyle={{ paddingTop: 10 }}/>
+          <Legend verticalAlign="bottom" align="right" wrapperStyle={{ paddingTop: 20 }} />
 
 
 
@@ -82,16 +105,16 @@ const HRDiagramPlot = () => {
             name="Pleiades UVB"
             data={pleiadesData}
             strokeWidth={1}
-            fill="green"
-            fillOpacity={0}
+            fill={colourScheme.clusters}
+
 
             shape={(props) => (
               <circle
                 cx={props.cx}
                 cy={props.cy}
                 r={3}
-                stroke="green"
-
+                stroke={colourScheme.clusters}
+                fill={isBGDarkMode ? "black" : "white"}
               />
             )}
           />
@@ -102,8 +125,8 @@ const HRDiagramPlot = () => {
             type="monotone"
             dataKey="Mv"
             data={shiftedZams}
-            stroke="red"
-            strokeWidth={2}
+            stroke={colourScheme.zams}
+            strokeWidth={3}
             dot={false}
           />
 
@@ -113,13 +136,40 @@ const HRDiagramPlot = () => {
             type="monotone"
             dataKey="Mv"
             data={shiftedIsochrone}
-            stroke="blue"
-            strokeWidth={2}
+            stroke={colourScheme.isochrones}
+            strokeWidth={3}
             dot={false}
           />
 
         </ComposedChart>
+        
       </ResponsiveContainer>
+      </div>
+      <div className="flex justify-center gap-4 mb-4 pt-2">
+
+          <label className="flex items-center gap-2">
+          <span>High-Contrast Mode</span>
+            <input
+              type="checkbox"
+              checked={isHighContrast}
+              onChange={() => setIsHighContrast(!isHighContrast)}
+              className="w-4 h-4"
+            />
+            
+          </label>
+
+          <label className="flex items-center gap-2">
+          <span>White Background</span>
+            <input
+              type="checkbox"
+              checked={!isBGDarkMode}
+              onChange={() => setIsBGDarkMode(!isBGDarkMode)}
+              className="w-4 h-4"
+            />
+            
+          </label>
+        </div>
+
     </div>
   );
 }
