@@ -1,5 +1,5 @@
-import { createContext, useContext, useState } from "react";
-
+import { createContext, useContext, useState, useEffect } from "react";
+import { useGlobalTarget } from "@/context/GlobalTargetContext";
 const HRPlotContext = createContext();
 
 export function HRPlotProvider({ children }) {
@@ -8,6 +8,15 @@ export function HRPlotProvider({ children }) {
         isochroneAge: 1e9,  //default: 1 billion years
         metallicity: 0.0,    //default: solar metallicity      
     });
+    const { setTarget } = useGlobalTarget();
+
+    useEffect(()=>
+    {
+        if (selectedCluster) {
+            setTarget(selectedCluster.name);
+        }
+    }
+    , [selectedCluster, setTarget]);
 
     return (
         <HRPlotContext.Provider value={{

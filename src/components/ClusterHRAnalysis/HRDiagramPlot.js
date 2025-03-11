@@ -121,7 +121,7 @@ const HRDiagramPlot = () => {
             allowDataOverflow={true}
             label={"V"}
             reversed />
-          <Tooltip cursor={{ strokeDasharray: "3 3" }} />
+          {/* <Tooltip cursor={{ strokeDasharray: "3 3" }} /> */}
           <Legend verticalAlign="bottom" align="right" wrapperStyle={{ paddingTop: 20 }} />
 
 

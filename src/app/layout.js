@@ -1,3 +1,4 @@
+import { GlobalTargetProvider } from "@/context/GlobalTargetContext";
 import { AladinProvider } from "@/context/AladinContext";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -23,9 +24,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <AladinProvider>
-          {children}
-        </AladinProvider>
+        <GlobalTargetProvider>
+          <AladinProvider>
+            {children}
+          </AladinProvider>
+        </GlobalTargetProvider>
       </body>
     </html>
   );

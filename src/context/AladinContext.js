@@ -1,15 +1,22 @@
 "use client";
-import { createContext, useContext, useState } from "react";
-
+import { createContext, useContext, useState, useEffect } from "react";
+import { useGlobalTarget } from "./GlobalTargetContext";
 const AladinContext = createContext();
 
 export function AladinProvider({ children }) {
+    const { target } = useGlobalTarget();
     const [settings, setSettings] = useState({
         survey: "P/DSS2/color",
         fov: 5,
         cooFrame: "ICRS",
-        target: "Pleiades"
+        target: target
     });
+    useEffect(() => {
+        setSettings((prev) => ({
+            ...prev,
+            target: target
+        }));
+    }, [target]);
 
     return (
         <AladinContext.Provider value={{ settings, setSettings }}>
