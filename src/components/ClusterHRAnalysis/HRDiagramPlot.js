@@ -74,6 +74,28 @@ const HRDiagramPlot = () => {
     return cluster ? cluster.name : "No Cluster Selected"
   }
 
+  const startDrag = (e) => {
+    const slider = e.target;
+    const sliderRect = slider.parentElement.getBoundingClientRect();
+
+    const onMouseMove = (event) => {
+      let newTop = event.clientY - sliderRect.top;
+      newTop = Math.max(0, Math.min(newTop, sliderRect.height));
+
+      const newMvOffset = (100 - (newTop / sliderRect.height) * 100) / 5;
+      setMvOffset(newMvOffset);
+    };
+
+    const onMouseUp = () => {
+      window.removeEventListener("mousemove", onMouseMove);
+      window.removeEventListener("mouseup", onMouseUp);
+    };
+
+    window.addEventListener("mousemove", onMouseMove);
+    window.addEventListener("mouseup", onMouseUp);
+  };
+
+
   return (
     <div className={`p-4 bg-black text-white rounded-lg`}>
       <h2 className="text-lg font-semibold mb-2">HR Diagram</h2>
@@ -81,6 +103,32 @@ const HRDiagramPlot = () => {
       {/*Offset Controls*/}
       {/*should be replaced by sliders*/}
       <div className="flex gap-4 mb-6">
+        <div>
+          <label className="text-sm flex items-center gap-1">Mv Offset
+            {/* Tooltip */}
+            <div className="group relative flex items-center">
+              <div className="w-4 h-4 flex items-center justify-center rounded-full bg-gray-500 text-white text-xs font-bold cursor-pointer">
+                ?
+              </div>
+
+              <div className="absolute top-0 left-0 translate-x-4 -translate-y-full w-64 p-2 bg-gray-800 text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                <p className="font-semibold pb-1">Mv Offset and Distance modulus</p>
+                <p>
+                  <b>Distance modulus</b> is the difference between the apparent magnitude and the absolute magnitude (Mv) of an astronomical object.
+                  Adjusting this value (<b>Mv offset</b>) allows you to align the ZAMS and isochrones graphs with the central axis of the cluster scatter plot,
+                  helping you determine the <b>distance modulus</b> of the cluster.
+                </p>
+              </div>
+            </div>
+          </label>
+          <input
+            type="number"
+            step="0.1"
+            value={MvOffset.toFixed(2)}
+            onChange={(e) => setMvOffset(parseFloat(e.target.value) || 0)}
+            className="px-2 py-1 text-black rounded"
+          />
+        </div>
         <div>
           <label className="text-sm flex items-center gap-1">
             E(B-V)
@@ -116,20 +164,12 @@ const HRDiagramPlot = () => {
             className="px-2 py-1 text-black rounded disabled:bg-gray-500"
           />
         </div>
-        <div>
-          <label className="block text-sm">Mv Offset</label>
-          <input
-            type="number"
-            step="0.1"
-            value={MvOffset}
-            onChange={(e) => setMvOffset(parseFloat(e.target.value) || 0)}
-            className="px-2 py-1 text-black rounded"
-          />
-        </div>
+
       </div>
 
 
-      <div className="flex justify-center rounded-lg gap-4 mb-0 pt-1 pb-1 bg-gray-700">
+      <div className="flex justify-center rounded-lg gap-4 mb-0 pt-1 pb-1 bg-gray-700 w-full max-w-[600px] mx-auto">
+
 
         <label className="flex items-center gap-2">
           <span>Toggle ZAMS</span>
@@ -153,78 +193,94 @@ const HRDiagramPlot = () => {
         </label>
       </div>
       {/* Chart */}
-      <div className={`p-4 rounded-lg ${isBGDarkMode ? "bg-black" : "bg-white"}`}>
+      <div className={`p-4 rounded-lg flex ${isBGDarkMode ? "bg-black" : "bg-white"} w-full max-w-[600px] mx-auto`} >
 
-        <ResponsiveContainer width="100%" height={400}>
-          <ComposedChart margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
-
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis
-              type="number"
-              dataKey="b_v"
-              name="B-V Color Index"
-              domain={[-0.5, 2.5]}
-              tickCount={6}
-              allowDataOverflow={true}
-              label={{ value: "B-V", position: "insideBottom", dy: 20 }} />
-            <YAxis
-              type="number"
-              dataKey="Mv"
-              name="Vmag"
-              domain={[0, 21]}
-              tickCount={8}
-              allowDataOverflow={true}
-              label={"V"}
-              reversed />
-            {/* <Tooltip cursor={{ strokeDasharray: "3 3" }} /> */}
-            <Legend verticalAlign="bottom" align="right" wrapperStyle={{ paddingTop: 20 }} />
+        {/* Sidebar for Mv Offset */}
+        <div className="w-[5%] flex flex-col justify-center items-center">
+          <div className="h-[90%] w-1 rounded bg-gray-400 relative">
+            <div
+              className="w-4 h-4 rounded-full absolute left-[-6px] cursor-pointer"
+              style={{
+                backgroundColor: isBGDarkMode ? "white" : "black",
+                top: `${100 - (MvOffset) * 5}%`,
+              }}
+              onMouseDown={(e) => startDrag(e)}
+            />
+          </div>
+          <p className="text-xs mt-2 text-gray-600">Mv Offset</p>
+        </div>
 
 
+        <div className="w-[95%]">
+          <ResponsiveContainer width="100%" height={400}>
+            <ComposedChart margin={{ top: 20, right: 20, bottom: 20, left: 0 }}>
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis
+                type="number"
+                dataKey="b_v"
+                name="B-V Color Index"
+                domain={[-0.5, 2.5]}
+                tickCount={6}
+                allowDataOverflow={true}
+                label={{ value: "B-V", position: "insideBottom", dy: 20 }}
+              />
+              <YAxis
+                type="number"
+                dataKey="Mv"
+                name="Vmag"
+                domain={[0, 21]}
+                tickCount={8}
+                allowDataOverflow={true}
+                label={"V"}
+                reversed
+              />
+              <Legend verticalAlign="bottom" align="right" wrapperStyle={{ paddingTop: 20 }} />
 
-            <Scatter
-              name={clusterDataLabel(selectedCluster)}
-              data={shiftedCluster}
-              strokeWidth={1}
-              fill={colourScheme.clusters}
+              <Scatter
+                name={clusterDataLabel(selectedCluster)}
+                data={shiftedCluster}
+                strokeWidth={1}
+                fill={colourScheme.clusters}
+                shape={(props) => (
+                  <circle
+                    cx={props.cx}
+                    cy={props.cy}
+                    r={3}
+                    stroke={colourScheme.clusters}
+                    fill={isBGDarkMode ? "black" : "white"}
+                  />
+                )}
+              />
 
-
-              shape={(props) => (
-                <circle
-                  cx={props.cx}
-                  cy={props.cy}
-                  r={3}
-                  stroke={colourScheme.clusters}
-                  fill={isBGDarkMode ? "black" : "white"}
+              {isShowingZAMS && (
+                <Line
+                  name="ZAMS"
+                  type="monotone"
+                  dataKey="Mv"
+                  data={shiftedZams}
+                  stroke={colourScheme.zams}
+                  strokeWidth={3}
+                  dot={false}
                 />
               )}
-            />
 
-            {/*ZAMS Line Graph*/}
-            {isShowingZAMS && <Line
-              name="ZAMS"
-              type="monotone"
-              dataKey="Mv"
-              data={shiftedZams}
-              stroke={colourScheme.zams}
-              strokeWidth={3}
-              dot={false}
-            />}
+              {isShowingIsochrones && (
+                <Line
+                  name="Isochrones"
+                  type="monotone"
+                  dataKey="Mv"
+                  data={shiftedIsochrone}
+                  stroke={colourScheme.isochrones}
+                  strokeWidth={3}
+                  dot={false}
+                />
+              )}
+            </ComposedChart>
+          </ResponsiveContainer>
+        </div>
 
-            {/*Isochrone Line Graph*/}
-            {isShowingIsochrones && <Line
-              name="Isochrones"
-              type="monotone"
-              dataKey="Mv"
-              data={shiftedIsochrone}
-              stroke={colourScheme.isochrones}
-              strokeWidth={3}
-              dot={false}
-            />}
-
-          </ComposedChart>
-
-        </ResponsiveContainer>
       </div>
+
       <div className="flex justify-center rounded-lg gap-4 mb-4 pt-1 pb-1 bg-gray-700">
 
         <label className="flex items-center gap-2">
