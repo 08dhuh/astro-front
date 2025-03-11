@@ -8,8 +8,15 @@ export default function AladinViewer() {
     useAladinLite(settings);
 
     return (
-        <div>
-            <div id="aladin-lite-div" style={{ width: "400px", height: "400px" }}></div>
-        </div>
+        <>
+            <div className="flex flex-col justify-center items-center">
+                <div id="aladin-lite-div" style={{ width: "400px", height: "400px" }} />
+                <p className="mt-2 px-4 py-2 text-white text-center border border-gray-300">
+                    Now displaying: <span className="font-semibold">{settings.target}</span>
+                </p>
+
+            </div>
+
+        </>
     );
 }
