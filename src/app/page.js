@@ -61,6 +61,11 @@ export default function Home() {
           <li>Follow the lab guides after selecting exercises.</li>
         </ol>
 
+        {/* AladinViewer */}
+        <div className="w-full flex justify-center">
+          <AladinViewer />
+        </div>
+
         {/* Exercises */}
         <select
           className="rounded border border-black/[.08] dark:border-white/[.145] bg-white dark:bg-black px-4 py-2 text-sm sm:text-base"
@@ -76,10 +81,7 @@ export default function Home() {
 
         {renderExerciseComponent()}
 
-        {/* AladinViewer */}
-        <div className="w-full flex justify-center">
-          <AladinViewer />
-        </div>
+        
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
 

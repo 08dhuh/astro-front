@@ -14,11 +14,11 @@ import { useHRPlot } from "@/context/HRPlotContext";
 //Data imports - should be replaced later
 import zamsData from "@/data/zams.json";
 import isochroneData from "@/data/isochrone_sample.json";
-import clusterData from "@/data/pleiades_uvb.json";
+//import clusterData from "@/data/pleiades_uvb.json";
 
 const HRDiagramPlot = () => {
   //plot context settings
-  const { selectedCluster, plotSettings, setPlotSettings } = useHRPlot();
+  const { selectedCluster, clusterData, plotSettings, setPlotSettings } = useHRPlot();
 
   //offsets
   const [b_vOffset, setB_VOffset] = useState(0);
