@@ -40,7 +40,8 @@ const HRDiagramPlot = () => {
 
   useEffect(() => {
     if (selectedCluster) {
-      setB_VOffset(selectedCluster["E(B-V)"] ?? 0);
+      //setB_VOffset(selectedCluster["E(B-V)"] ?? 0);
+      setB_VOffset(selectedCluster["reddening"] ?? 0);
     }
   }, [selectedCluster]);
 

@@ -70,11 +70,16 @@ export default function ClusterTable({ selectedCluster, setSelectedCluster }) {
         className="hover:bg-gray-600 cursor-pointer"
         onClick={() => setSelectedCluster(cluster)}
       >
-        <td className="border border-gray-300 px-4 py-2">{cluster.id}</td>
+        <td className="border border-gray-300 px-4 py-2">{cluster.cluster_id}</td>
         <td className="border border-gray-300 px-4 py-2">{cluster.name}</td>
         <td className="border border-gray-300 px-4 py-2">{cluster.star_count}</td>
-        <td className="border border-gray-300 px-4 py-2">{cluster["E(B-V)"] ?? "N/A"}</td>
-        <td className="border border-gray-300 px-4 py-2">{cluster["[Fe/H]"] ?? "N/A"}</td>
+        <td className="border border-gray-300 px-4 py-2">
+          {cluster["reddening"] != null ? cluster["reddening"].toFixed(3) : "N/A"}
+        </td>
+
+        <td className="border border-gray-300 px-4 py-2">
+          {cluster["fe_h"] != null ? cluster["fe_h"].toFixed(3) : "N/A"}
+        </td>
         {/* <td className="border border-gray-300 px-4 py-2">{cluster.Dist ?? "N/A"}</td>
         <td className="border border-gray-300 px-4 py-2">{cluster.Age ?? "N/A"}</td> */}
       </tr>
@@ -110,7 +115,7 @@ export default function ClusterTable({ selectedCluster, setSelectedCluster }) {
           <table className="w-full border-collapse border border-gray-300 bg-black text-white">
             {clusterTableHeader()}
             <tbody>
-            {createClusterTable(sortedFilteredClusters)}
+              {createClusterTable(sortedFilteredClusters)}
             </tbody>
 
           </table>
