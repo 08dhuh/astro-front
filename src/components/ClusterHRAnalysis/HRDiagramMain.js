@@ -17,11 +17,11 @@ function HRDiagramMain() {
         <div className="mt-4 p-4 border border-gray-300 bg-gray-700">
           <h3 className="text-lg font-semibold">Selected Cluster Details</h3>
           <p className="mt-2"></p>
-          <p><strong>ID:</strong> {selectedCluster.id}</p>
+          <p><strong>ID:</strong> {selectedCluster.cluster_id}</p>
           <p><strong>Name:</strong> {selectedCluster.name}</p>
           <p><strong>Star Count:</strong> {selectedCluster.star_count}</p>
-          <p><strong>E(B-V):</strong> {selectedCluster["E(B-V)"] ?? "N/A"}</p>
-          <p><strong>[Fe/H]:</strong> {selectedCluster["[Fe/H]"] ?? "N/A"}</p>
+          <p><strong>E(B-V):</strong> {selectedCluster["reddening"] ?? "N/A"}</p>
+          <p><strong>[Fe/H]:</strong> {selectedCluster["fe_h"] ?? "N/A"}</p>
           {/* <p><strong>Distance (pc):</strong> {selectedCluster.Dist ?? "N/A"}</p>
           <p><strong>Age (Gyr):</strong> {selectedCluster.Age ?? "N/A"}</p> */}
         </div>
