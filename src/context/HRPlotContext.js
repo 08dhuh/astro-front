@@ -20,7 +20,7 @@ export function HRPlotProvider({ children }) {
             //sets selected cluster as the global target object
             setTarget(selectedCluster.name);
             //processes UBV data for the selected cluster
-            //loadUBVData(selectedCluster.pk);
+            loadUBVData(selectedCluster.pk);
         }
     }
     , [selectedCluster, setTarget]);
@@ -39,10 +39,12 @@ export function HRPlotProvider({ children }) {
     
         try {
             const ubvData = await fetchClusterUBV(clusterPk);
-            console.log(ubvData);
+            //console.log(ubvData);
     
             if (ubvData.length > 0) {
-                setClusterData(processUBVData(ubvData));
+                const processedData = processUBVData(ubvData)
+                //console.log(processedData);
+                setClusterData(processedData);
             } else {
                 console.error("No cluster data available");
                 setClusterData([]);
