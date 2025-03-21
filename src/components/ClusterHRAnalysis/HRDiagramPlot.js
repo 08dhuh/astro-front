@@ -13,12 +13,12 @@ import {
 import { useHRPlot } from "@/context/HRPlotContext";
 //Data imports - should be replaced later
 import zamsData from "@/data/zams.json";
-import isochroneData from "@/data/isochrone_sample.json";
+//import isochroneData from "@/data/isochrone_sample.json";
 //import clusterData from "@/data/pleiades_uvb.json";
 
 const HRDiagramPlot = () => {
   //plot context settings
-  const { selectedCluster, clusterData, plotSettings, setPlotSettings } = useHRPlot();
+  const { selectedCluster, clusterData, plotSettings, setPlotSettings, isochroneData } = useHRPlot();
 
   //offsets
   const [b_vOffset, setB_VOffset] = useState(0);
@@ -52,7 +52,7 @@ const HRDiagramPlot = () => {
       ...point,
       b_v: point.b_v + b_vOffset
     })),
-    [b_vOffset]
+    [clusterData,b_vOffset]
   );
 
   const shiftedZams = useMemo(() =>
@@ -68,7 +68,7 @@ const HRDiagramPlot = () => {
       b_v: point.b_v + b_vOffset,
       Mv: point.Mv + MvOffset,
     })),
-    [b_vOffset, MvOffset]
+    [isochroneData, b_vOffset, MvOffset]
   );
 
   const clusterDataLabel = (cluster) => {
@@ -306,6 +306,64 @@ const HRDiagramPlot = () => {
 
         </label>
       </div>
+      {/*isochrone controls*/}
+      <h3 className="text-lg font-semibold mb-2">Isochrone Controls</h3>
+      <div className="flex gap-4 mb-6">
+        <div>
+          <label className="text-sm flex items-center gap-1">
+            Metallicity (Z)
+            <div className="group relative flex items-center">
+              <div className="w-4 h-4 flex items-center justify-center rounded-full bg-gray-500 text-white text-xs font-bold cursor-pointer">?</div>
+              <div className="absolute top-0 left-0 translate-x-4 -translate-y-full w-64 p-2 bg-gray-800 text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                <p className="font-semibold pb-1">Metallicity (Z)</p>
+                <p>
+                  The proportion of elements heavier than hydrogen and helium.
+                  Choose from standard metallicities for isochrone fitting.
+                </p>
+              </div>
+            </div>
+          </label>
+          <select
+            value={plotSettings.z}
+            onChange={(e) => setPlotSettings({ ...plotSettings, z: parseFloat(e.target.value) })}
+            className="px-2 py-1 text-black rounded"
+          >
+            {[0.0004, 0.001, 0.004, 0.008, 0.019, 0.03].map((z) => (
+              <option key={z} value={z}>{z}</option>
+            ))}
+          </select>
+        </div>
+
+
+        <div>
+          <label className="text-sm flex items-center gap-1">
+            log(Age)
+            <div className="group relative flex items-center">
+              <div className="w-4 h-4 flex items-center justify-center rounded-full bg-gray-500 text-white text-xs font-bold cursor-pointer">?</div>
+              <div className="absolute top-0 left-0 translate-x-4 -translate-y-full w-64 p-2 bg-gray-800 text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                <p className="font-semibold pb-1">log(Age)</p>
+                <p>
+                  Controls the logarithmic age of the isochrone curve.
+                  Range: 7.80 (~63 million years) to 10.25 (~17.8 billion years).
+                </p>
+              </div>
+            </div>
+          </label>
+          <input
+            type="range"
+            min={7.80}
+            max={10.25}
+            step={0.05}
+            value={plotSettings.logAge}
+            onChange={(e) => setPlotSettings({ ...plotSettings, logAge: parseFloat(e.target.value) })}
+            className="w-64"
+          />
+          <div className="text-sm mt-1">
+            Selected: <strong>{plotSettings.logAge.toFixed(2)}</strong>
+          </div>
+        </div>
+      </div>
+
 
     </div >
   );

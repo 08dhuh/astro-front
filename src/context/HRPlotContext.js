@@ -2,15 +2,18 @@ import { createContext, useContext, useState, useEffect } from "react";
 import { useGlobalTarget } from "@/context/GlobalTargetContext";
 import { processUBVData } from "@/utils/clusterHRUtils";
 import { fetchClusterUBV } from "@/services/apiBackendService";
+import { fetchIsochroneData } from "@/services/isochronesBackendService";
 import pleiades_uvb from "@/data/pleiades_uvb.json";
+import isochroneSample from "@/data/isochrone_sample.json";
 const HRPlotContext = createContext();
 
 export function HRPlotProvider({ children }) {
     const [selectedCluster, setSelectedCluster] = useState(null);
     const [clusterData, setClusterData] = useState(pleiades_uvb);
+    const [isochroneData, setIsochroneData] = useState(isochroneSample);
     const [plotSettings, setPlotSettings] = useState({
-        isochroneAge: 1e9,  //default: 1 billion years
-        metallicity: 0.0,    //default: solar metallicity      
+        logAge: 7.8,  //default: 63 million years
+        z: 0.019,    //default: solar metallicity      
     });
     const { setTarget } = useGlobalTarget();
 
@@ -25,15 +28,21 @@ export function HRPlotProvider({ children }) {
     }
     , [selectedCluster, setTarget]);
 
+    useEffect(()=> {
+        loadIsochroneData(plotSettings.logAge, plotSettings.z);
+    }, [plotSettings.logAge, plotSettings.z])
+
     return (
         <HRPlotContext.Provider value={{
             selectedCluster, setSelectedCluster,
             plotSettings, setPlotSettings,
-            clusterData, setClusterData
+            clusterData,
+            isochroneData
         }}>
             {children}
         </HRPlotContext.Provider>
     );
+
     async function loadUBVData(clusterPk) {
         if (!clusterPk) return;
     
@@ -52,6 +61,15 @@ export function HRPlotProvider({ children }) {
         } catch (error) {
             console.error("Error fetching UBV data:", error);
             setClusterData([]);
+        }
+    }
+    async function loadIsochroneData(logAge, Z) {
+        try {
+            const isoData = await fetchIsochroneData(logAge, Z);
+            setIsochroneData(isoData || []);
+        } catch (error) {
+            console.error("Error fetching isochrone data:", error);
+            setIsochroneData([]);
         }
     }
 }
