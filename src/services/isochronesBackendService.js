@@ -21,7 +21,7 @@ export async function fetchIsochroneData(logAge, Z) {
         const response = await fetch(API_ROUTES.ISOCHRONES(logAge, Z));    
         if (!response.ok) throw new Error(`Error fetching isochrones data: ${response.statusText}`);
         const data = await response.json();
-        console.log(data);
+        //console.log(data);
         return data.data || [];
     } catch (error) {
         console.error(error);

@@ -3,12 +3,14 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import AladinViewer from "@/components/AladinViewer";
 import HRDiagramMain from "@/components/ClusterHRAnalysis/HRDiagramMain";
+import HRAMain from "@/components/HubbleRedshiftAnalysis/HRAMain";
 import { HRPlotProvider } from "@/context/HRPlotContext";
 
 
 const exercises = [
   { label: "Select Exercise...", value: "" },
   { label: "HR Diagram", value: "HRDiagram" },
+  {label: "Hubble Redshift-Distance Relation", value: "HRA" },
 ];
 
 
@@ -40,6 +42,8 @@ export default function Home() {
             <HRDiagramMain />
           </HRPlotProvider>
         );
+      case "HRA":
+        return (<HRAMain />);
       default:
         return null;
     }

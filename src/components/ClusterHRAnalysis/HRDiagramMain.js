@@ -7,10 +7,10 @@ import ClusterTable from "./ClusterTable";
 
 function HRDiagramMain() {
   //const [selectedCluster, setSelectedCluster] = useState(null);
-  const {selectedCluster, setSelectedCluster} = useHRPlot();
-  
+  const { selectedCluster, setSelectedCluster } = useHRPlot();
+
   return (
-    <div>      
+    <div>
       <ClusterTable selectedCluster={selectedCluster} setSelectedCluster={setSelectedCluster} />
 
       {selectedCluster && (
@@ -29,6 +29,21 @@ function HRDiagramMain() {
 
 
       <HRDiagramPlot />
+      <a
+        className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-white"
+        href="/ClusterHRAnalysis"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          aria-hidden
+          src="/window.svg"
+          alt="Window icon"
+          width={16}
+          height={16}
+        />
+        Prac Exercise
+      </a>
     </div>
   );
 }
