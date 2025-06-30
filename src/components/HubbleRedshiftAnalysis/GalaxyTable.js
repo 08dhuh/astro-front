@@ -19,7 +19,7 @@ export default function GalaxyTable({ setSelectedGalaxy }) {
         <table className="w-full border-collapse border border-gray-300 bg-black text-white">
           <thead>
             <tr className="bg-gray-700">
-              <th className="border border-gray-300 px-4 py-2">ID</th>
+              <th className="border border-gray-300 px-4 py-2">Galaxy ID</th>
               <th className="border border-gray-300 px-4 py-2">RA</th>
               <th className="border border-gray-300 px-4 py-2">DEC</th>
             </tr>

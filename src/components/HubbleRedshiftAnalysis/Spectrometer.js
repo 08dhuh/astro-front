@@ -14,17 +14,9 @@ import {
 } from "recharts";
 import spData from "@/data/spectra/NGC1357.json";
 
-const dummyLegendData = [
-  { name: "λ₀,K", color: "red" },
-  { name: "λ₀,H", color: "red" },
-];
-
-
 const referenceLines = [
-  { wavelength: 3933.7, label: "λ₀,K"  },
+  { wavelength: 3933.7, label: "λ₀,K" },
   { wavelength: 3968.5, label: "λ₀,H" },
-  // { wavelength: 4101, label: "Hδ" },
-  // { wavelength: 4340, label: "Hγ" },
 ];
 
 const CustomTooltip = ({ active, payload, label }) => {
@@ -42,25 +34,45 @@ const CustomTooltip = ({ active, payload, label }) => {
 
 export default function Spectrometer({ selectedGalaxy, spectrumData }) {
 
+  const minWavelength = 3700;
+  const maxWavelength = 4700;
 
-  const lambda0 = {
-    K: 3933.7,
-    H: 3968.5,
-  };
+  const leftMostRef = Math.min(...referenceLines.map(l => l.wavelength));
+  const rightMostRef = Math.max(...referenceLines.map(l => l.wavelength));
+
+  const minShift = minWavelength - leftMostRef;
+  const maxShift = maxWavelength - rightMostRef;
+
 
   const [dragOffset, setDragOffset] = useState(0);
+  const [showStaticLines, setShowStaticLines] = useState(true);
 
   const dataToPlot =
-  spectrumData && spectrumData.length > 0 ? spectrumData : spData;
+    spectrumData && spectrumData.length > 0 ? spectrumData : spData;
 
   return (
-    <div className="w-full max-w-3xl h-80 bg-white rounded p-4">
-      <ResponsiveContainer width="100%" height="100%">
-        <LineChart data={dataToPlot}>
+    <div className="w-full max-w-3xl bg-white rounded p-4">
+      <ResponsiveContainer width="100%" height={320}>
+
+        <LineChart
+          data={dataToPlot}
+          margin={{ top: 25, right: 20, bottom: 20, left: 0 }}
+        >
+          <text
+            x="50%"
+            y={10}
+            textAnchor="middle"
+            dominantBaseline="middle"
+            style={{ fontSize: 17 }}
+            
+          >
+            Spectrum of {selectedGalaxy?.id || "Unknown Galaxy"}
+          </text>
+
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis
             dataKey="wavelength"
-            domain={[3700, 4700]}
+            domain={[minWavelength, maxWavelength]}
             tickCount={9}
             allowDataOverflow={true}
             label={{
@@ -77,17 +89,6 @@ export default function Spectrometer({ selectedGalaxy, spectrumData }) {
             label={{ value: "Intensity", angle: -90, position: "insideLeft" }}
           />
           <Tooltip content={<CustomTooltip />} />
-          {dummyLegendData.map((entry) => (
-            <Line
-              key={entry.name}
-              name={entry.name}
-              data={[]}
-              stroke={entry.color}
-              strokeDasharray="3 3"
-              legendType="line"
-            />
-          ))}
-          {/* <Legend verticalAlign="top" height={36} />*/}
           <Line
             type="monotone"
             dataKey="intensity"
@@ -95,92 +96,99 @@ export default function Spectrometer({ selectedGalaxy, spectrumData }) {
             strokeWidth={2}
             dot={false}
           />
+          <Line
+            name="λ₀,K (3933.7 Å)"
+            data={[]}
+            stroke="blue"
+            strokeWidth={2}
+            legendType="line"
+          />
+          <Line
+            name="λ₀,H (3968.5 Å)"
+            data={[]}
+            stroke="blue"
+            strokeWidth={2}
+            legendType="line"
+          />
+
+          <Legend verticalAlign="top" height={36} />
+
+
+          {/* Static Lines */}
+          {showStaticLines &&
+            referenceLines.map((line) => (
+              <ReferenceLine
+                key={`static-${line.wavelength}`}
+                x={line.wavelength}
+                stroke="blue"
+                strokeOpacity={0.4}
+                strokeWidth={2}
+                label={{
+                  position: "top",
+                  value: line.label,
+                  fill: "red",
+                  fontSize: 10,
+                }}
+              />
+            ))}
+
+          {/* Movable Lines */}
           {referenceLines.map((line) => (
             <ReferenceLine
-              key={line.wavelength}
+              key={`movable-${line.wavelength}`}
               x={line.wavelength + dragOffset}
               stroke="red"
-              strokeDasharray="5 3"
-              label={{
-                position: "top",
-                value: line.label,
-                fill: "red",
-                fontSize: 10,
-              }}
+              strokeDasharray="6 2"
+              strokeWidth={2}
               isFront
             />
-          ))} 
+          ))}
         </LineChart>
-
       </ResponsiveContainer>
-      {/* <div className="mt-2 text-sm text-black bg-white p-2 rounded w-full max-w-3xl">
-  <p><strong>Redshift Simulation</strong></p>
-  <p>Δλ = {dragOffset.toFixed(2)} Å</p>
-  <p>z<sub>K</sub> = {(dragOffset / lambda0.K).toFixed(4)} | z<sub>H</sub> = {(dragOffset / lambda0.H).toFixed(4)}</p>
-  <input
-    type="range"
-    min={-100}
-    max={100}
-    step={0.1}
-    value={dragOffset}
-    onChange={(e) => setDragOffset(parseFloat(e.target.value))}
-    className="w-full mt-2"
-  />
-</div> */}
+
+      {/* Controls */}
+      <div className="mt-3 text-sm text-black bg-white p-2 rounded w-full max-w-3xl">
+        <div className="flex items-center gap-4 mb-2">
+          <label className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              checked={showStaticLines}
+              onChange={() => setShowStaticLines(!showStaticLines)}
+            />
+            Toggle Reference Lines
+          </label>
+        </div>
+
+        <div className="flex items-center gap-4 mb-2">
+          <label>
+            Shift (Å):
+            <input
+              type="number"
+              step="0.1"
+              value={dragOffset}
+              onChange={(e) => setDragOffset(parseFloat(e.target.value))}
+              className="ml-2 border border-gray-400 rounded px-1 w-24"
+            />
+          </label>
+          <button
+            onClick={() => setDragOffset(0)}
+            className="bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-700"
+          >
+            Reset
+          </button>
+
+        </div>
+
+        <input
+          type="range"
+          min={minShift}
+          max={maxShift}
+          step={0.1}
+          value={dragOffset}
+          onChange={(e) => setDragOffset(parseFloat(e.target.value))}
+          className="w-full mt-2"
+        />
+      </div>
     </div>
   );
-
-
 }
-
-// import {
-//     LineChart,
-//     Line,
-//     XAxis,
-//     YAxis,
-//     CartesianGrid,
-//     Tooltip,
-//     ResponsiveContainer,
-//   } from "recharts";
-
-//   const dummySpectrum = [
-//     { wavelength: 3700, intensity: 0.1 },
-//     { wavelength: 3900, intensity: 0.4 },
-//     { wavelength: 4100, intensity: 0.35 },
-//     { wavelength: 4300, intensity: 0.7 },
-//     { wavelength: 4500, intensity: 0.5 },
-//     { wavelength: 4700, intensity: 0.2 },
-//   ];
-  
-
-//   export default function Spectrometer() {
-//     return (
-//       <div className="w-full max-w-3xl h-80 bg-white rounded p-4">
-//         <ResponsiveContainer width="100%" height="100%">
-//           <LineChart data={dummySpectrum}>
-//             <CartesianGrid strokeDasharray="3 3" />
-//             <XAxis
-//               dataKey="wavelength"
-//               domain={[3700, 4700]}
-//               tickCount={7}
-//               label={{ value: "Wavelength (Å)", position: "insideBottom", dy: 10 }}
-//               type="number"
-//             />
-//             <YAxis
-//               domain={[0, 1]}
-//               tickCount={6}
-//               label={{ value: "Intensity", angle: -90, position: "insideLeft" }}
-//             />
-//             <Tooltip />
-//             <Line
-//               type="monotone"
-//               dataKey="intensity"
-//               stroke="#8884d8"
-//               strokeWidth={2}
-//               dot={false}
-//             />
-//           </LineChart>
-//         </ResponsiveContainer>
-//       </div>
-//     );
-//   }

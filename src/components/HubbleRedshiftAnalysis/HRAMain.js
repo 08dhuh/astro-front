@@ -29,48 +29,50 @@ export default function HRAMain() {
     setTarget(selectedGalaxy.id);
     fetchSpectrum();
   }, [selectedGalaxy, setTarget]);
-  return (<>
 
+  return (
+    <div className="w-full px-4">
+      <h1 className="text-3xl font-extrabold text-white text-center mb-2">
+        Hubble Redshift Spectrum Analysis
+      </h1>
+      <br/>
+      <h2 className="flex justify-center items-center gap-2 text-2xl font-semibold text-white mb-6">
+        <img
+          aria-hidden
+          src="/file.svg"
+          alt="Document icon"
+          width={18}
+          height={18}
+        />
+        <a
+          className="hover:underline hover:underline-offset-4"
+          href="/HubbleRedshiftAnalysis"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instructions & Worksheet
+        </a>
+      </h2>
 
-    <GalaxyTable setSelectedGalaxy={setSelectedGalaxy} />
+      <GalaxyTable setSelectedGalaxy={setSelectedGalaxy} />
 
-    {selectedGalaxy && (
-      <div className="mt-4 p-4 border border-gray-300 bg-gray-700 w-full max-w-3xl">
-        <h3 className="text-lg font-semibold">Selected Galaxy</h3>
-        <p className="mt-2"><strong>ID:</strong> {selectedGalaxy.id}</p>
-        <p><strong>RA:</strong> {selectedGalaxy.ra}</p>
-        <p><strong>DEC:</strong> {selectedGalaxy.dec}</p>
-        <p><strong>Mag(B):</strong> {selectedGalaxy.flux_b}</p>
+      {selectedGalaxy && (
+        <div className="mt-6 p-4 border border-gray-300 bg-gray-700 w-full max-w-3xl mx-auto rounded">
+          <h3 className="text-lg font-semibold text-white mb-2">Selected Galaxy</h3>
+          <p className="text-white"><strong>ID:</strong> {selectedGalaxy.id}</p>
+          <p className="text-white"><strong>RA:</strong> {selectedGalaxy.ra}</p>
+          <p className="text-white"><strong>DEC:</strong> {selectedGalaxy.dec}</p>
+          <p className="text-white"><strong>Mag(B):</strong> {selectedGalaxy.flux_b}</p>
+        </div>
+      )}
+
+      <div className="text-white w-full flex flex-col items-center gap-6 mt-8">
+        <Spectrometer
+          selectedGalaxy={selectedGalaxy}
+          spectrumData={spectrumData}
+        />
       </div>
-    )}
-
-
-    <div className="text-white w-full flex flex-col items-center gap-4">
-      <h2 className="text-xl font-bold">Hubble Redshift Spectrum Analysis</h2>
-
-      <Spectrometer
-        selectedGalaxy={selectedGalaxy}
-        //setSelectedGalaxy={setSelectedGalaxy}
-        spectrumData={spectrumData}
-
-      />
     </div>
-    <a
-      className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-white"
-      href="/HubbleRedshiftAnalysis"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img
-        aria-hidden
-        src="/window.svg"
-        alt="Window icon"
-        width={16}
-        height={16}
-      />
-      Prac Exercise
-    </a>
-
-  </>
   );
+
 }

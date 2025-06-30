@@ -15,6 +15,7 @@ import { useHRPlot } from "@/context/HRPlotContext";
 import zamsData from "@/data/zams.json";
 //import isochroneData from "@/data/isochrone_sample.json";
 //import clusterData from "@/data/pleiades_uvb.json";
+import TooltipIcon from "../common/ToolTipIcon";
 
 const HRDiagramPlot = () => {
   //plot context settings
@@ -98,16 +99,21 @@ const HRDiagramPlot = () => {
 
 
   return (
-    <div className={`p-4 bg-black text-white rounded-lg`}>
+    <div className="relative p-4 bg-black text-white rounded-lg">
       <h2 className="text-lg font-semibold mb-2">HR Diagram</h2>
 
       {/*Offset Controls*/}
       {/*should be replaced by sliders*/}
       <div className="flex gap-4 mb-6">
         <div>
-          <label className="text-sm flex items-center gap-1">Mv Offset
+          <label className="text-sm flex items-center gap-1">
+            Mv Offset
             {/* Tooltip */}
-            <div className="group relative flex items-center">
+            <TooltipIcon
+              title="Mv Offset and Distance modulus"
+              description="Distance modulus is the difference between apparent and absolute magnitude (Mv) of an object. Adjusting Mv Offset helps align ZAMS and isochrones with the cluster scatter plot to estimate distance modulus."
+            />
+            {/* <div className="group relative flex items-center">
               <div className="w-4 h-4 flex items-center justify-center rounded-full bg-gray-500 text-white text-xs font-bold cursor-pointer">
                 ?
               </div>
@@ -120,7 +126,7 @@ const HRDiagramPlot = () => {
                   helping you determine the <b>distance modulus</b> of the cluster.
                 </p>
               </div>
-            </div>
+            </div> */}
           </label>
           <input
             type="number"
@@ -130,12 +136,17 @@ const HRDiagramPlot = () => {
             className="px-2 py-1 text-black rounded"
           />
         </div>
+
         <div>
           <label className="text-sm flex items-center gap-1">
             E(B-V)
 
             {/* Tooltip */}
-            <div className="group relative flex items-center">
+            <TooltipIcon
+              title="E(B-V): Extinction or Reddening"
+              description="E(B-V) is the absorption and scattering of light by dust and gas between a star cluster and the observer. This value comes from the selected cluster and cannot be changed manually."
+            />
+            {/* <div className="group relative flex items-center">
               <div className="w-4 h-4 flex items-center justify-center rounded-full bg-gray-500 text-white text-xs font-bold cursor-pointer">
                 ?
               </div>
@@ -151,7 +162,7 @@ const HRDiagramPlot = () => {
                   cannot be manually changed by default.
                 </p>
               </div>
-            </div>
+            </div> */}
           </label>
 
 
@@ -168,9 +179,8 @@ const HRDiagramPlot = () => {
 
       </div>
 
-
+      {/* Toggle Options */}
       <div className="flex justify-center rounded-lg gap-4 mb-0 pt-1 pb-1 bg-gray-700 w-full max-w-[600px] mx-auto">
-
 
         <label className="flex items-center gap-2">
           <span>Toggle ZAMS</span>
@@ -193,6 +203,7 @@ const HRDiagramPlot = () => {
 
         </label>
       </div>
+
       {/* Chart */}
       <div className={`p-4 rounded-lg flex ${isBGDarkMode ? "bg-black" : "bg-white"} w-full max-w-[600px] mx-auto`} >
 
@@ -306,13 +317,18 @@ const HRDiagramPlot = () => {
 
         </label>
       </div>
+
       {/*isochrone controls*/}
-      <h3 className="text-lg font-semibold mb-2">Isochrone Controls</h3>
+      <h3 className="text-lg font-semibold mb-2 pt-4">Isochrone Controls</h3>
       <div className="flex gap-4 mb-6">
         <div>
           <label className="text-sm flex items-center gap-1">
             Metallicity (Z)
-            <div className="group relative flex items-center">
+            <TooltipIcon
+              title="Metallicity (Z)"
+              description="The proportion of elements heavier than hydrogen and helium. Select a standard metallicity for isochrone fitting."
+            />
+            {/* <div className="group relative flex items-center">
               <div className="w-4 h-4 flex items-center justify-center rounded-full bg-gray-500 text-white text-xs font-bold cursor-pointer">?</div>
               <div className="absolute top-0 left-0 translate-x-4 -translate-y-full w-64 p-2 bg-gray-800 text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                 <p className="font-semibold pb-1">Metallicity (Z)</p>
@@ -321,7 +337,7 @@ const HRDiagramPlot = () => {
                   Choose from standard metallicities for isochrone fitting.
                 </p>
               </div>
-            </div>
+            </div> */}
           </label>
           <select
             value={plotSettings.z}
@@ -338,7 +354,11 @@ const HRDiagramPlot = () => {
         <div>
           <label className="text-sm flex items-center gap-1">
             log(Age)
-            <div className="group relative flex items-center">
+            <TooltipIcon
+              title="log(Age)"
+              description="Controls the logarithmic age of the isochrone curve. Typical range: 7.80 (~63 million years) to 10.25 (~17.8 billion years)."
+            />
+            {/* <div className="group relative flex items-center">
               <div className="w-4 h-4 flex items-center justify-center rounded-full bg-gray-500 text-white text-xs font-bold cursor-pointer">?</div>
               <div className="absolute top-0 left-0 translate-x-4 -translate-y-full w-64 p-2 bg-gray-800 text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                 <p className="font-semibold pb-1">log(Age)</p>
@@ -347,7 +367,7 @@ const HRDiagramPlot = () => {
                   Range: 7.80 (~63 million years) to 10.25 (~17.8 billion years).
                 </p>
               </div>
-            </div>
+            </div> */}
           </label>
           <input
             type="range"
