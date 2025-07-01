@@ -107,7 +107,7 @@ const HRDiagramPlot = () => {
       <div className="flex gap-4 mb-6">
         <div>
           <label className="text-sm flex items-center gap-1">
-            Mv Offset
+            V-Mv
             {/* Tooltip */}
             <TooltipIcon
               title="Mv Offset and Distance modulus"
@@ -171,7 +171,7 @@ const HRDiagramPlot = () => {
             type="number"
             step="0.1"
             value={b_vOffset}
-            disabled
+            //disabled
             onChange={(e) => setB_VOffset(parseFloat(e.target.value) || 0)}
             className="px-2 py-1 text-black rounded disabled:bg-gray-500"
           />
@@ -219,7 +219,7 @@ const HRDiagramPlot = () => {
               onMouseDown={(e) => startDrag(e)}
             />
           </div>
-          <p className="text-xs mt-2 text-gray-600">Mv Offset</p>
+          <p className="text-xs mt-2 text-gray-600">V-Mv</p>
         </div>
 
 

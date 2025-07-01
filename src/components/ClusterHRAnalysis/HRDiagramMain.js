@@ -12,11 +12,11 @@ function HRDiagramMain() {
 
   return (
     <div className="w-full px-4">
-      <h1 className="text-3xl font-extrabold text-white text-center mb-2">
+      <h1 className="bg-black/[.05] dark:bg-white/[.06] text-3xl font-extrabold text-center mb-2">
         HR Diagram Analysis of Star Clusters
       </h1>
       <br/>
-      <h2 className="flex justify-center items-center gap-2 text-2xl font-semibold text-white mb-6">
+      <h2 className="bg-black/[.05] dark:bg-white/[.06] flex justify-center items-center gap-2 text-2xl font-semibold mb-6">
         <img
           aria-hidden
           src="/file.svg"

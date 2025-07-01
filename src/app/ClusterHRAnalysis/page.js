@@ -1,3 +1,7 @@
+"use client";
+import { useState } from "react";
+import ClusterDataTable from "./ClusterDataTable";
+
 export default function Prac() {
   const questions = [
     "1. For each of the clusters, retrieve the data, analyse the HR diagram, and fill in the blanks to complete the survey data.",
@@ -8,6 +12,8 @@ export default function Prac() {
     "6. Write a short summary of what you’ve learnt in this lab.",
   ];
 
+  const [rows, setRows] = useState([Array(6).fill("")]);
+
   return (
     <div className="min-h-screen bg-white text-black p-8">
       <h1 className="text-2xl font-bold mb-6">
@@ -15,11 +21,14 @@ export default function Prac() {
       </h1>
 
       <details className="mb-8 bg-gray-100 border border-gray-300 p-4 rounded">
-        <summary className="font-semibold text-lg cursor-pointer">Introduction</summary>
+        <summary className="font-semibold text-lg cursor-pointer">
+          Introduction
+        </summary>
         <div className="mt-2 space-y-2 text-sm">
           <p>
-            In this exercise, you'll have to read the right sections of the appendix to
-            know how to get the data out of the program. You'll then use the table to answer some questions.
+            In this exercise, you'll have to read the right sections of the
+            appendix to know how to get the data out of the program. You'll then
+            use the table to answer some questions.
           </p>
         </div>
       </details>
@@ -27,10 +36,14 @@ export default function Prac() {
       {questions.map((q, i) => (
         <div key={i} className="mb-6">
           <p className="mb-2 font-semibold">{q}</p>
-          <textarea
-            className="w-full border border-gray-400 p-2 min-h-[100px]"
-            placeholder="Type your response here..."
-          />
+          {i === 0 ? (
+            <ClusterDataTable rows={rows} setRows={setRows} />
+          ) : (
+            <textarea
+              className="w-full border border-gray-400 p-2 min-h-[100px]"
+              placeholder="Type your response here..."
+            />
+          )}
         </div>
       ))}
     </div>
