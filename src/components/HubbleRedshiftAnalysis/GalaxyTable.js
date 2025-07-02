@@ -22,6 +22,7 @@ export default function GalaxyTable({ setSelectedGalaxy }) {
               <th className="border border-gray-300 px-4 py-2">Galaxy ID</th>
               <th className="border border-gray-300 px-4 py-2">RA</th>
               <th className="border border-gray-300 px-4 py-2">DEC</th>
+              <th className="border border-gray-300 px-4 py-2">Apparent Magnitude (B-band)</th>
             </tr>
           </thead>
           <tbody>
@@ -34,6 +35,7 @@ export default function GalaxyTable({ setSelectedGalaxy }) {
                 <td className="border border-gray-300 px-4 py-2">{galaxy.id}</td>
                 <td className="border border-gray-300 px-4 py-2">{galaxy.ra}</td>
                 <td className="border border-gray-300 px-4 py-2">{galaxy.dec}</td>
+                <td className="border border-gray-300 px-4 py-2">{galaxy.flux_b}</td>
               </tr>
             ))}
           </tbody>
