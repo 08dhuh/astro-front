@@ -23,6 +23,7 @@ const HRDiagramPlot = () => {
 
   //offsets
   const [b_vOffset, setB_VOffset] = useState(0);
+  const [b_vOffsetIsochrone, setB_VOffsetIsochrone] = useState(0); //isochrone-only X shift
   const [MvOffset, setMvOffset] = useState(0);
 
   //toggle graph settings
@@ -37,12 +38,12 @@ const HRDiagramPlot = () => {
   const colourScheme = isHighContrast
     ? { clusters: "#E69F00", zams: "#CC79A7", isochrones: "#0072B2" }
     : { clusters: "green", zams: "red", isochrones: "blue" };
-
+  const [isIsoOpen, setIsIsoOpen] = useState(true);
 
   useEffect(() => {
     if (selectedCluster) {
       //setB_VOffset(selectedCluster["E(B-V)"] ?? 0);
-      setB_VOffset(selectedCluster["reddening"] ?? 0);
+      setB_VOffset(selectedCluster["reddening"].toFixed(3) ?? 0);
     }
   }, [selectedCluster]);
 
@@ -51,25 +52,27 @@ const HRDiagramPlot = () => {
   const shiftedCluster = useMemo(() =>
     clusterData.map((point) => ({
       ...point,
-      b_v: point.b_v + b_vOffset
+      b_v: point.b_v - b_vOffset
     })),
-    [clusterData,b_vOffset]
+    [clusterData, b_vOffset]
   );
 
   const shiftedZams = useMemo(() =>
     zamsData.map((point) => ({
-      b_v: point.b_v + b_vOffset, // X-Axis
+      //b_v: point.b_v + b_vOffset,
+      b_v: point.b_v, // no X-Axis shift for ZAMS
       Mv: point.Mv + MvOffset, // Y-Axis
     })),
-    [b_vOffset, MvOffset]
+    [MvOffset]
   );
 
   const shiftedIsochrone = useMemo(() =>
     isochroneData.map((point) => ({
-      b_v: point.b_v + b_vOffset,
+      //b_v: point.b_v + b_vOffset,
+      b_v: point.b_v + b_vOffsetIsochrone, // X-Axis shift for Isochrone lines
       Mv: point.Mv + MvOffset,
     })),
-    [isochroneData, b_vOffset, MvOffset]
+    [isochroneData, b_vOffsetIsochrone, MvOffset]
   );
 
   const clusterDataLabel = (cluster) => {
@@ -102,7 +105,7 @@ const HRDiagramPlot = () => {
     <div className="relative p-4 bg-black text-white rounded-lg">
       <h2 className="text-lg font-semibold mb-2">HR Diagram</h2>
 
-      {/*Offset Controls*/}
+      {/*Cluster Offset Controls*/}
       {/*should be replaced by sliders*/}
       <div className="flex gap-4 mb-6">
         <div>
@@ -169,7 +172,7 @@ const HRDiagramPlot = () => {
           {/* Input */}
           <input
             type="number"
-            step="0.1"
+            step="0.01"
             value={b_vOffset}
             //disabled
             onChange={(e) => setB_VOffset(parseFloat(e.target.value) || 0)}
@@ -178,6 +181,112 @@ const HRDiagramPlot = () => {
         </div>
 
       </div>
+
+      {/*isochrone controls*/}
+      <div className="pt-4 mb-2">
+        <button
+          type="button"
+          onClick={() => setIsIsoOpen(v => !v)}
+          aria-expanded={isIsoOpen}
+          aria-controls="isochrone-controls"
+          className="flex items-center gap-2 rounded px-2 py-1 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/40"
+          title={isIsoOpen ? "Hide isochrone controls" : "Show isochrone controls"}
+        >
+          <h3 className="text-lg font-semibold">Isochrone Controls</h3>
+          <span aria-hidden="true">{isIsoOpen ? "▲" : "▼"}</span>
+        </button>
+      </div>
+      {isIsoOpen && (
+        <div
+          id="isochrone-controls"
+          className={`flex gap-4 mb-6`}>
+          <div>
+            <label className="text-sm flex items-center gap-1">
+              Metallicity (Z)
+              <TooltipIcon
+                title="Metallicity (Z)"
+                description="The proportion of elements heavier than hydrogen and helium. Select a standard metallicity for isochrone fitting."
+              />
+              {/* <div className="group relative flex items-center">
+              <div className="w-4 h-4 flex items-center justify-center rounded-full bg-gray-500 text-white text-xs font-bold cursor-pointer">?</div>
+              <div className="absolute top-0 left-0 translate-x-4 -translate-y-full w-64 p-2 bg-gray-800 text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                <p className="font-semibold pb-1">Metallicity (Z)</p>
+                <p>
+                  The proportion of elements heavier than hydrogen and helium.
+                  Choose from standard metallicities for isochrone fitting.
+                </p>
+              </div>
+            </div> */}
+            </label>
+            <select
+              value={plotSettings.z}
+              onChange={(e) => setPlotSettings({ ...plotSettings, z: parseFloat(e.target.value) })}
+              className="px-2 py-1 text-black rounded"
+            >
+              {[0.0004, 0.001, 0.004, 0.008, 0.019, 0.03].map((z) => (
+                <option key={z} value={z}>{z}</option>
+              ))}
+            </select>
+          </div>
+
+
+          <div>
+            <label className="text-sm flex items-center gap-1">
+              log(Age)
+              <TooltipIcon
+                title="log(Age)"
+                description="Controls the logarithmic age of the isochrone curve. Typical range: 7.80 (~63 million years) to 10.25 (~17.8 billion years)."
+              />
+              {/* <div className="group relative flex items-center">
+              <div className="w-4 h-4 flex items-center justify-center rounded-full bg-gray-500 text-white text-xs font-bold cursor-pointer">?</div>
+              <div className="absolute top-0 left-0 translate-x-4 -translate-y-full w-64 p-2 bg-gray-800 text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                <p className="font-semibold pb-1">log(Age)</p>
+                <p>
+                  Controls the logarithmic age of the isochrone curve.
+                  Range: 7.80 (~63 million years) to 10.25 (~17.8 billion years).
+                </p>
+              </div>
+            </div> */}
+            </label>
+            <input
+              type="range"
+              min={7.80}
+              max={10.25}
+              step={0.05}
+              value={plotSettings.logAge}
+              onChange={(e) => setPlotSettings({ ...plotSettings, logAge: parseFloat(e.target.value) })}
+              className="w-64"
+            />
+            <div className="text-sm mt-1">
+              Value: <strong>{plotSettings.logAge.toFixed(2)}</strong>
+              <br />
+              Alt: <strong>{Math.pow(10, plotSettings.logAge.toFixed(2)) / Math.pow(10, 9)}</strong>
+            </div>
+          </div>
+          <div>
+            <label className="text-sm flex items-center gap-1">
+              Isochrone E(B-V)
+              <TooltipIcon
+                title="Isochrone E(B-V) (horizontal shift)"
+                description="Applies an independent reddening offset to the isochrone curves only."
+              />
+            </label>
+            <input
+              type="range"
+              min={-1.0}
+              max={1.0}
+              step="0.01"
+              value={b_vOffsetIsochrone}
+              onChange={(e) => setB_VOffsetIsochrone(parseFloat(e.target.value) || 0)}
+              className="w-64"
+            />
+            <div className="text-sm mt-1">
+              Value: <strong>{b_vOffsetIsochrone.toFixed(2)}</strong>
+            </div>
+          </div>
+
+        </div>)}
+
 
       {/* Toggle Options */}
       <div className="flex justify-center rounded-lg gap-4 mb-0 pt-1 pb-1 bg-gray-700 w-full max-w-[600px] mx-auto">
@@ -224,7 +333,8 @@ const HRDiagramPlot = () => {
 
 
         <div className="w-[95%]">
-          <ResponsiveContainer width="100%" height={400}>
+          <ResponsiveContainer width="100%" aspect={2 / 3}>
+            {/* <ResponsiveContainer width="100%" height={400}> */}
             <ComposedChart margin={{ top: 20, right: 20, bottom: 20, left: 0 }}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis
@@ -232,7 +342,7 @@ const HRDiagramPlot = () => {
                 dataKey="b_v"
                 name="B-V Color Index"
                 domain={[-0.5, 2.5]}
-                tickCount={6}
+                tickCount={7}
                 allowDataOverflow={true}
                 label={{ value: "B-V", position: "insideBottom", dy: 20 }}
               />
@@ -241,7 +351,7 @@ const HRDiagramPlot = () => {
                 dataKey="Mv"
                 name="Vmag"
                 domain={[0, 21]}
-                tickCount={8}
+                tickCount={12}
                 allowDataOverflow={true}
                 label={"V"}
                 reversed
@@ -318,71 +428,7 @@ const HRDiagramPlot = () => {
         </label>
       </div>
 
-      {/*isochrone controls*/}
-      <h3 className="text-lg font-semibold mb-2 pt-4">Isochrone Controls</h3>
-      <div className="flex gap-4 mb-6">
-        <div>
-          <label className="text-sm flex items-center gap-1">
-            Metallicity (Z)
-            <TooltipIcon
-              title="Metallicity (Z)"
-              description="The proportion of elements heavier than hydrogen and helium. Select a standard metallicity for isochrone fitting."
-            />
-            {/* <div className="group relative flex items-center">
-              <div className="w-4 h-4 flex items-center justify-center rounded-full bg-gray-500 text-white text-xs font-bold cursor-pointer">?</div>
-              <div className="absolute top-0 left-0 translate-x-4 -translate-y-full w-64 p-2 bg-gray-800 text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                <p className="font-semibold pb-1">Metallicity (Z)</p>
-                <p>
-                  The proportion of elements heavier than hydrogen and helium.
-                  Choose from standard metallicities for isochrone fitting.
-                </p>
-              </div>
-            </div> */}
-          </label>
-          <select
-            value={plotSettings.z}
-            onChange={(e) => setPlotSettings({ ...plotSettings, z: parseFloat(e.target.value) })}
-            className="px-2 py-1 text-black rounded"
-          >
-            {[0.0004, 0.001, 0.004, 0.008, 0.019, 0.03].map((z) => (
-              <option key={z} value={z}>{z}</option>
-            ))}
-          </select>
-        </div>
 
-
-        <div>
-          <label className="text-sm flex items-center gap-1">
-            log(Age)
-            <TooltipIcon
-              title="log(Age)"
-              description="Controls the logarithmic age of the isochrone curve. Typical range: 7.80 (~63 million years) to 10.25 (~17.8 billion years)."
-            />
-            {/* <div className="group relative flex items-center">
-              <div className="w-4 h-4 flex items-center justify-center rounded-full bg-gray-500 text-white text-xs font-bold cursor-pointer">?</div>
-              <div className="absolute top-0 left-0 translate-x-4 -translate-y-full w-64 p-2 bg-gray-800 text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                <p className="font-semibold pb-1">log(Age)</p>
-                <p>
-                  Controls the logarithmic age of the isochrone curve.
-                  Range: 7.80 (~63 million years) to 10.25 (~17.8 billion years).
-                </p>
-              </div>
-            </div> */}
-          </label>
-          <input
-            type="range"
-            min={7.80}
-            max={10.25}
-            step={0.05}
-            value={plotSettings.logAge}
-            onChange={(e) => setPlotSettings({ ...plotSettings, logAge: parseFloat(e.target.value) })}
-            className="w-64"
-          />
-          <div className="text-sm mt-1">
-            Selected: <strong>{plotSettings.logAge.toFixed(2)}</strong>
-          </div>
-        </div>
-      </div>
 
 
     </div >
