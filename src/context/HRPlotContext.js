@@ -5,6 +5,8 @@ import { fetchClusterUBV } from "@/services/apiBackendService";
 import { fetchIsochroneData } from "@/services/isochronesBackendService";
 import pleiades_uvb from "@/data/pleiades_uvb.json";
 import isochroneSample from "@/data/isochrone_sample.json";
+import references from "@/data/references/hr_cluster.json" assert { type: "json" };
+
 const HRPlotContext = createContext();
 
 export function HRPlotProvider({ children }) {
@@ -37,7 +39,8 @@ export function HRPlotProvider({ children }) {
             selectedCluster, setSelectedCluster,
             plotSettings, setPlotSettings,
             clusterData,
-            isochroneData
+            isochroneData,
+            references
         }}>
             {children}
         </HRPlotContext.Provider>

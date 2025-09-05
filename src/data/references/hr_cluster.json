@@ -1,0 +1,22 @@
+[
+  {
+    "authors": "J.-C. Mermilliod",
+    "year": "1995",
+    "title": "The Database for Galactic Open Clusters (BDA)",
+    "container": "Information & On-Line Data in Astronomy",
+    "series": "Astrophysics and Space Science Library",
+    "volume": "203",
+    "editors": "D. Egret & M.A. Albrecht",
+    "pages": "127",
+    "doi": "10.1007/978-94-011-0397-8_12"
+  },
+  {
+    "authors": "L. Girardi, A. Bressan, G. Bertelli, & C. Chiosi",
+    "year": "2000",
+    "title": "Evolutionary Tracks and Isochrones For Low- and Intermediate-mass Stars: From 0.15 to 7 M☉, and From Z=0.0004 to 0.03",
+    "container": "Astronomy & Astrophysics Supplement Series",
+    "volume": "141",
+    "pages": "371",
+    "url": "http://pleiadi.pd.astro.it/#data10"
+  }
+]
