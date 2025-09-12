@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import AladinViewer from "@/components/AladinViewer";
 import HRDiagramMain from "@/components/ClusterHRAnalysis/HRDiagramMain";
@@ -21,18 +21,41 @@ export default function Home() {
   const [showScroll, setShowScroll] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 200) {
-        setShowScroll(true);
-      } else {
-        setShowScroll(false);
-      }
-    };
+    const handleScroll = () => setShowScroll(window.scrollY > 200);
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // exercise Rendering & scrolling
+  const exerciseContainerRef = useRef(null);
+
+  useEffect(() => {
+    if (!selectedExercise) return;
+
+    const raf = requestAnimationFrame(() => {
+      const el = exerciseContainerRef.current;
+      if (!el) return;
+
+
+      const prefersReduced =
+        window.matchMedia &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      
+      const OFFSET = 16; 
+      const y = el.getBoundingClientRect().top + window.scrollY - OFFSET;
+
+      window.scrollTo({ top: y, behavior: prefersReduced ? "auto" : "smooth" });
+
+
+      el.setAttribute("tabindex", "-1");
+      el.focus({ preventScroll: true });
+    });
+
+    return () => cancelAnimationFrame(raf);
+
+  }, [selectedExercise]);
 
   const renderExerciseComponent = () => {
     switch (selectedExercise) {
@@ -56,7 +79,7 @@ export default function Home() {
             Interactive Astro Practical Hub
           </h1>
           <p className="text-sm text-center sm:text-left max-w-prose font-[family-name:var(--font-geist-mono)]">
-            Welcome to the Astro Practical App! <br/>This tool guides you through astronomy lab exercises.
+            Welcome to the Astro Practical App! <br />This tool guides you through astronomy lab exercises.
           </p>
           <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
             <li className="mb-2">
@@ -85,7 +108,15 @@ export default function Home() {
             <AladinViewer />
           </div>
 
-          {renderExerciseComponent()}
+          <div
+            ref={exerciseContainerRef}
+            className="w-full scroll-mt-24 outline-none"
+            aria-live="polite">
+
+            {renderExerciseComponent()}
+          </div>
+
+
 
 
           <div className="h-32" />
