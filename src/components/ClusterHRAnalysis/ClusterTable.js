@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import clusters from "@/data/clusters.json";
+import clusterTargets from "@/data/cluster_targets.json";
 
 export default function ClusterTable({ selectedCluster, setSelectedCluster }) {
   const [isOpen, setIsOpen] = useState(true);
