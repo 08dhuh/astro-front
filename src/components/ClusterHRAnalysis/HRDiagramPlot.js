@@ -259,8 +259,8 @@ const HRDiagramPlot = () => {
             />
             <div className="text-sm mt-1">
               Value: <strong>{plotSettings.logAge.toFixed(2)}</strong>
-              <br />
-              Alt: <strong>{Math.pow(10, plotSettings.logAge.toFixed(2)) / Math.pow(10, 9)}</strong>
+              
+              &nbsp;<strong>( ≈ {(Math.pow(10, plotSettings.logAge) / Math.pow(10, 9)).toFixed(2)} Gyr)</strong>
             </div>
           </div>
           <div>
