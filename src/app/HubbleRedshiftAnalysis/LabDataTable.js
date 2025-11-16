@@ -4,8 +4,8 @@
 //Todo
 const columnDefs = [
   { label: "Galaxy name", type: "input" },
-  { label: "Measured λH", type: "input" },
-  { label: "Measured λK", type: "input" },
+  { label: "Measured λ₀,H", type: "input" },
+  { label: "Measured λ₀,K", type: "input" },
   { label: "Redshift Δλ (H)", type: "input" },
   { label: "Redshift Δλ (K)", type: "input" },
   { label: "Velocity from H (km/s)", type: "input" },

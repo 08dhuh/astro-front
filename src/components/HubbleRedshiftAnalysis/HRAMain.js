@@ -4,9 +4,10 @@ import { useState, useEffect } from "react";
 import Spectrometer from "./Spectrometer";
 import GalaxyTable from "./GalaxyTable";
 import { useGlobalTarget } from "@/context/GlobalTargetContext";
+import galaxies from "@/data/galaxy_meta.json";
 
 export default function HRAMain() {
-  const [selectedGalaxy, setSelectedGalaxy] = useState(null);
+  const [selectedGalaxy, setSelectedGalaxy] = useState(galaxies[0]);
   const [spectrumData, setSpectrumData] = useState([]);
   const { setTarget } = useGlobalTarget();
 

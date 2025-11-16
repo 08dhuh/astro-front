@@ -1,0 +1,16 @@
+{
+  "fraunhofer": [
+    { "id": "CaK", "wavelength": 3933.7, "label": "λ₀,K" },
+    { "id": "CaH", "wavelength": 3968.5, "label": "λ₀,H" }
+  ],
+  "balmer": [
+    { "id": "Hdelta", "wavelength": 4101.7, "label": "" },
+    { "id": "Hgamma", "wavelength": 4340.5, "label": "" }
+  ],
+  "agn": [
+    { "id": "OII3727",   "wavelength": 3727.0, "label": "" },
+    { "id": "NeIII3869", "wavelength": 3869.0, "label": "" },
+    { "id": "Hdelta",    "wavelength": 4101.7, "label": "" },
+    { "id": "Hgamma",    "wavelength": 4340.5, "label": "" }
+  ]
+}

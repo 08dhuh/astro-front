@@ -12,19 +12,17 @@ import {
   ReferenceLine,
   Legend
 } from "recharts";
-import spData from "@/data/spectra/NGC1357.json";
+import defaultGalaxySpectrumData from "@/data/spectra/NGC1357.json";
 
-const referenceLines = [
-  { wavelength: 3933.7, label: "λ₀,K" },
-  { wavelength: 3968.5, label: "λ₀,H" },
-];
+import refSpectrumData from "@/data/reference_line_sets.json"
+
 
 const CustomTooltip = ({ active, payload, label }) => {
   if (active && payload && payload.length) {
     const { intensity } = payload[0].payload;
     return (
       <div className="bg-white p-2 border border-gray-400 rounded shadow text-sm text-black">
-        <p><strong>Wavelength:</strong> {label.toFixed(2)} Å</p>
+        <p><strong>Wavelength:</strong> {label.toFixed(0)} Å</p>
         <p><strong>Intensity:</strong> {intensity.toFixed(4)}</p>
       </div>
     );
@@ -32,23 +30,46 @@ const CustomTooltip = ({ active, payload, label }) => {
   return null;
 };
 
-export default function Spectrometer({ selectedGalaxy, spectrumData }) {
+export default function Spectrometer({ selectedGalaxy, spectrumData: galaxySpectrumData }) {
 
-  const minWavelength = 3700;
-  const maxWavelength = 4700;
+  const [referenceLines, setReferenceLines] = useState(refSpectrumData["fraunhofer"]);
 
-  const leftMostRef = Math.min(...referenceLines.map(l => l.wavelength));
-  const rightMostRef = Math.max(...referenceLines.map(l => l.wavelength));
-
-  const minShift = minWavelength - leftMostRef;
-  const maxShift = maxWavelength - rightMostRef;
+  const minWavelength = 3500;
+  const maxWavelength = 6000;
+  const defaultMinWavelength = 3700;
+  const defaultMaxWavelength = 4700;
 
 
-  const [dragOffset, setDragOffset] = useState(0);
+  const [currentMinWavelength, setCurrentMinWavelength] = useState(defaultMinWavelength);
+  const [currentMaxWavelength, setCurrentMaxWavelength] = useState(defaultMaxWavelength);
+
+  const hasReferenceLines = referenceLines.length > 0;
+
+  const leftMostRef = hasReferenceLines ? Math.min(...referenceLines.map(l => l.wavelength)) : null;
+  const rightMostRef = hasReferenceLines ? Math.max(...referenceLines.map(l => l.wavelength)) : null;
+
+
+  const minShift = 0; // Z >= 0
+  const maxShift = 1000; //currentMaxWavelength - rightMostRef;
+
+
+  //const [dragOffset, setDragOffset] = useState(0);
   const [showStaticLines, setShowStaticLines] = useState(true);
 
+  const [z, setZ] = useState(0); //internal use only
+  const dragOffset = hasReferenceLines && leftMostRef ? z * leftMostRef : 0;
+
+  //default set
+  //Ca H&K and G-band absorption lines
+  //
+  const updateDragOffset = (newOffset) => {
+    if (hasReferenceLines && leftMostRef) {
+      setZ(newOffset / leftMostRef);
+    }
+  }
+
   const dataToPlot =
-    spectrumData && spectrumData.length > 0 ? spectrumData : spData;
+    galaxySpectrumData && galaxySpectrumData.length > 0 ? galaxySpectrumData : defaultGalaxySpectrumData;
 
   return (
     <div className="w-full max-w-3xl bg-white rounded p-4">
@@ -64,7 +85,7 @@ export default function Spectrometer({ selectedGalaxy, spectrumData }) {
             textAnchor="middle"
             dominantBaseline="middle"
             style={{ fontSize: 17 }}
-            
+
           >
             Spectrum of {selectedGalaxy?.id || "Unknown Galaxy"}
           </text>
@@ -72,7 +93,7 @@ export default function Spectrometer({ selectedGalaxy, spectrumData }) {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis
             dataKey="wavelength"
-            domain={[minWavelength, maxWavelength]}
+            domain={[currentMinWavelength, currentMaxWavelength]}
             tickCount={9}
             allowDataOverflow={true}
             label={{
@@ -122,7 +143,7 @@ export default function Spectrometer({ selectedGalaxy, spectrumData }) {
                 x={line.wavelength}
                 stroke="blue"
                 strokeOpacity={0.4}
-                strokeWidth={2}
+                strokeWidth={1.5}
                 label={{
                   position: "top",
                   value: line.label,
@@ -136,10 +157,10 @@ export default function Spectrometer({ selectedGalaxy, spectrumData }) {
           {referenceLines.map((line) => (
             <ReferenceLine
               key={`movable-${line.wavelength}`}
-              x={line.wavelength + dragOffset}
+              x={line.wavelength * (1 + z)}
               stroke="red"
               strokeDasharray="6 2"
-              strokeWidth={2}
+              strokeWidth={1.5}
               isFront
             />
           ))}
@@ -158,37 +179,46 @@ export default function Spectrometer({ selectedGalaxy, spectrumData }) {
             Toggle Reference Lines
           </label>
         </div>
-
+        {/* Offset Controls */}
         <div className="flex items-center gap-4 mb-2">
           <label>
             Shift (Å):
             <input
               type="number"
               step="0.1"
-              value={dragOffset}
-              onChange={(e) => setDragOffset(parseFloat(e.target.value))}
+              value={dragOffset.toFixed(1)}
+              onChange={(e) => updateDragOffset(parseFloat(e.target.value))}
               className="ml-2 border border-gray-400 rounded px-1 w-24"
+              disabled={!hasReferenceLines}
             />
           </label>
           <button
-            onClick={() => setDragOffset(0)}
+            onClick={() => updateDragOffset(0)}
             className="bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-700"
+            disabled={!hasReferenceLines}
           >
             Reset
           </button>
 
         </div>
-
         <input
           type="range"
           min={minShift}
           max={maxShift}
           step={0.1}
           value={dragOffset}
-          onChange={(e) => setDragOffset(parseFloat(e.target.value))}
+          onChange={(e) => updateDragOffset(parseFloat(e.target.value))}
           className="w-full mt-2"
+          disabled={!hasReferenceLines}
         />
       </div>
+
+      {!hasReferenceLines && (
+        <div className="mt-2 text-sm text-gray-600">
+          Select a reference line set to enable wavelength shifting.
+        </div>
+      )}
+
     </div>
   );
 }
