@@ -34,14 +34,21 @@ export default function Spectrometer({ selectedGalaxy, spectrumData: galaxySpect
 
   const [referenceLines, setReferenceLines] = useState(refSpectrumData["fraunhofer"]);
 
-  const minWavelength = 3500;
+  const minWavelength = 3600;
   const maxWavelength = 6000;
   const defaultMinWavelength = 3700;
   const defaultMaxWavelength = 4700;
 
-
   const [currentMinWavelength, setCurrentMinWavelength] = useState(defaultMinWavelength);
   const [currentMaxWavelength, setCurrentMaxWavelength] = useState(defaultMaxWavelength);
+  const [minInput, setMinInput] = useState(defaultMinWavelength);
+  const [maxInput, setMaxInput] = useState(defaultMaxWavelength);
+  const [isMinTyping, setIsMinTyping] = useState(false);
+  const [isMaxTyping, setIsMaxTyping] = useState(false);
+
+  const MIN_INCREMENT_GAP = 100;
+  const WAVELENGTH_INCREMENT = 50; //always positive
+
 
   const hasReferenceLines = referenceLines.length > 0;
 
@@ -49,8 +56,8 @@ export default function Spectrometer({ selectedGalaxy, spectrumData: galaxySpect
   const rightMostRef = hasReferenceLines ? Math.max(...referenceLines.map(l => l.wavelength)) : null;
 
 
-  const minShift = 0; // Z >= 0
-  const maxShift = 1000; //currentMaxWavelength - rightMostRef;
+  const minOffset = 0; // Z >= 0
+  const maxOffset = 1000; //currentMaxWavelength - rightMostRef;
 
 
   //const [dragOffset, setDragOffset] = useState(0);
@@ -67,24 +74,82 @@ export default function Spectrometer({ selectedGalaxy, spectrumData: galaxySpect
       setZ(newOffset / leftMostRef);
     }
   }
+  const handleMinWavelengthChange = () => {
+    const increment = Math.max(10, WAVELENGTH_INCREMENT);
+
+    let newMin = Math.round(minInput / increment) * increment;
+
+    const upperLimit = currentMaxWavelength - MIN_INCREMENT_GAP;
+    newMin = Math.min(newMin, upperLimit);
+    newMin = Math.max(newMin, minWavelength);
+
+    setCurrentMinWavelength(newMin);
+    setMinInput(newMin);
+    setIsMinTyping(false);
+  };
+
+  const handleMaxWavelengthChange = () => {
+    const increment = Math.max(10, WAVELENGTH_INCREMENT);
+
+    let newMax = Math.round(maxInput / increment) * increment;
+
+    const lowerLimit = currentMinWavelength + MIN_INCREMENT_GAP;
+    newMax = Math.max(newMax, lowerLimit);
+    newMax = Math.min(maxWavelength, newMax);
+
+    setCurrentMaxWavelength(newMax);
+    setMaxInput(newMax);
+    setIsMaxTyping(false);
+  };
+
+
+  const handleMinInputChange = (value) => {
+    if (Number.isNaN(value)) return;
+    setMinInput(value);
+
+    if (!isMinTyping) {
+      const upperLimit = currentMaxWavelength - MIN_INCREMENT_GAP;
+      let newMin = value;
+      newMin = Math.min(newMin, upperLimit);
+      newMin = Math.max(newMin, minWavelength);
+      setCurrentMinWavelength(newMin);
+    }
+  };
+
+  const handleMaxInputChange = (value) => {
+    if (Number.isNaN(value)) return;
+    setMaxInput(value);
+
+    if (!isMaxTyping) {
+      const lowerLimit = currentMinWavelength + MIN_INCREMENT_GAP;
+      let newMax = value;
+      newMax = Math.max(newMax, lowerLimit);
+      newMax = Math.min(newMax, maxWavelength);
+      setCurrentMaxWavelength(newMax);
+    }
+  };
+
+
 
   const dataToPlot =
     galaxySpectrumData && galaxySpectrumData.length > 0 ? galaxySpectrumData : defaultGalaxySpectrumData;
 
   return (
-    <div className="w-full max-w-3xl bg-white rounded p-4">
+    <div className="w-full max-w-3xl bg-white rounded p-4 space-y-4">
+
       <ResponsiveContainer width="100%" height={320}>
 
         <LineChart
           data={dataToPlot}
           margin={{ top: 25, right: 20, bottom: 20, left: 0 }}
+          padding={{ bottom: 20 }}
         >
           <text
             x="50%"
             y={10}
             textAnchor="middle"
             dominantBaseline="middle"
-            style={{ fontSize: 17 }}
+            style={{ fontSize: 17, fontWeight: "bold" }}
 
           >
             Spectrum of {selectedGalaxy?.id || "Unknown Galaxy"}
@@ -168,6 +233,39 @@ export default function Spectrometer({ selectedGalaxy, spectrumData: galaxySpect
       </ResponsiveContainer>
 
       {/* Controls */}
+      {/* Plot Range Controls */}
+      <div className="flex flex-wrap items-center justify-between gap-4 mb-2 text-black bg-white text-sm">
+        <label className="flex items-center gap-2">
+          <span>Min range (Å):</span>
+          <input
+            type="number"
+            step={WAVELENGTH_INCREMENT}
+            min={minWavelength}
+            max={currentMaxWavelength - MIN_INCREMENT_GAP}
+            value={minInput}
+            onChange={(e) => handleMinInputChange(parseFloat(e.target.value))}
+            onKeyDown={() => setIsMinTyping(true)}
+            onBlur={handleMinWavelengthChange}
+            className="border border-gray-400 rounded px-1 w-20 text-sm"
+          />
+        </label>
+
+        <label className="flex items-center gap-2">
+          <span>Max range (Å):</span>
+          <input
+            type="number"
+            step={WAVELENGTH_INCREMENT}
+            min={currentMinWavelength + MIN_INCREMENT_GAP}
+            max={maxWavelength}
+            value={maxInput}
+            onChange={(e) => handleMaxInputChange(parseFloat(e.target.value))}
+            onKeyDown={() => setIsMaxTyping(true)}
+            onBlur={handleMaxWavelengthChange}
+            className="border border-gray-400 rounded px-1 w-20 text-sm"
+          />
+        </label>
+      </div>
+
       <div className="mt-3 text-sm text-black bg-white p-2 rounded w-full max-w-3xl">
         <div className="flex items-center gap-4 mb-2">
           <label className="flex items-center gap-2">
@@ -176,13 +274,13 @@ export default function Spectrometer({ selectedGalaxy, spectrumData: galaxySpect
               checked={showStaticLines}
               onChange={() => setShowStaticLines(!showStaticLines)}
             />
-            Toggle Reference Lines
+            Toggle Static Reference Lines
           </label>
         </div>
         {/* Offset Controls */}
         <div className="flex items-center gap-4 mb-2">
           <label>
-            Shift (Å):
+            Δλ Offset (Å):
             <input
               type="number"
               step="0.1"
@@ -197,20 +295,35 @@ export default function Spectrometer({ selectedGalaxy, spectrumData: galaxySpect
             className="bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-700"
             disabled={!hasReferenceLines}
           >
-            Reset
+            Reset Offset
+          </button>
+          <button
+            onClick={() => {
+              setCurrentMaxWavelength(defaultMaxWavelength);
+              setCurrentMinWavelength(defaultMinWavelength);
+              setMaxInput(defaultMaxWavelength);
+              setMinInput(defaultMinWavelength);
+            }}
+            className="bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-700"
+          >
+            Reset Range
           </button>
 
         </div>
+
         <input
           type="range"
-          min={minShift}
-          max={maxShift}
+          min={minOffset}
+          max={maxOffset}
           step={0.1}
           value={dragOffset}
           onChange={(e) => updateDragOffset(parseFloat(e.target.value))}
           className="w-full mt-2"
           disabled={!hasReferenceLines}
         />
+        <p className="text-xs text-gray-600 mt-1">
+          Applied offset (Δλ) is measured from the leftmost reference line {leftMostRef ? `: ${leftMostRef.toFixed(1)} Å.` : ''}
+        </p>
       </div>
 
       {!hasReferenceLines && (
