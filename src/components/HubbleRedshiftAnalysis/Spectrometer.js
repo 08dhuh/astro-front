@@ -17,6 +17,7 @@ import defaultGalaxySpectrumData from "@/data/spectra/NGC1357.json";
 import refSpectrumData from "@/data/reference_line_sets.json"
 
 
+
 const CustomTooltip = ({ active, payload, label }) => {
   if (active && payload && payload.length) {
     const { intensity } = payload[0].payload;
@@ -31,9 +32,28 @@ const CustomTooltip = ({ active, payload, label }) => {
 };
 
 export default function Spectrometer({ selectedGalaxy, spectrumData: galaxySpectrumData }) {
+  const referenceSetOptions = [
+    { key: "absorption", label: "Absorption Ca II H & K, G band" },
+    { key: "balmer", label: "Hydrogen Balmer series" },
+    { key: "agn", label: "Quasar/AGN emission lines" },
+  ];
+  //const [referenceLines, setReferenceLines] = useState(refSpectrumData["absorption"]);
+  const [selectedReferenceSets, setSelectedReferenceSets] = useState(["absorption"]);
+  const referenceLines = (() => {
+    const uniqueIds = new Set();
+    const collected = [];
 
-  const [referenceLines, setReferenceLines] = useState(refSpectrumData["fraunhofer"]);
+    for (const setKey of selectedReferenceSets) {
+      const lines = refSpectrumData[setKey] ?? [];
+      for (const line of lines) {
+        if (uniqueIds.has(line.id)) continue;
+        uniqueIds.add(line.id);
+        collected.push(line);
+      }
+    }
 
+    return collected;
+  })();
   const minWavelength = 3600;
   const maxWavelength = 6000;
   const defaultMinWavelength = 3700;
@@ -53,11 +73,11 @@ export default function Spectrometer({ selectedGalaxy, spectrumData: galaxySpect
   const hasReferenceLines = referenceLines.length > 0;
 
   const leftMostRef = hasReferenceLines ? Math.min(...referenceLines.map(l => l.wavelength)) : null;
-  const rightMostRef = hasReferenceLines ? Math.max(...referenceLines.map(l => l.wavelength)) : null;
+  //const rightMostRef = hasReferenceLines ? Math.max(...referenceLines.map(l => l.wavelength)) : null;
 
 
   const minOffset = 0; // Z >= 0
-  const maxOffset = 1000; //currentMaxWavelength - rightMostRef;
+  const maxOffset = 1000;
 
 
   //const [dragOffset, setDragOffset] = useState(0);
@@ -267,7 +287,7 @@ export default function Spectrometer({ selectedGalaxy, spectrumData: galaxySpect
       </div>
 
       <div className="mt-3 text-sm text-black bg-white p-2 rounded w-full max-w-3xl">
-        <div className="flex items-center gap-4 mb-2">
+        <div className="flex items-center justify-between gap-4 mb-4">
           <label className="flex items-center gap-2">
             <input
               type="checkbox"
@@ -276,9 +296,39 @@ export default function Spectrometer({ selectedGalaxy, spectrumData: galaxySpect
             />
             Toggle Static Reference Lines
           </label>
+          <label className="flex items-center gap-2">
+            <span>Reference sets:</span>
+            <select
+              className="border border-gray-400 rounded px-1 py-0.5 text-sm bg-white"
+              value=""
+              onChange={(e) => {
+                const key = e.target.value;
+                if (!key) return;
+
+                setSelectedReferenceSets((prev) =>
+                  prev.includes(key)
+                    ? prev.filter((k) => k !== key)
+                    : [...prev, key]
+                );
+              }}
+            >
+
+              <option value="" disabled>Toggle reference sets…</option>
+              {referenceSetOptions.map((set) => {
+                const isActive = selectedReferenceSets.includes(set.key);
+                return (
+                  <option key={set.key} value={set.key}>
+                    {isActive ? "✅ " : ""}
+                    {set.label}
+                  </option>
+                );
+              })}
+            </select>
+          </label>
+
         </div>
         {/* Offset Controls */}
-        <div className="flex items-center gap-4 mb-2">
+        <div className="flex items-center justify-between gap-4 mb-2">
           <label>
             Δλ Offset (Å):
             <input
@@ -290,24 +340,27 @@ export default function Spectrometer({ selectedGalaxy, spectrumData: galaxySpect
               disabled={!hasReferenceLines}
             />
           </label>
-          <button
-            onClick={() => updateDragOffset(0)}
-            className="bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-700"
-            disabled={!hasReferenceLines}
-          >
-            Reset Offset
-          </button>
-          <button
-            onClick={() => {
-              setCurrentMaxWavelength(defaultMaxWavelength);
-              setCurrentMinWavelength(defaultMinWavelength);
-              setMaxInput(defaultMaxWavelength);
-              setMinInput(defaultMinWavelength);
-            }}
-            className="bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-700"
-          >
-            Reset Range
-          </button>
+          <div className="flex items-center gap-2">
+
+            <button
+              onClick={() => updateDragOffset(0)}
+              className="bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-700"
+              disabled={!hasReferenceLines}
+            >
+              Reset Offset
+            </button>
+            <button
+              onClick={() => {
+                setCurrentMaxWavelength(defaultMaxWavelength);
+                setCurrentMinWavelength(defaultMinWavelength);
+                setMaxInput(defaultMaxWavelength);
+                setMinInput(defaultMinWavelength);
+              }}
+              className="bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-700"
+            >
+              Reset Range
+            </button>
+          </div>
 
         </div>
 
@@ -327,7 +380,7 @@ export default function Spectrometer({ selectedGalaxy, spectrumData: galaxySpect
       </div>
 
       {!hasReferenceLines && (
-        <div className="mt-2 text-sm text-gray-600">
+        <div className="mt-2 text-sm text-gray-600 text-center">
           Select a reference line set to enable wavelength shifting.
         </div>
       )}

@@ -1,16 +1,98 @@
 {
-  "fraunhofer": [
-    { "id": "CaK", "wavelength": 3933.7, "label": "λ₀,K" },
-    { "id": "CaH", "wavelength": 3968.5, "label": "λ₀,H" }
+  "absorption": [
+    {
+      "id": "CaK",
+      "wavelength": 3933.7,
+      "label": "K"
+    },
+    {
+      "id": "CaH",
+      "wavelength": 3968.5,
+      "label": "H"
+    },
+    {
+      "id": "Gband",
+      "wavelength": 4305.6,
+      "label": "G"
+    }
   ],
   "balmer": [
-    { "id": "Hdelta", "wavelength": 4101.7, "label": "" },
-    { "id": "Hgamma", "wavelength": 4340.5, "label": "" }
+    {
+      "id": "H_delta",
+      "wavelength": 4102.89,
+      "label": "Hδ"
+    },
+    {
+      "id": "H_gamma",
+      "wavelength": 4341.68,
+      "label": "Hγ"
+    },
+    {
+      "id": "H_beta",
+      "wavelength": 4862.68,
+      "label": "Hβ"
+    },
+    {
+      "id": "H_alpha",
+      "wavelength": 6564.61,
+      "label": "Hα"
+    }
   ],
   "agn": [
-    { "id": "OII3727",   "wavelength": 3727.0, "label": "" },
-    { "id": "NeIII3869", "wavelength": 3869.0, "label": "" },
-    { "id": "Hdelta",    "wavelength": 4101.7, "label": "" },
-    { "id": "Hgamma",    "wavelength": 4340.5, "label": "" }
+    {
+      "id": "OII_3727",
+      "wavelength": 3727.092,
+      "label": ""
+    },
+    {
+      "id": "OII_3729",
+      "wavelength": 3729.875,
+      "label": ""
+    },
+    {
+      "id": "HeI_3889",
+      "wavelength": 3889.00,
+      "label": ""
+    },
+    {
+      "id": "SII_4072",
+      "wavelength": 4072.30,
+      "label": ""
+    },
+    {
+      "id": "H_delta",
+      "wavelength": 4102.89,
+      "label": ""
+    },
+    {
+      "id": "H_gamma",
+      "wavelength": 4341.68,
+      "label": ""
+    },
+    {
+      "id": "OIII_4364",
+      "wavelength": 4364.436,
+      "label": ""
+    },
+    {
+      "id": "H_beta",
+      "wavelength": 4862.68,
+      "label": ""
+    },
+    {
+      "id": "OIII_4932",
+      "wavelength": 4932.603,
+      "label": ""
+    },
+    {
+      "id": "OIII_4959",
+      "wavelength": 4960.295,
+      "label": ""
+    },
+    {
+      "id": "OIII_5007",
+      "wavelength": 5008.240,
+      "label": ""
+    }
   ]
 }
