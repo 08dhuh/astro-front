@@ -6,19 +6,14 @@ import HubblePlot from './HubblePlot';
 
 export default function Prac() {
 
-  const [rows, setRows] = useState([Array(10).fill("")]);
+  const [rows, setRows] = useState([Array(10).fill(""), Array(10).fill("")]);
 
 
   const questions = [
-    //"2. Why might we measure the wavelength of two emission lines per galaxy instead of one?",
-    "2. In your spreadsheet, fill out the relevant columns using your recorded apparent magnitudes and the equation log10(D) = (m - M + 5) / 5.",
-    //"4. How might the apparent recessional velocity of the galaxies affect the wavelength of the light they emit?",
-    //"5. Why do we call it apparent recessional velocity?",
-    "3. Now plot a Hubble diagram by graphing the velocities in km·s⁻¹ (y-axis) vs. the distances in Mpc (x-axis). Fit a linear trendline through the origin. Label your graph and give it a title. Determine the Hubble parameter from your graph and write it below.\n\nYour value for the Hubble Parameter:",
-    "4. The current best value for the Hubble Parameter is H₀ = 67.8 km·s⁻¹·Mpc⁻¹. How much does your value differ from this? What factors could have affected your result? How might you improve the accuracy of your result?",
-    //"8. Write the equation for time as a function of H₀. (Hint: remember that v = d / t and H₀ = v / d)",
-    //"9. Now convert the units of H₀ to s⁻¹ to obtain a time for the age of the universe. (Hint: 1 Mpc = 3.0857×10¹⁹ km)",
-    //"10. Write a brief conclusion summarising what you have learnt in this lab.",
+
+    "2. Now plot a Hubble diagram by graphing the velocities in km·s⁻¹ (y-axis) vs. the distances in Mpc (x-axis). \nFit a linear trendline through the origin. Determine the Hubble parameter from your graph and write it below.\n\nYour value for the Hubble Parameter:",
+    "3. The current best value for the Hubble Parameter is H₀ = 67.8 km·s⁻¹·Mpc⁻¹. How much does your value differ from this? \nWhat factors could have affected your result? How might you improve the accuracy of your result?",
+
   ];
 
   const plotData = rows
@@ -76,6 +71,52 @@ export default function Prac() {
           </p>
         </div>
       </details>
+      <details open className="mb-6 bg-gray-100 border border-gray-300 p-4 rounded">
+        <summary className="font-semibold text-lg cursor-pointer">
+          Instructions
+        </summary>
+
+        <div className="mt-2 space-y-2 text-sm">
+
+          <p>
+            In order to measure the Hubble Parameter we need two quantities:
+            <br />• the distance to each galaxy
+            <br />• the apparent recessional velocity of each galaxy
+          </p>
+          <p>
+            The apparent recessional velocity used in this exercise is the value in Column H,
+            which is the average of the velocities derived from the wavelength shifts of the
+            Ca II H and K absorption lines. These lines normally appear at wavelengths
+            3968.5 Å (H) and 3933.7 Å (K) if the galaxy is not moving. In real observations
+            they are redshifted to longer wavelengths depending on how quickly the galaxy
+            is receding.
+          </p>
+          <p>
+            Using the draggable Δλ adjuster beneath the spectrum plot, shift the template markers
+            so the dashed lines align with the dips of the Ca II H and K absorption features for
+            each galaxy. Record the measured wavelengths λ₀,K and λ₀,H in Columns B and C.
+          </p>
+          <p>
+            Columns D through H depend on the values you enter in Columns B and C. Rather than
+            calculating each value manually, you will define the relationships between columns
+            using the "Formulae" inputs. These formulas may use column letters (B–J) and the
+            constants k–n, which represent fixed physical parameters. The calculations will then
+            be carried out automatically according to the expressions you provide.
+          </p>
+          <p>
+            For example, the formula for Column H is pre-filled as
+            <span className="font-mono"> H = (F + G) / 2 </span>.
+            Once you have defined formulas for Columns D, E, F, and G, the value in Column H will
+            be computed automatically.
+          </p>
+          <p>
+            For Column J, the distance is calculated from the apparent magnitude in Column I using
+            the standard distance-modulus relation. When you select a galaxy in Column A, its
+            apparent B-band magnitude is filled in for you in Column I.
+          </p>
+
+        </div>
+      </details>
 
       {/* Q1 */}
       <div className="mb-8">
@@ -87,22 +128,28 @@ export default function Prac() {
           NOTE:
         </p>
       </div>
+      <div key={0} className="mb-6">
+        <p className="text-l font-semibold mb-4 whitespace-pre-line">
+          <span>{questions[0]}</span>
+          <input
+            type="text"
+            className="w-20 text-right border border-gray-300 px-2 py-1 rounded text-sm ml-2"
+          />
+          &nbsp;km·s⁻¹·Mpc⁻¹
+        </p>
 
 
-      {questions.map((q, i) => (
-        <div key={i} className="mb-6">
-          <p className="mb-2 font-semibold whitespace-pre-line">{q}</p>
+      </div>
+      <div className="w-full flex justify-center mb-6">
+        <HubblePlot data={plotData} />
+      </div>
 
-          {i === 1 && (
-            <HubblePlot data={plotData} />
-          )}
+      <div key={1} className="mb-12">
+        <h2 className="text-l font-semibold mb-4 whitespace-pre-line">{questions[1]}
+        </h2>
 
-          {/* <textarea
-            className="w-full border border-gray-400 p-2 min-h-[100px]"
-            placeholder="Type your response here..."
-          /> */}
-        </div>
-      ))}
+      </div>
+
 
     </div>
   );

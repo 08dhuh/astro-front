@@ -45,8 +45,8 @@ function HRDiagramMain() {
           <p className="text-white"><strong>ID:</strong> {selectedCluster.cluster_id}</p>
           <p className="text-white"><strong>Name:</strong> {selectedCluster.name}</p>
           <p className="text-white"><strong>Star Count:</strong> {selectedCluster.star_count}</p>
-          <p className="text-white"><strong>E(B-V):</strong> {selectedCluster["reddening"] ?? "N/A"}</p>
-          <p className="text-white"><strong>[Fe/H]:</strong> {selectedCluster["fe_h"] ?? "N/A"}</p>
+          <p className="text-white"><strong>E(B-V):</strong> {selectedCluster["reddening"]?.toFixed(5) ?? "N/A"}</p>
+          <p className="text-white"><strong>[Fe/H]:</strong> {selectedCluster["fe_h"]?.toFixed(5) ?? "N/A"}</p>
         </div>
       )}
 

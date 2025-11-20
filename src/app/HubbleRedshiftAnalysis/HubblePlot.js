@@ -21,16 +21,34 @@ const dummyData = [
 ];
 
 export default function HubblePlot({ data = dummyData }) {
-  const [slope, setSlope] = useState(67.8); // km/s/Mpc
+  const [slope, setSlope] = useState(60.0); // km/s/Mpc
   const [intercept, setIntercept] = useState(0); // km/s
 
 
-  const regressionLine = data
-    .filter(d => d.distance !== null)
-    .map((point) => ({
-      distance: point.distance,
-      velocity: slope * point.distance + intercept,
-    }));
+  let regressionLine = [];
+
+  const finitePoints = data.filter(
+    (d) =>
+      d &&
+      typeof d.distance === "number" &&
+      typeof d.velocity === "number" &&
+      Number.isFinite(d.distance) &&
+      Number.isFinite(d.velocity)
+  );
+
+  if (finitePoints.length >= 1) {
+    const distances = finitePoints.map((d) => d.distance);
+    const minD = Math.min(...distances);
+    const maxD = Math.max(...distances);
+
+    if (Number.isFinite(minD) && Number.isFinite(maxD) && minD !== maxD) {
+      regressionLine = [
+        { distance: minD, velocity: slope * minD + intercept },
+        { distance: maxD, velocity: slope * maxD + intercept },
+      ];
+    }
+  }
+
 
   return (
     <div className="w-full max-w-4xl bg-white rounded p-4 mt-6">
@@ -39,9 +57,7 @@ export default function HubblePlot({ data = dummyData }) {
       </h2>
 
       <ResponsiveContainer width="100%" height={400}>
-        <ScatterChart
-          margin={{ top: 25, right: 20, bottom: 20, left: 0 }}
-        >
+        <ScatterChart margin={{ top: 25, right: 20, bottom: 20, left: 0 }}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis
             type="number"
@@ -65,18 +81,18 @@ export default function HubblePlot({ data = dummyData }) {
             />
           </YAxis>
           <Tooltip cursor={{ strokeDasharray: "3 3" }} />
+
           <Scatter name="Galaxy Data" data={data} fill="#8884d8" />
-          <Line
-            type="linear"
-            dataKey="velocity"
-            data={regressionLine}
-            stroke="red"
-            strokeWidth={2}
-            dot={false}
+
+          <Scatter
             name="Fitted Line"
+            data={regressionLine}
+            line={{ stroke: "red", strokeWidth: 2 }}
+            shape={() => null}
           />
         </ScatterChart>
       </ResponsiveContainer>
+
 
       <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-black">
         <label className="flex flex-col">

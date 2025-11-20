@@ -14,7 +14,7 @@ import {
 } from "recharts";
 import defaultGalaxySpectrumData from "@/data/spectra/NGC1357.json";
 
-import refSpectrumData from "@/data/reference_line_sets.json"
+import refSpectrumData from "@/data/reference_line_sets.json";
 
 
 
