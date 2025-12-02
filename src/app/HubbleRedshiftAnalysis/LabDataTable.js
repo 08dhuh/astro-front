@@ -60,8 +60,8 @@ function isValidNumber(value) {
 
 export default function LabDataTable({ rows, setRows }) {
   //const [rows, setRows] = useState([Array(columnDefs.length).fill("")]);
-  //const [formulas, setFormulas] = useState(initialFormulas);
-  const [formulas, setFormulas] = useState(correctFormulas);
+  const [formulas, setFormulas] = useState(initialFormulas);
+  //const [formulas, setFormulas] = useState(correctFormulas);
 
   const handleGalaxyNameChange = (rowIdx, value) => {
     const updated = [...rows];
