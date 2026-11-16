@@ -1,0 +1,4492 @@
+[
+    {
+        "cluster_id": "bas11a",
+        "name": "Basel 11a",
+        "reddening": 0.0,
+        "distance_pc": null,
+        "star_count": 2,
+        "pk": 1,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "bas19",
+        "name": "Basel 19",
+        "reddening": null,
+        "distance_pc": null,
+        "star_count": 14,
+        "pk": 2,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "be011",
+        "name": "Berkeley 11",
+        "reddening": 0.949999988079071,
+        "distance_pc": null,
+        "star_count": 22,
+        "pk": 3,
+        "fe_h": 0.009999999776482582,
+        "log_age": null
+    },
+    {
+        "cluster_id": "be019",
+        "name": "Berkeley 19",
+        "reddening": 0.3199999928474426,
+        "distance_pc": null,
+        "star_count": 19,
+        "pk": 4,
+        "fe_h": -0.5,
+        "log_age": null
+    },
+    {
+        "cluster_id": "be021",
+        "name": "Berkeley 21",
+        "reddening": 0.7599999904632568,
+        "distance_pc": null,
+        "star_count": 20,
+        "pk": 5,
+        "fe_h": -0.8349999785423279,
+        "log_age": null
+    },
+    {
+        "cluster_id": "be028",
+        "name": "Berkeley 28",
+        "reddening": 0.7609999775886536,
+        "distance_pc": null,
+        "star_count": 4,
+        "pk": 6,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "be058",
+        "name": "Berkeley 58",
+        "reddening": 0.7200000286102295,
+        "distance_pc": null,
+        "star_count": 38,
+        "pk": 7,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "be059",
+        "name": "Berkeley 59",
+        "reddening": 1.2410000562667847,
+        "distance_pc": null,
+        "star_count": 21,
+        "pk": 8,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "be062",
+        "name": "Berkeley 62",
+        "reddening": 0.8500000238418579,
+        "distance_pc": null,
+        "star_count": 14,
+        "pk": 9,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "be082",
+        "name": "Berkeley 82",
+        "reddening": 1.0210000276565552,
+        "distance_pc": null,
+        "star_count": 20,
+        "pk": 10,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "be086",
+        "name": "Berkeley 86",
+        "reddening": 0.8980000019073486,
+        "distance_pc": null,
+        "star_count": 40,
+        "pk": 11,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "be087",
+        "name": "Berkeley 87",
+        "reddening": 1.36899995803833,
+        "distance_pc": null,
+        "star_count": 40,
+        "pk": 12,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "be094",
+        "name": "Berkeley 94",
+        "reddening": 0.6079999804496765,
+        "distance_pc": null,
+        "star_count": 12,
+        "pk": 13,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "be096",
+        "name": "Berkeley 96",
+        "reddening": 0.5400000214576721,
+        "distance_pc": null,
+        "star_count": 10,
+        "pk": 14,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "bh099",
+        "name": "vdB-Hagen 99",
+        "reddening": 0.054999999701976776,
+        "distance_pc": null,
+        "star_count": 36,
+        "pk": 15,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "biu02",
+        "name": "Biurakan 2",
+        "reddening": 0.36000001430511475,
+        "distance_pc": null,
+        "star_count": 20,
+        "pk": 16,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "bl01",
+        "name": "Blanco 1",
+        "reddening": 0.009999999776482582,
+        "distance_pc": null,
+        "star_count": 132,
+        "pk": 17,
+        "fe_h": 0.03999999910593033,
+        "log_age": null
+    },
+    {
+        "cluster_id": "bo01",
+        "name": "Bochum 1",
+        "reddening": 0.5019999742507935,
+        "distance_pc": null,
+        "star_count": 9,
+        "pk": 18,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "bo02",
+        "name": "Bochum 2",
+        "reddening": 0.8309999704360962,
+        "distance_pc": null,
+        "star_count": 8,
+        "pk": 19,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "bo03",
+        "name": "Bochum 3",
+        "reddening": 0.23999999463558197,
+        "distance_pc": null,
+        "star_count": 8,
+        "pk": 20,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "bo04",
+        "name": "Bochum 4",
+        "reddening": 0.6299999952316284,
+        "distance_pc": null,
+        "star_count": 30,
+        "pk": 21,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "bo06",
+        "name": "Bochum 6",
+        "reddening": 0.699999988079071,
+        "distance_pc": null,
+        "star_count": 5,
+        "pk": 22,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "bo07",
+        "name": "Bochum 7",
+        "reddening": 0.8600000143051147,
+        "distance_pc": null,
+        "star_count": 13,
+        "pk": 23,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "bo08",
+        "name": "Bochum 8",
+        "reddening": null,
+        "distance_pc": null,
+        "star_count": 8,
+        "pk": 24,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "bo09",
+        "name": "Bochum 9",
+        "reddening": 0.10999999940395355,
+        "distance_pc": null,
+        "star_count": 22,
+        "pk": 25,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "bo10",
+        "name": "Bochum 10",
+        "reddening": 0.3059999942779541,
+        "distance_pc": null,
+        "star_count": 53,
+        "pk": 26,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "bo11",
+        "name": "Bochum 11",
+        "reddening": 0.5759999752044678,
+        "distance_pc": null,
+        "star_count": 17,
+        "pk": 27,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "bo12",
+        "name": "Bochum 12",
+        "reddening": 0.23999999463558197,
+        "distance_pc": null,
+        "star_count": 12,
+        "pk": 28,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "bo13",
+        "name": "Bochum 13",
+        "reddening": 0.8539999723434448,
+        "distance_pc": null,
+        "star_count": 13,
+        "pk": 29,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "bo14",
+        "name": "Bochum 14",
+        "reddening": 1.5080000162124634,
+        "distance_pc": null,
+        "star_count": 11,
+        "pk": 30,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "bo15",
+        "name": "Bochum 15",
+        "reddening": 0.5759999752044678,
+        "distance_pc": null,
+        "star_count": 33,
+        "pk": 31,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "cr069",
+        "name": "Collinder 69",
+        "reddening": 0.11999999731779099,
+        "distance_pc": null,
+        "star_count": 61,
+        "pk": 32,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "cr096",
+        "name": "Collinder 96",
+        "reddening": 0.5099999904632568,
+        "distance_pc": null,
+        "star_count": 14,
+        "pk": 33,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "cr097",
+        "name": "Collinder 97",
+        "reddening": 0.0,
+        "distance_pc": null,
+        "star_count": 17,
+        "pk": 34,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "cr121",
+        "name": "Collinder 121",
+        "reddening": 0.03999999910593033,
+        "distance_pc": null,
+        "star_count": 47,
+        "pk": 35,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "cr132",
+        "name": "Collinder 132",
+        "reddening": 0.03700000047683716,
+        "distance_pc": null,
+        "star_count": 35,
+        "pk": 36,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "cr135",
+        "name": "Collinder 135",
+        "reddening": 0.03200000151991844,
+        "distance_pc": null,
+        "star_count": 77,
+        "pk": 37,
+        "fe_h": -0.21899999678134918,
+        "log_age": null
+    },
+    {
+        "cluster_id": "cr140",
+        "name": "Collinder 140",
+        "reddening": 0.029999999329447746,
+        "distance_pc": null,
+        "star_count": 80,
+        "pk": 38,
+        "fe_h": -0.10000000149011612,
+        "log_age": null
+    },
+    {
+        "cluster_id": "cr197",
+        "name": "Collinder 197",
+        "reddening": 0.5479999780654907,
+        "distance_pc": null,
+        "star_count": 21,
+        "pk": 39,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "cr205",
+        "name": "Collinder 205",
+        "reddening": 0.75,
+        "distance_pc": null,
+        "star_count": 18,
+        "pk": 40,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "cr223",
+        "name": "Collinder 223",
+        "reddening": 0.25,
+        "distance_pc": null,
+        "star_count": 110,
+        "pk": 41,
+        "fe_h": -0.21699999272823334,
+        "log_age": null
+    },
+    {
+        "cluster_id": "cr228",
+        "name": "Collinder 228",
+        "reddening": 0.34200000762939453,
+        "distance_pc": null,
+        "star_count": 114,
+        "pk": 42,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "cr232",
+        "name": "Collinder 232",
+        "reddening": 0.47999998927116394,
+        "distance_pc": null,
+        "star_count": 9,
+        "pk": 43,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "cr258",
+        "name": "Collinder 258",
+        "reddening": 0.1599999964237213,
+        "distance_pc": null,
+        "star_count": 36,
+        "pk": 44,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "cr268",
+        "name": "Collinder 268",
+        "reddening": 0.30799999833106995,
+        "distance_pc": null,
+        "star_count": 22,
+        "pk": 45,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "cr271",
+        "name": "Collinder 271",
+        "reddening": 0.28700000047683716,
+        "distance_pc": null,
+        "star_count": 10,
+        "pk": 46,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "cr307",
+        "name": "Collinder 307",
+        "reddening": 0.8299999833106995,
+        "distance_pc": null,
+        "star_count": 12,
+        "pk": 47,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "cr347",
+        "name": "Collinder 347",
+        "reddening": 1.159999966621399,
+        "distance_pc": null,
+        "star_count": 20,
+        "pk": 48,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "cr359",
+        "name": "Collinder 359",
+        "reddening": 0.19300000369548798,
+        "distance_pc": null,
+        "star_count": 13,
+        "pk": 49,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "cr394",
+        "name": "Collinder 394",
+        "reddening": 0.23499999940395355,
+        "distance_pc": null,
+        "star_count": 62,
+        "pk": 50,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "cr399",
+        "name": "Collinder 399",
+        "reddening": 0.37700000405311584,
+        "distance_pc": null,
+        "star_count": 8,
+        "pk": 51,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "cr463",
+        "name": "Collinder 463",
+        "reddening": 0.2590000033378601,
+        "distance_pc": null,
+        "star_count": 82,
+        "pk": 52,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "do24",
+        "name": "Dolidze 24",
+        "reddening": 0.1459999978542328,
+        "distance_pc": null,
+        "star_count": 8,
+        "pk": 53,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "do25",
+        "name": "Dolidze 25",
+        "reddening": 0.800000011920929,
+        "distance_pc": null,
+        "star_count": 23,
+        "pk": 54,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "do42",
+        "name": "Dolidze 42",
+        "reddening": 0.5709999799728394,
+        "distance_pc": null,
+        "star_count": 37,
+        "pk": 55,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "fei01",
+        "name": "Feinstein 1",
+        "reddening": 0.4000000059604645,
+        "distance_pc": null,
+        "star_count": 27,
+        "pk": 56,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ha20",
+        "name": "Harvard 20",
+        "reddening": 0.2290000021457672,
+        "distance_pc": null,
+        "star_count": 28,
+        "pk": 57,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "haf08",
+        "name": "Haffner 8",
+        "reddening": 0.03200000151991844,
+        "distance_pc": null,
+        "star_count": 13,
+        "pk": 58,
+        "fe_h": 0.05999999865889549,
+        "log_age": null
+    },
+    {
+        "cluster_id": "haf14",
+        "name": "Haffner 14",
+        "reddening": 0.6000000238418579,
+        "distance_pc": null,
+        "star_count": 25,
+        "pk": 59,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "haf15",
+        "name": "Haffner 15",
+        "reddening": 1.0499999523162842,
+        "distance_pc": null,
+        "star_count": 13,
+        "pk": 60,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "haf16",
+        "name": "Haffner 16",
+        "reddening": 0.17499999701976776,
+        "distance_pc": null,
+        "star_count": 15,
+        "pk": 61,
+        "fe_h": -0.11100000143051147,
+        "log_age": null
+    },
+    {
+        "cluster_id": "haf18",
+        "name": "Haffner 18",
+        "reddening": 0.6110000014305115,
+        "distance_pc": null,
+        "star_count": 25,
+        "pk": 62,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "haf19",
+        "name": "Haffner 19",
+        "reddening": 0.3799999952316284,
+        "distance_pc": null,
+        "star_count": 24,
+        "pk": 63,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "hm01",
+        "name": "Havlen-Moffat 1",
+        "reddening": 1.850000023841858,
+        "distance_pc": null,
+        "star_count": 24,
+        "pk": 64,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ho09",
+        "name": "Hogg 9",
+        "reddening": 0.3799999952316284,
+        "distance_pc": null,
+        "star_count": 9,
+        "pk": 65,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ho10",
+        "name": "Hogg 10",
+        "reddening": 0.46000000834465027,
+        "distance_pc": null,
+        "star_count": 24,
+        "pk": 66,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ho11",
+        "name": "Hogg 11",
+        "reddening": 0.3199999928474426,
+        "distance_pc": null,
+        "star_count": 6,
+        "pk": 67,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ho12",
+        "name": "Hogg 12",
+        "reddening": 0.4000000059604645,
+        "distance_pc": null,
+        "star_count": 11,
+        "pk": 68,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ho14",
+        "name": "Hogg 14",
+        "reddening": 0.2290000021457672,
+        "distance_pc": null,
+        "star_count": 11,
+        "pk": 69,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ho15",
+        "name": "Hogg 15",
+        "reddening": 1.2999999523162842,
+        "distance_pc": null,
+        "star_count": 37,
+        "pk": 70,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ho16",
+        "name": "Hogg 16",
+        "reddening": 0.41100001335144043,
+        "distance_pc": null,
+        "star_count": 68,
+        "pk": 71,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ho18",
+        "name": "Hogg 18",
+        "reddening": 0.503000020980835,
+        "distance_pc": null,
+        "star_count": 16,
+        "pk": 72,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ho22",
+        "name": "Hogg 22",
+        "reddening": 0.6470000147819519,
+        "distance_pc": null,
+        "star_count": 30,
+        "pk": 73,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ic0166",
+        "name": "IC 0166",
+        "reddening": 1.0499999523162842,
+        "distance_pc": null,
+        "star_count": 20,
+        "pk": 74,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ic0348",
+        "name": "IC 0348",
+        "reddening": 0.9290000200271606,
+        "distance_pc": null,
+        "star_count": 22,
+        "pk": 75,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ic0361",
+        "name": "IC 0361",
+        "reddening": 1.1169999837875366,
+        "distance_pc": null,
+        "star_count": 19,
+        "pk": 76,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ic1590",
+        "name": "IC 1590",
+        "reddening": 0.3199999928474426,
+        "distance_pc": null,
+        "star_count": 36,
+        "pk": 77,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ic1795",
+        "name": "IC 1795",
+        "reddening": null,
+        "distance_pc": null,
+        "star_count": 55,
+        "pk": 78,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ic1805",
+        "name": "IC 1805",
+        "reddening": 0.8700000047683716,
+        "distance_pc": null,
+        "star_count": 192,
+        "pk": 79,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ic1848",
+        "name": "IC 1848",
+        "reddening": 0.6600000262260437,
+        "distance_pc": null,
+        "star_count": 19,
+        "pk": 80,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ic2157",
+        "name": "IC 2157",
+        "reddening": 0.5479999780654907,
+        "distance_pc": null,
+        "star_count": 12,
+        "pk": 81,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ic2391",
+        "name": "IC 2391",
+        "reddening": 0.00800000037997961,
+        "distance_pc": null,
+        "star_count": 84,
+        "pk": 82,
+        "fe_h": -0.009999999776482582,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ic2395",
+        "name": "IC 2395",
+        "reddening": 0.09000000357627869,
+        "distance_pc": null,
+        "star_count": 279,
+        "pk": 83,
+        "fe_h": 0.0,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ic2488",
+        "name": "IC 2488",
+        "reddening": 0.23100000619888306,
+        "distance_pc": null,
+        "star_count": 145,
+        "pk": 84,
+        "fe_h": 0.10000000149011612,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ic2581",
+        "name": "IC 2581",
+        "reddening": 0.41499999165534973,
+        "distance_pc": null,
+        "star_count": 65,
+        "pk": 85,
+        "fe_h": -0.3400000035762787,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ic2602",
+        "name": "IC 2602",
+        "reddening": 0.024000000208616257,
+        "distance_pc": null,
+        "star_count": 99,
+        "pk": 86,
+        "fe_h": 0.0,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ic2714",
+        "name": "IC 2714",
+        "reddening": 0.3409999907016754,
+        "distance_pc": null,
+        "star_count": 205,
+        "pk": 87,
+        "fe_h": 0.009999999776482582,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ic2944",
+        "name": "IC 2944",
+        "reddening": 0.3199999928474426,
+        "distance_pc": null,
+        "star_count": 138,
+        "pk": 88,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ic4651",
+        "name": "IC 4651",
+        "reddening": 0.11599999666213989,
+        "distance_pc": null,
+        "star_count": 105,
+        "pk": 89,
+        "fe_h": 0.15000000596046448,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ic4665",
+        "name": "IC 4665",
+        "reddening": 0.17399999499320984,
+        "distance_pc": null,
+        "star_count": 68,
+        "pk": 90,
+        "fe_h": -0.029999999329447746,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ic4725",
+        "name": "IC 4725",
+        "reddening": 0.47600001096725464,
+        "distance_pc": null,
+        "star_count": 159,
+        "pk": 91,
+        "fe_h": 0.17000000178813934,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ic4756",
+        "name": "IC 4756",
+        "reddening": 0.19200000166893005,
+        "distance_pc": null,
+        "star_count": 118,
+        "pk": 92,
+        "fe_h": -0.009999999776482582,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ic4996",
+        "name": "IC 4996",
+        "reddening": 0.7099999785423279,
+        "distance_pc": null,
+        "star_count": 33,
+        "pk": 93,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ic5146",
+        "name": "IC 5146",
+        "reddening": 0.5929999947547913,
+        "distance_pc": null,
+        "star_count": 36,
+        "pk": 94,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "kas01",
+        "name": "Kastner 1",
+        "reddening": null,
+        "distance_pc": null,
+        "star_count": 20,
+        "pk": 95,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ki08",
+        "name": "King 8",
+        "reddening": 0.5799999833106995,
+        "distance_pc": null,
+        "star_count": 14,
+        "pk": 96,
+        "fe_h": -0.46000000834465027,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ki12",
+        "name": "King 12",
+        "reddening": 0.5099999904632568,
+        "distance_pc": null,
+        "star_count": 31,
+        "pk": 97,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ki14",
+        "name": "King 14",
+        "reddening": 0.3400000035762787,
+        "distance_pc": null,
+        "star_count": 2,
+        "pk": 98,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ki21",
+        "name": "King 21",
+        "reddening": 0.8859999775886536,
+        "distance_pc": null,
+        "star_count": 26,
+        "pk": 99,
+        "fe_h": 0.05999999865889549,
+        "log_age": null
+    },
+    {
+        "cluster_id": "lod0807",
+        "name": "Loden 807",
+        "reddening": 0.20000000298023224,
+        "distance_pc": null,
+        "star_count": 3,
+        "pk": 100,
+        "fe_h": -0.1899999976158142,
+        "log_age": null
+    },
+    {
+        "cluster_id": "lod0915",
+        "name": "Loden 915",
+        "reddening": 0.15000000596046448,
+        "distance_pc": null,
+        "star_count": 36,
+        "pk": 101,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ly01",
+        "name": "Lynga 1",
+        "reddening": 0.44999998807907104,
+        "distance_pc": null,
+        "star_count": 24,
+        "pk": 102,
+        "fe_h": 0.03999999910593033,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ly02",
+        "name": "Lynga 2",
+        "reddening": 0.2199999988079071,
+        "distance_pc": null,
+        "star_count": 32,
+        "pk": 103,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ly04",
+        "name": "Lynga 4",
+        "reddening": 0.699999988079071,
+        "distance_pc": null,
+        "star_count": 6,
+        "pk": 104,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ly06",
+        "name": "Lynga 6",
+        "reddening": 1.25,
+        "distance_pc": null,
+        "star_count": 39,
+        "pk": 105,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ly07",
+        "name": "Lynga 7",
+        "reddening": 0.27300000190734863,
+        "distance_pc": null,
+        "star_count": 19,
+        "pk": 106,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ly14",
+        "name": "Lynga 14",
+        "reddening": 1.4279999732971191,
+        "distance_pc": null,
+        "star_count": 16,
+        "pk": 107,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ma18",
+        "name": "Markarian 18",
+        "reddening": null,
+        "distance_pc": null,
+        "star_count": 18,
+        "pk": 108,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ma38",
+        "name": "Markarian 38",
+        "reddening": 0.4050000011920929,
+        "distance_pc": null,
+        "star_count": 16,
+        "pk": 109,
+        "fe_h": 0.18000000715255737,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ma50",
+        "name": "Markarian 50",
+        "reddening": 0.8100000023841858,
+        "distance_pc": null,
+        "star_count": 21,
+        "pk": 110,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "mam01",
+        "name": "Mamajek 1",
+        "reddening": 0.0,
+        "distance_pc": null,
+        "star_count": 1,
+        "pk": 111,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "mel020",
+        "name": "Alpha Per",
+        "reddening": 0.09000000357627869,
+        "distance_pc": null,
+        "star_count": 321,
+        "pk": 112,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "mel022",
+        "name": "Pleiades",
+        "reddening": 0.029999999329447746,
+        "distance_pc": null,
+        "star_count": 415,
+        "pk": 113,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "mel025",
+        "name": "Hyades",
+        "reddening": 0.009999999776482582,
+        "distance_pc": null,
+        "star_count": 606,
+        "pk": 114,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "mel066",
+        "name": "Melotte 66",
+        "reddening": 0.15000000596046448,
+        "distance_pc": null,
+        "star_count": 66,
+        "pk": 115,
+        "fe_h": -0.33000001311302185,
+        "log_age": null
+    },
+    {
+        "cluster_id": "mel071",
+        "name": "Melotte 71",
+        "reddening": 0.11299999803304672,
+        "distance_pc": null,
+        "star_count": 30,
+        "pk": 116,
+        "fe_h": -0.3199999928474426,
+        "log_age": null
+    },
+    {
+        "cluster_id": "mel101",
+        "name": "Melotte 101",
+        "reddening": 0.47999998927116394,
+        "distance_pc": null,
+        "star_count": 22,
+        "pk": 117,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "mel105",
+        "name": "Melotte 105",
+        "reddening": 0.8299999833106995,
+        "distance_pc": null,
+        "star_count": 8,
+        "pk": 118,
+        "fe_h": 0.07999999821186066,
+        "log_age": null
+    },
+    {
+        "cluster_id": "mel111",
+        "name": "Coma Ber",
+        "reddening": 0.013000000268220901,
+        "distance_pc": null,
+        "star_count": 417,
+        "pk": 119,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "mof01",
+        "name": "Moffat 1",
+        "reddening": 1.0,
+        "distance_pc": null,
+        "star_count": 14,
+        "pk": 120,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc0103",
+        "name": "NGC 103",
+        "reddening": 0.4059999883174896,
+        "distance_pc": null,
+        "star_count": 45,
+        "pk": 121,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc0129",
+        "name": "NGC 129",
+        "reddening": 0.5479999780654907,
+        "distance_pc": null,
+        "star_count": 57,
+        "pk": 122,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc0188",
+        "name": "NGC 188",
+        "reddening": 0.035999998450279236,
+        "distance_pc": null,
+        "star_count": 167,
+        "pk": 123,
+        "fe_h": 0.11999999731779099,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc0225",
+        "name": "NGC 225",
+        "reddening": 0.27399998903274536,
+        "distance_pc": null,
+        "star_count": 31,
+        "pk": 124,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc0381",
+        "name": "NGC 381",
+        "reddening": 0.4000000059604645,
+        "distance_pc": null,
+        "star_count": 39,
+        "pk": 125,
+        "fe_h": 0.07000000029802322,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc0436",
+        "name": "NGC 436",
+        "reddening": 0.4000000059604645,
+        "distance_pc": null,
+        "star_count": 35,
+        "pk": 126,
+        "fe_h": -0.550000011920929,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc0457",
+        "name": "NGC 457",
+        "reddening": 0.47200000286102295,
+        "distance_pc": null,
+        "star_count": 97,
+        "pk": 127,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc0559",
+        "name": "NGC 559",
+        "reddening": 0.8199999928474426,
+        "distance_pc": null,
+        "star_count": 29,
+        "pk": 128,
+        "fe_h": -0.25,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc0581",
+        "name": "NGC 581",
+        "reddening": 0.38199999928474426,
+        "distance_pc": null,
+        "star_count": 82,
+        "pk": 129,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc0609",
+        "name": "NGC 609",
+        "reddening": 0.3499999940395355,
+        "distance_pc": null,
+        "star_count": 7,
+        "pk": 130,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc0637",
+        "name": "NGC 637",
+        "reddening": 0.6399999856948853,
+        "distance_pc": null,
+        "star_count": 27,
+        "pk": 131,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc0654",
+        "name": "NGC 654",
+        "reddening": 0.8199999928474426,
+        "distance_pc": null,
+        "star_count": 98,
+        "pk": 132,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc0659",
+        "name": "NGC 659",
+        "reddening": 0.6520000100135803,
+        "distance_pc": null,
+        "star_count": 26,
+        "pk": 133,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc0663",
+        "name": "NGC 663",
+        "reddening": 0.800000011920929,
+        "distance_pc": null,
+        "star_count": 40,
+        "pk": 134,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc0744",
+        "name": "NGC 744",
+        "reddening": 0.3840000033378601,
+        "distance_pc": null,
+        "star_count": 34,
+        "pk": 135,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc0752",
+        "name": "NGC 752",
+        "reddening": 0.03400000184774399,
+        "distance_pc": null,
+        "star_count": 102,
+        "pk": 136,
+        "fe_h": 0.009999999776482582,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc0869",
+        "name": "NGC 869",
+        "reddening": 0.574999988079071,
+        "distance_pc": null,
+        "star_count": 84,
+        "pk": 137,
+        "fe_h": -0.30000001192092896,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc0884",
+        "name": "NGC 884",
+        "reddening": 0.5600000023841858,
+        "distance_pc": null,
+        "star_count": 83,
+        "pk": 138,
+        "fe_h": -0.30000001192092896,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc0957",
+        "name": "NGC 957",
+        "reddening": 0.7099999785423279,
+        "distance_pc": null,
+        "star_count": 29,
+        "pk": 139,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1027",
+        "name": "NGC 1027",
+        "reddening": 0.4099999964237213,
+        "distance_pc": null,
+        "star_count": 26,
+        "pk": 140,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1039",
+        "name": "NGC 1039",
+        "reddening": 0.07000000029802322,
+        "distance_pc": null,
+        "star_count": 77,
+        "pk": 141,
+        "fe_h": 0.07000000029802322,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1245",
+        "name": "NGC 1245",
+        "reddening": 0.23999999463558197,
+        "distance_pc": null,
+        "star_count": 32,
+        "pk": 142,
+        "fe_h": -0.03999999910593033,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1252",
+        "name": "NGC 1252",
+        "reddening": 0.0,
+        "distance_pc": null,
+        "star_count": 37,
+        "pk": 143,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1342",
+        "name": "NGC 1342",
+        "reddening": 0.3190000057220459,
+        "distance_pc": null,
+        "star_count": 36,
+        "pk": 144,
+        "fe_h": -0.1599999964237213,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1444",
+        "name": "NGC 1444",
+        "reddening": 0.7120000123977661,
+        "distance_pc": null,
+        "star_count": 24,
+        "pk": 145,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1496",
+        "name": "NGC 1496",
+        "reddening": 0.44999998807907104,
+        "distance_pc": null,
+        "star_count": 22,
+        "pk": 146,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1502",
+        "name": "NGC 1502",
+        "reddening": 0.699999988079071,
+        "distance_pc": null,
+        "star_count": 38,
+        "pk": 147,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1513",
+        "name": "NGC 1513",
+        "reddening": 0.6700000166893005,
+        "distance_pc": null,
+        "star_count": 31,
+        "pk": 148,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1528",
+        "name": "NGC 1528",
+        "reddening": 0.25999999046325684,
+        "distance_pc": null,
+        "star_count": 70,
+        "pk": 149,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1545",
+        "name": "NGC 1545",
+        "reddening": 0.30300000309944153,
+        "distance_pc": null,
+        "star_count": 25,
+        "pk": 150,
+        "fe_h": -0.12999999523162842,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1624",
+        "name": "NGC 1624",
+        "reddening": 0.9200000166893005,
+        "distance_pc": null,
+        "star_count": 14,
+        "pk": 151,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1647",
+        "name": "NGC 1647",
+        "reddening": 0.3700000047683716,
+        "distance_pc": null,
+        "star_count": 52,
+        "pk": 152,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1662",
+        "name": "NGC 1662",
+        "reddening": 0.30399999022483826,
+        "distance_pc": null,
+        "star_count": 35,
+        "pk": 153,
+        "fe_h": -0.0949999988079071,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1664",
+        "name": "NGC 1664",
+        "reddening": 0.2540000081062317,
+        "distance_pc": null,
+        "star_count": 48,
+        "pk": 154,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1778",
+        "name": "NGC 1778",
+        "reddening": 0.335999995470047,
+        "distance_pc": null,
+        "star_count": 78,
+        "pk": 155,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1807",
+        "name": "NGC 1807",
+        "reddening": null,
+        "distance_pc": null,
+        "star_count": 14,
+        "pk": 156,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1817",
+        "name": "NGC 1817",
+        "reddening": 0.33399999141693115,
+        "distance_pc": null,
+        "star_count": 83,
+        "pk": 157,
+        "fe_h": -0.1599999964237213,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1857",
+        "name": "NGC 1857",
+        "reddening": 0.4699999988079071,
+        "distance_pc": null,
+        "star_count": 33,
+        "pk": 158,
+        "fe_h": -0.36000001430511475,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1893",
+        "name": "NGC 1893",
+        "reddening": 0.5600000023841858,
+        "distance_pc": null,
+        "star_count": 72,
+        "pk": 159,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1901",
+        "name": "NGC 1901",
+        "reddening": 0.029999999329447746,
+        "distance_pc": null,
+        "star_count": 23,
+        "pk": 160,
+        "fe_h": -0.017999999225139618,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1907",
+        "name": "NGC 1907",
+        "reddening": 0.5199999809265137,
+        "distance_pc": null,
+        "star_count": 55,
+        "pk": 161,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1912",
+        "name": "NGC 1912",
+        "reddening": 0.25,
+        "distance_pc": null,
+        "star_count": 32,
+        "pk": 162,
+        "fe_h": -0.3799999952316284,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1931",
+        "name": "NGC 1931",
+        "reddening": 0.7400000095367432,
+        "distance_pc": null,
+        "star_count": 27,
+        "pk": 163,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1960",
+        "name": "NGC 1960",
+        "reddening": 0.2199999988079071,
+        "distance_pc": null,
+        "star_count": 53,
+        "pk": 164,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc1976",
+        "name": "NGC 1976",
+        "reddening": 0.05000000074505806,
+        "distance_pc": null,
+        "star_count": 605,
+        "pk": 165,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2099",
+        "name": "NGC 2099",
+        "reddening": 0.3019999861717224,
+        "distance_pc": null,
+        "star_count": 124,
+        "pk": 166,
+        "fe_h": 0.08900000154972076,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2112",
+        "name": "NGC 2112",
+        "reddening": 0.6000000238418579,
+        "distance_pc": null,
+        "star_count": 19,
+        "pk": 167,
+        "fe_h": 0.1599999964237213,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2129",
+        "name": "NGC 2129",
+        "reddening": 0.800000011920929,
+        "distance_pc": null,
+        "star_count": 29,
+        "pk": 168,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2141",
+        "name": "NGC 2141",
+        "reddening": 0.25,
+        "distance_pc": null,
+        "star_count": 33,
+        "pk": 169,
+        "fe_h": -0.18000000715255737,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2158",
+        "name": "NGC 2158",
+        "reddening": 0.36000001430511475,
+        "distance_pc": null,
+        "star_count": 30,
+        "pk": 170,
+        "fe_h": -0.2800000011920929,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2168",
+        "name": "NGC 2168",
+        "reddening": 0.20000000298023224,
+        "distance_pc": null,
+        "star_count": 113,
+        "pk": 171,
+        "fe_h": -0.1599999964237213,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2169",
+        "name": "NGC 2169",
+        "reddening": 0.19900000095367432,
+        "distance_pc": null,
+        "star_count": 34,
+        "pk": 172,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2175",
+        "name": "NGC 2175",
+        "reddening": 0.5979999899864197,
+        "distance_pc": null,
+        "star_count": 77,
+        "pk": 173,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2186",
+        "name": "NGC 2186",
+        "reddening": 0.27000001072883606,
+        "distance_pc": null,
+        "star_count": 23,
+        "pk": 174,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2204",
+        "name": "NGC 2204",
+        "reddening": 0.08500000089406967,
+        "distance_pc": null,
+        "star_count": 32,
+        "pk": 175,
+        "fe_h": -0.23000000417232513,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2215",
+        "name": "NGC 2215",
+        "reddening": 0.25999999046325684,
+        "distance_pc": null,
+        "star_count": 16,
+        "pk": 176,
+        "fe_h": -0.4000000059604645,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2232",
+        "name": "NGC 2232",
+        "reddening": 0.029999999329447746,
+        "distance_pc": null,
+        "star_count": 43,
+        "pk": 177,
+        "fe_h": 0.3199999928474426,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2236",
+        "name": "NGC 2236",
+        "reddening": 0.4790000021457672,
+        "distance_pc": null,
+        "star_count": 13,
+        "pk": 178,
+        "fe_h": -0.30000001192092896,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2243",
+        "name": "NGC 2243",
+        "reddening": 0.050999999046325684,
+        "distance_pc": null,
+        "star_count": 25,
+        "pk": 179,
+        "fe_h": -0.41999998688697815,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2244",
+        "name": "NGC 2244",
+        "reddening": 0.4699999988079071,
+        "distance_pc": null,
+        "star_count": 106,
+        "pk": 180,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2251",
+        "name": "NGC 2251",
+        "reddening": 0.1860000044107437,
+        "distance_pc": null,
+        "star_count": 35,
+        "pk": 181,
+        "fe_h": -0.10000000149011612,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2264",
+        "name": "NGC 2264",
+        "reddening": 0.050999999046325684,
+        "distance_pc": null,
+        "star_count": 272,
+        "pk": 182,
+        "fe_h": -0.15000000596046448,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2269",
+        "name": "NGC 2269",
+        "reddening": 0.39800000190734863,
+        "distance_pc": null,
+        "star_count": 12,
+        "pk": 183,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2281",
+        "name": "NGC 2281",
+        "reddening": 0.06300000101327896,
+        "distance_pc": null,
+        "star_count": 110,
+        "pk": 184,
+        "fe_h": 0.12999999523162842,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2286",
+        "name": "NGC 2286",
+        "reddening": 0.6600000262260437,
+        "distance_pc": null,
+        "star_count": 1,
+        "pk": 185,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2287",
+        "name": "NGC 2287",
+        "reddening": 0.009999999776482582,
+        "distance_pc": null,
+        "star_count": 174,
+        "pk": 186,
+        "fe_h": -0.23000000417232513,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2301",
+        "name": "NGC 2301",
+        "reddening": 0.029999999329447746,
+        "distance_pc": null,
+        "star_count": 48,
+        "pk": 187,
+        "fe_h": 0.05999999865889549,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2302",
+        "name": "NGC 2302",
+        "reddening": 0.23000000417232513,
+        "distance_pc": null,
+        "star_count": 16,
+        "pk": 188,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2323",
+        "name": "NGC 2323",
+        "reddening": 0.20000000298023224,
+        "distance_pc": null,
+        "star_count": 182,
+        "pk": 189,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2324",
+        "name": "NGC 2324",
+        "reddening": 0.25,
+        "distance_pc": null,
+        "star_count": 46,
+        "pk": 190,
+        "fe_h": -0.17000000178813934,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2335",
+        "name": "NGC 2335",
+        "reddening": 0.3930000066757202,
+        "distance_pc": null,
+        "star_count": 63,
+        "pk": 191,
+        "fe_h": -0.18000000715255737,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2343",
+        "name": "NGC 2343",
+        "reddening": 0.11800000071525574,
+        "distance_pc": null,
+        "star_count": 56,
+        "pk": 192,
+        "fe_h": -0.30000001192092896,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2345",
+        "name": "NGC 2345",
+        "reddening": 0.6159999966621399,
+        "distance_pc": null,
+        "star_count": 64,
+        "pk": 193,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2353",
+        "name": "NGC 2353",
+        "reddening": 0.10000000149011612,
+        "distance_pc": null,
+        "star_count": 51,
+        "pk": 194,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2354",
+        "name": "NGC 2354",
+        "reddening": 0.18000000715255737,
+        "distance_pc": null,
+        "star_count": 29,
+        "pk": 195,
+        "fe_h": -0.30000001192092896,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2360",
+        "name": "NGC 2360",
+        "reddening": 0.009999999776482582,
+        "distance_pc": null,
+        "star_count": 101,
+        "pk": 196,
+        "fe_h": -0.029999999329447746,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2362",
+        "name": "NGC 2362",
+        "reddening": 0.10000000149011612,
+        "distance_pc": null,
+        "star_count": 69,
+        "pk": 197,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2367",
+        "name": "NGC 2367",
+        "reddening": 0.05000000074505806,
+        "distance_pc": null,
+        "star_count": 18,
+        "pk": 198,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2374",
+        "name": "NGC 2374",
+        "reddening": 0.09000000357627869,
+        "distance_pc": null,
+        "star_count": 25,
+        "pk": 199,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2383",
+        "name": "NGC 2383",
+        "reddening": 0.33000001311302185,
+        "distance_pc": null,
+        "star_count": 11,
+        "pk": 200,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2384",
+        "name": "NGC 2384",
+        "reddening": 0.3100000023841858,
+        "distance_pc": null,
+        "star_count": 15,
+        "pk": 201,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2414",
+        "name": "NGC 2414",
+        "reddening": 0.5080000162124634,
+        "distance_pc": null,
+        "star_count": 12,
+        "pk": 202,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2420",
+        "name": "NGC 2420",
+        "reddening": 0.03999999910593033,
+        "distance_pc": null,
+        "star_count": 44,
+        "pk": 203,
+        "fe_h": -0.3799999952316284,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2421",
+        "name": "NGC 2421",
+        "reddening": 0.41999998688697815,
+        "distance_pc": null,
+        "star_count": 28,
+        "pk": 204,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2422",
+        "name": "NGC 2422",
+        "reddening": 0.07000000029802322,
+        "distance_pc": null,
+        "star_count": 41,
+        "pk": 205,
+        "fe_h": 0.10999999940395355,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2423",
+        "name": "NGC 2423",
+        "reddening": 0.09700000286102295,
+        "distance_pc": null,
+        "star_count": 11,
+        "pk": 206,
+        "fe_h": 0.14000000059604645,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2425",
+        "name": "NGC 2425",
+        "reddening": 0.20999999344348907,
+        "distance_pc": null,
+        "star_count": 1,
+        "pk": 207,
+        "fe_h": -0.15000000596046448,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2437",
+        "name": "NGC 2437",
+        "reddening": 0.10000000149011612,
+        "distance_pc": null,
+        "star_count": 14,
+        "pk": 208,
+        "fe_h": 0.05900000035762787,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2439",
+        "name": "NGC 2439",
+        "reddening": 0.3700000047683716,
+        "distance_pc": null,
+        "star_count": 67,
+        "pk": 209,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2447",
+        "name": "NGC 2447",
+        "reddening": 0.04600000008940697,
+        "distance_pc": null,
+        "star_count": 23,
+        "pk": 210,
+        "fe_h": -0.10000000149011612,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2451",
+        "name": "NGC 2451",
+        "reddening": 0.054999999701976776,
+        "distance_pc": null,
+        "star_count": 213,
+        "pk": 211,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2451A",
+        "name": "NGC 2451A",
+        "reddening": 0.009999999776482582,
+        "distance_pc": null,
+        "star_count": 29,
+        "pk": 212,
+        "fe_h": 0.0,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2451B",
+        "name": "NGC 2451B",
+        "reddening": 0.054999999701976776,
+        "distance_pc": null,
+        "star_count": 35,
+        "pk": 213,
+        "fe_h": -0.44999998807907104,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2453",
+        "name": "NGC 2453",
+        "reddening": 0.44600000977516174,
+        "distance_pc": null,
+        "star_count": 22,
+        "pk": 214,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2467",
+        "name": "NGC 2467",
+        "reddening": 0.33799999952316284,
+        "distance_pc": null,
+        "star_count": 100,
+        "pk": 215,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2477",
+        "name": "NGC 2477",
+        "reddening": 0.3100000023841858,
+        "distance_pc": null,
+        "star_count": 195,
+        "pk": 216,
+        "fe_h": 0.07000000029802322,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2482",
+        "name": "NGC 2482",
+        "reddening": 0.09399999678134918,
+        "distance_pc": null,
+        "star_count": 41,
+        "pk": 217,
+        "fe_h": -0.07000000029802322,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2483",
+        "name": "NGC 2483",
+        "reddening": 0.30300000309944153,
+        "distance_pc": null,
+        "star_count": 17,
+        "pk": 218,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2489",
+        "name": "NGC 2489",
+        "reddening": 0.37400001287460327,
+        "distance_pc": null,
+        "star_count": 6,
+        "pk": 219,
+        "fe_h": 0.07999999821186066,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2506",
+        "name": "NGC 2506",
+        "reddening": 0.10000000149011612,
+        "distance_pc": null,
+        "star_count": 39,
+        "pk": 220,
+        "fe_h": -0.20000000298023224,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2516",
+        "name": "NGC 2516",
+        "reddening": 0.10100000351667404,
+        "distance_pc": null,
+        "star_count": 210,
+        "pk": 221,
+        "fe_h": 0.05999999865889549,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2527",
+        "name": "NGC 2527",
+        "reddening": 0.03799999877810478,
+        "distance_pc": null,
+        "star_count": 25,
+        "pk": 222,
+        "fe_h": -0.10000000149011612,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2533",
+        "name": "NGC 2533",
+        "reddening": 0.14000000059604645,
+        "distance_pc": null,
+        "star_count": 22,
+        "pk": 223,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2539",
+        "name": "NGC 2539",
+        "reddening": 0.0820000022649765,
+        "distance_pc": null,
+        "star_count": 354,
+        "pk": 224,
+        "fe_h": 0.12999999523162842,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2546",
+        "name": "NGC 2546",
+        "reddening": 0.1340000033378601,
+        "distance_pc": null,
+        "star_count": 46,
+        "pk": 225,
+        "fe_h": 0.11999999731779099,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2547",
+        "name": "NGC 2547",
+        "reddening": 0.1860000044107437,
+        "distance_pc": null,
+        "star_count": 119,
+        "pk": 226,
+        "fe_h": -0.1599999964237213,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2548",
+        "name": "NGC 2548",
+        "reddening": 0.029999999329447746,
+        "distance_pc": null,
+        "star_count": 45,
+        "pk": 227,
+        "fe_h": 0.07999999821186066,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2567",
+        "name": "NGC 2567",
+        "reddening": 0.12800000607967377,
+        "distance_pc": null,
+        "star_count": 165,
+        "pk": 228,
+        "fe_h": 0.0,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2571",
+        "name": "NGC 2571",
+        "reddening": 0.13699999451637268,
+        "distance_pc": null,
+        "star_count": 49,
+        "pk": 229,
+        "fe_h": 0.05000000074505806,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2632",
+        "name": "Praesepe",
+        "reddening": 0.008999999612569809,
+        "distance_pc": null,
+        "star_count": 413,
+        "pk": 230,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2635",
+        "name": "NGC 2635",
+        "reddening": 0.3499999940395355,
+        "distance_pc": null,
+        "star_count": 6,
+        "pk": 231,
+        "fe_h": -0.6100000143051147,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2645",
+        "name": "NGC 2645",
+        "reddening": 0.3799999952316284,
+        "distance_pc": null,
+        "star_count": 48,
+        "pk": 232,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2660",
+        "name": "NGC 2660",
+        "reddening": 0.31299999356269836,
+        "distance_pc": null,
+        "star_count": 44,
+        "pk": 233,
+        "fe_h": 0.03999999910593033,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2669",
+        "name": "NGC 2669",
+        "reddening": 0.18000000715255737,
+        "distance_pc": null,
+        "star_count": 31,
+        "pk": 234,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2670",
+        "name": "NGC 2670",
+        "reddening": 0.4300000071525574,
+        "distance_pc": null,
+        "star_count": 4,
+        "pk": 235,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2682",
+        "name": "NGC 2682",
+        "reddening": 0.029999999329447746,
+        "distance_pc": null,
+        "star_count": 497,
+        "pk": 236,
+        "fe_h": 0.029999999329447746,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2818",
+        "name": "NGC 2818",
+        "reddening": 0.12099999934434891,
+        "distance_pc": null,
+        "star_count": 38,
+        "pk": 237,
+        "fe_h": -0.17000000178813934,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2866",
+        "name": "NGC 2866",
+        "reddening": 0.6600000262260437,
+        "distance_pc": null,
+        "star_count": 23,
+        "pk": 238,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2910",
+        "name": "NGC 2910",
+        "reddening": 0.335999995470047,
+        "distance_pc": null,
+        "star_count": 10,
+        "pk": 239,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2925",
+        "name": "NGC 2925",
+        "reddening": 0.07999999821186066,
+        "distance_pc": null,
+        "star_count": 2,
+        "pk": 240,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc2972",
+        "name": "NGC 2972",
+        "reddening": 0.34299999475479126,
+        "distance_pc": null,
+        "star_count": 14,
+        "pk": 241,
+        "fe_h": -0.0729999989271164,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc3033",
+        "name": "NGC 3033",
+        "reddening": 0.3269999921321869,
+        "distance_pc": null,
+        "star_count": 19,
+        "pk": 242,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc3105",
+        "name": "NGC 3105",
+        "reddening": 0.949999988079071,
+        "distance_pc": null,
+        "star_count": 34,
+        "pk": 243,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc3114",
+        "name": "NGC 3114",
+        "reddening": 0.0689999982714653,
+        "distance_pc": null,
+        "star_count": 80,
+        "pk": 244,
+        "fe_h": 0.019999999552965164,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc3228",
+        "name": "NGC 3228",
+        "reddening": 0.02800000086426735,
+        "distance_pc": null,
+        "star_count": 26,
+        "pk": 245,
+        "fe_h": 0.029999999329447746,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc3255",
+        "name": "NGC 3255",
+        "reddening": 0.25,
+        "distance_pc": null,
+        "star_count": 8,
+        "pk": 246,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc3293",
+        "name": "NGC 3293",
+        "reddening": 0.2630000114440918,
+        "distance_pc": null,
+        "star_count": 105,
+        "pk": 247,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc3324",
+        "name": "NGC 3324",
+        "reddening": 0.43799999356269836,
+        "distance_pc": null,
+        "star_count": 45,
+        "pk": 248,
+        "fe_h": -0.4740000069141388,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc3330",
+        "name": "NGC 3330",
+        "reddening": 0.05000000074505806,
+        "distance_pc": null,
+        "star_count": 8,
+        "pk": 249,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc3496",
+        "name": "NGC 3496",
+        "reddening": 0.4690000116825104,
+        "distance_pc": null,
+        "star_count": 15,
+        "pk": 250,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc3532",
+        "name": "NGC 3532",
+        "reddening": 0.02800000086426735,
+        "distance_pc": null,
+        "star_count": 234,
+        "pk": 251,
+        "fe_h": 0.019999999552965164,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc3572",
+        "name": "NGC 3572",
+        "reddening": 0.3889999985694885,
+        "distance_pc": null,
+        "star_count": 30,
+        "pk": 252,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc3576",
+        "name": "NGC 3576",
+        "reddening": 23.0,
+        "distance_pc": null,
+        "star_count": 1,
+        "pk": 253,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc3590",
+        "name": "NGC 3590",
+        "reddening": 0.4490000009536743,
+        "distance_pc": null,
+        "star_count": 45,
+        "pk": 254,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc3603",
+        "name": "NGC 3603",
+        "reddening": 1.3380000591278076,
+        "distance_pc": null,
+        "star_count": 28,
+        "pk": 255,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc3680",
+        "name": "NGC 3680",
+        "reddening": 0.06599999964237213,
+        "distance_pc": null,
+        "star_count": 90,
+        "pk": 256,
+        "fe_h": -0.1899999976158142,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc3766",
+        "name": "NGC 3766",
+        "reddening": 0.20000000298023224,
+        "distance_pc": null,
+        "star_count": 38,
+        "pk": 257,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc3960",
+        "name": "NGC 3960",
+        "reddening": 0.28999999165534973,
+        "distance_pc": null,
+        "star_count": 98,
+        "pk": 258,
+        "fe_h": 0.019999999552965164,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc4103",
+        "name": "NGC 4103",
+        "reddening": 0.2939999997615814,
+        "distance_pc": null,
+        "star_count": 42,
+        "pk": 259,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc4337",
+        "name": "NGC 4337",
+        "reddening": 0.23000000417232513,
+        "distance_pc": null,
+        "star_count": 18,
+        "pk": 260,
+        "fe_h": 0.11999999731779099,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc4349",
+        "name": "NGC 4349",
+        "reddening": 0.3840000033378601,
+        "distance_pc": null,
+        "star_count": 21,
+        "pk": 261,
+        "fe_h": -0.11999999731779099,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc4439",
+        "name": "NGC 4439",
+        "reddening": 0.3479999899864197,
+        "distance_pc": null,
+        "star_count": 24,
+        "pk": 262,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc4463",
+        "name": "NGC 4463",
+        "reddening": 0.4339999854564667,
+        "distance_pc": null,
+        "star_count": 20,
+        "pk": 263,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc4609",
+        "name": "NGC 4609",
+        "reddening": 0.3700000047683716,
+        "distance_pc": null,
+        "star_count": 52,
+        "pk": 264,
+        "fe_h": 0.05000000074505806,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc4755",
+        "name": "NGC 4755",
+        "reddening": 0.3880000114440918,
+        "distance_pc": null,
+        "star_count": 90,
+        "pk": 265,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc4815",
+        "name": "NGC 4815",
+        "reddening": 0.8080000281333923,
+        "distance_pc": null,
+        "star_count": 9,
+        "pk": 266,
+        "fe_h": -0.009999999776482582,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc5120",
+        "name": "NGC 5120",
+        "reddening": null,
+        "distance_pc": null,
+        "star_count": 3,
+        "pk": 267,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc5138",
+        "name": "NGC 5138",
+        "reddening": 0.2619999945163727,
+        "distance_pc": null,
+        "star_count": 50,
+        "pk": 268,
+        "fe_h": 0.11999999731779099,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc5168",
+        "name": "NGC 5168",
+        "reddening": 0.4309999942779541,
+        "distance_pc": null,
+        "star_count": 13,
+        "pk": 269,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc5281",
+        "name": "NGC 5281",
+        "reddening": 0.22499999403953552,
+        "distance_pc": null,
+        "star_count": 18,
+        "pk": 270,
+        "fe_h": 0.0,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc5316",
+        "name": "NGC 5316",
+        "reddening": 0.2669999897480011,
+        "distance_pc": null,
+        "star_count": 42,
+        "pk": 271,
+        "fe_h": -0.019999999552965164,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc5367",
+        "name": "NGC 5367",
+        "reddening": null,
+        "distance_pc": null,
+        "star_count": 10,
+        "pk": 272,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc5460",
+        "name": "NGC 5460",
+        "reddening": 0.09200000017881393,
+        "distance_pc": null,
+        "star_count": 158,
+        "pk": 273,
+        "fe_h": -0.05999999865889549,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc5606",
+        "name": "NGC 5606",
+        "reddening": 0.4740000069141388,
+        "distance_pc": null,
+        "star_count": 56,
+        "pk": 274,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc5617",
+        "name": "NGC 5617",
+        "reddening": 0.47999998927116394,
+        "distance_pc": null,
+        "star_count": 47,
+        "pk": 275,
+        "fe_h": -0.18000000715255737,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc5662",
+        "name": "NGC 5662",
+        "reddening": 0.3109999895095825,
+        "distance_pc": null,
+        "star_count": 245,
+        "pk": 276,
+        "fe_h": -0.029999999329447746,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc5749",
+        "name": "NGC 5749",
+        "reddening": 0.37599998712539673,
+        "distance_pc": null,
+        "star_count": 112,
+        "pk": 277,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc5822",
+        "name": "NGC 5822",
+        "reddening": 0.10300000011920929,
+        "distance_pc": null,
+        "star_count": 180,
+        "pk": 278,
+        "fe_h": 0.05000000074505806,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc5823",
+        "name": "NGC 5823",
+        "reddening": 0.09000000357627869,
+        "distance_pc": null,
+        "star_count": 80,
+        "pk": 279,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc5999",
+        "name": "NGC 5999",
+        "reddening": 0.44999998807907104,
+        "distance_pc": null,
+        "star_count": 27,
+        "pk": 280,
+        "fe_h": 0.0,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6005",
+        "name": "NGC 6005",
+        "reddening": 0.44999998807907104,
+        "distance_pc": null,
+        "star_count": 6,
+        "pk": 281,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6025",
+        "name": "NGC 6025",
+        "reddening": 0.1589999943971634,
+        "distance_pc": null,
+        "star_count": 78,
+        "pk": 282,
+        "fe_h": 0.1899999976158142,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6031",
+        "name": "NGC 6031",
+        "reddening": 0.3709999918937683,
+        "distance_pc": null,
+        "star_count": 15,
+        "pk": 283,
+        "fe_h": 0.019999999552965164,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6067",
+        "name": "NGC 6067",
+        "reddening": 0.3799999952316284,
+        "distance_pc": null,
+        "star_count": 82,
+        "pk": 284,
+        "fe_h": 0.1379999965429306,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6087",
+        "name": "NGC 6087",
+        "reddening": 0.17499999701976776,
+        "distance_pc": null,
+        "star_count": 96,
+        "pk": 285,
+        "fe_h": -0.009999999776482582,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6124",
+        "name": "NGC 6124",
+        "reddening": 0.75,
+        "distance_pc": null,
+        "star_count": 56,
+        "pk": 286,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6134",
+        "name": "NGC 6134",
+        "reddening": 0.3499999940395355,
+        "distance_pc": null,
+        "star_count": 35,
+        "pk": 287,
+        "fe_h": 0.15000000596046448,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6167",
+        "name": "NGC 6167",
+        "reddening": 0.7789999842643738,
+        "distance_pc": null,
+        "star_count": 48,
+        "pk": 288,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6169",
+        "name": "NGC 6169",
+        "reddening": 0.7289999723434448,
+        "distance_pc": null,
+        "star_count": 4,
+        "pk": 289,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6178",
+        "name": "NGC 6178",
+        "reddening": 0.21899999678134918,
+        "distance_pc": null,
+        "star_count": 19,
+        "pk": 290,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6192",
+        "name": "NGC 6192",
+        "reddening": 0.6370000243186951,
+        "distance_pc": null,
+        "star_count": 43,
+        "pk": 291,
+        "fe_h": 0.11999999731779099,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6193",
+        "name": "NGC 6193",
+        "reddening": 0.4749999940395355,
+        "distance_pc": null,
+        "star_count": 52,
+        "pk": 292,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6200",
+        "name": "NGC 6200",
+        "reddening": 0.5809999704360962,
+        "distance_pc": null,
+        "star_count": 15,
+        "pk": 293,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6204",
+        "name": "NGC 6204",
+        "reddening": 0.46000000834465027,
+        "distance_pc": null,
+        "star_count": 68,
+        "pk": 294,
+        "fe_h": -1.0529999732971191,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6208",
+        "name": "NGC 6208",
+        "reddening": 0.20999999344348907,
+        "distance_pc": null,
+        "star_count": 31,
+        "pk": 295,
+        "fe_h": -0.029999999329447746,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6231",
+        "name": "NGC 6231",
+        "reddening": 0.4390000104904175,
+        "distance_pc": null,
+        "star_count": 74,
+        "pk": 296,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6242",
+        "name": "NGC 6242",
+        "reddening": 0.37700000405311584,
+        "distance_pc": null,
+        "star_count": 23,
+        "pk": 297,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6249",
+        "name": "NGC 6249",
+        "reddening": 0.4429999887943268,
+        "distance_pc": null,
+        "star_count": 15,
+        "pk": 298,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6250",
+        "name": "NGC 6250",
+        "reddening": 0.3499999940395355,
+        "distance_pc": null,
+        "star_count": 37,
+        "pk": 299,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6259",
+        "name": "NGC 6259",
+        "reddening": 0.49799999594688416,
+        "distance_pc": null,
+        "star_count": 40,
+        "pk": 300,
+        "fe_h": 0.019999999552965164,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6268",
+        "name": "NGC 6268",
+        "reddening": 0.4000000059604645,
+        "distance_pc": null,
+        "star_count": 7,
+        "pk": 301,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6281",
+        "name": "NGC 6281",
+        "reddening": 0.14800000190734863,
+        "distance_pc": null,
+        "star_count": 85,
+        "pk": 302,
+        "fe_h": 0.0,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6322",
+        "name": "NGC 6322",
+        "reddening": 0.5899999737739563,
+        "distance_pc": null,
+        "star_count": 39,
+        "pk": 303,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6383",
+        "name": "NGC 6383",
+        "reddening": 0.2980000078678131,
+        "distance_pc": null,
+        "star_count": 107,
+        "pk": 304,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6396",
+        "name": "NGC 6396",
+        "reddening": 0.9259999990463257,
+        "distance_pc": null,
+        "star_count": 22,
+        "pk": 305,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6405",
+        "name": "NGC 6405",
+        "reddening": 0.14399999380111694,
+        "distance_pc": null,
+        "star_count": 192,
+        "pk": 306,
+        "fe_h": 0.05999999865889549,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6416",
+        "name": "NGC 6416",
+        "reddening": 0.25099998712539673,
+        "distance_pc": null,
+        "star_count": 11,
+        "pk": 307,
+        "fe_h": -0.6129999756813049,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6425",
+        "name": "NGC 6425",
+        "reddening": 0.39899998903274536,
+        "distance_pc": null,
+        "star_count": 30,
+        "pk": 308,
+        "fe_h": 0.09000000357627869,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6475",
+        "name": "NGC 6475",
+        "reddening": 0.10300000011920929,
+        "distance_pc": null,
+        "star_count": 56,
+        "pk": 309,
+        "fe_h": 0.14000000059604645,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6494",
+        "name": "NGC 6494",
+        "reddening": 0.35600000619888306,
+        "distance_pc": null,
+        "star_count": 193,
+        "pk": 310,
+        "fe_h": 0.03999999910593033,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6514",
+        "name": "NGC 6514",
+        "reddening": 0.1899999976158142,
+        "distance_pc": null,
+        "star_count": 72,
+        "pk": 311,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6520",
+        "name": "NGC 6520",
+        "reddening": 0.41999998688697815,
+        "distance_pc": null,
+        "star_count": 1,
+        "pk": 312,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6530",
+        "name": "NGC 6530",
+        "reddening": 0.3330000042915344,
+        "distance_pc": null,
+        "star_count": 182,
+        "pk": 313,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6531",
+        "name": "NGC 6531",
+        "reddening": 0.2809999883174896,
+        "distance_pc": null,
+        "star_count": 61,
+        "pk": 314,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6546",
+        "name": "NGC 6546",
+        "reddening": 0.4909999966621399,
+        "distance_pc": null,
+        "star_count": 52,
+        "pk": 315,
+        "fe_h": -0.33399999141693115,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6604",
+        "name": "NGC 6604",
+        "reddening": 0.9700000286102295,
+        "distance_pc": null,
+        "star_count": 31,
+        "pk": 316,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6611",
+        "name": "NGC 6611",
+        "reddening": 0.800000011920929,
+        "distance_pc": null,
+        "star_count": 127,
+        "pk": 317,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6613",
+        "name": "NGC 6613",
+        "reddening": 0.44999998807907104,
+        "distance_pc": null,
+        "star_count": 17,
+        "pk": 318,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6618",
+        "name": "NGC 6618",
+        "reddening": 1.5099999904632568,
+        "distance_pc": null,
+        "star_count": 105,
+        "pk": 319,
+        "fe_h": 0.13199999928474426,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6633",
+        "name": "NGC 6633",
+        "reddening": 0.18199999630451202,
+        "distance_pc": null,
+        "star_count": 171,
+        "pk": 320,
+        "fe_h": 0.05999999865889549,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6649",
+        "name": "NGC 6649",
+        "reddening": 1.2009999752044678,
+        "distance_pc": null,
+        "star_count": 95,
+        "pk": 321,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6664",
+        "name": "NGC 6664",
+        "reddening": 0.7089999914169312,
+        "distance_pc": null,
+        "star_count": 32,
+        "pk": 322,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6694",
+        "name": "NGC 6694",
+        "reddening": 0.5099999904632568,
+        "distance_pc": null,
+        "star_count": 30,
+        "pk": 323,
+        "fe_h": -0.09000000357627869,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6704",
+        "name": "NGC 6704",
+        "reddening": 0.7170000076293945,
+        "distance_pc": null,
+        "star_count": 6,
+        "pk": 324,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6705",
+        "name": "NGC 6705",
+        "reddening": 0.42800000309944153,
+        "distance_pc": null,
+        "star_count": 73,
+        "pk": 325,
+        "fe_h": 0.0,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6709",
+        "name": "NGC 6709",
+        "reddening": 0.30399999022483826,
+        "distance_pc": null,
+        "star_count": 30,
+        "pk": 326,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6716",
+        "name": "NGC 6716",
+        "reddening": 0.2199999988079071,
+        "distance_pc": null,
+        "star_count": 36,
+        "pk": 327,
+        "fe_h": -0.3100000023841858,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6755",
+        "name": "NGC 6755",
+        "reddening": 0.8259999752044678,
+        "distance_pc": null,
+        "star_count": 23,
+        "pk": 328,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6791",
+        "name": "NGC 6791",
+        "reddening": 0.1599999964237213,
+        "distance_pc": null,
+        "star_count": 64,
+        "pk": 329,
+        "fe_h": 0.41999998688697815,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6802",
+        "name": "NGC 6802",
+        "reddening": 0.8399999737739563,
+        "distance_pc": null,
+        "star_count": 25,
+        "pk": 330,
+        "fe_h": 0.029999999329447746,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6811",
+        "name": "NGC 6811",
+        "reddening": 0.1599999964237213,
+        "distance_pc": null,
+        "star_count": 124,
+        "pk": 331,
+        "fe_h": -0.019999999552965164,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6819",
+        "name": "NGC 6819",
+        "reddening": 0.1599999964237213,
+        "distance_pc": null,
+        "star_count": 60,
+        "pk": 332,
+        "fe_h": -0.019999999552965164,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6823",
+        "name": "NGC 6823",
+        "reddening": 0.8539999723434448,
+        "distance_pc": null,
+        "star_count": 79,
+        "pk": 333,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6830",
+        "name": "NGC 6830",
+        "reddening": 0.5009999871253967,
+        "distance_pc": null,
+        "star_count": 28,
+        "pk": 334,
+        "fe_h": 0.23999999463558197,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6834",
+        "name": "NGC 6834",
+        "reddening": 0.7080000042915344,
+        "distance_pc": null,
+        "star_count": 30,
+        "pk": 335,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6866",
+        "name": "NGC 6866",
+        "reddening": 0.07400000095367432,
+        "distance_pc": null,
+        "star_count": 25,
+        "pk": 336,
+        "fe_h": -0.013000000268220901,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6871",
+        "name": "NGC 6871",
+        "reddening": 0.4429999887943268,
+        "distance_pc": null,
+        "star_count": 35,
+        "pk": 337,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6882",
+        "name": "NGC 6882",
+        "reddening": 0.06199999898672104,
+        "distance_pc": null,
+        "star_count": 76,
+        "pk": 338,
+        "fe_h": -0.019999999552965164,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6883",
+        "name": "NGC 6883",
+        "reddening": 0.30000001192092896,
+        "distance_pc": null,
+        "star_count": 9,
+        "pk": 339,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6910",
+        "name": "NGC 6910",
+        "reddening": 0.9710000157356262,
+        "distance_pc": null,
+        "star_count": 32,
+        "pk": 340,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6913",
+        "name": "NGC 6913",
+        "reddening": 1.0299999713897705,
+        "distance_pc": null,
+        "star_count": 122,
+        "pk": 341,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6939",
+        "name": "NGC 6939",
+        "reddening": 0.33000001311302185,
+        "distance_pc": null,
+        "star_count": 42,
+        "pk": 342,
+        "fe_h": 0.0,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc6940",
+        "name": "NGC 6940",
+        "reddening": 0.21400000154972076,
+        "distance_pc": null,
+        "star_count": 137,
+        "pk": 343,
+        "fe_h": 0.013000000268220901,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7031",
+        "name": "NGC 7031",
+        "reddening": 0.8539999723434448,
+        "distance_pc": null,
+        "star_count": 29,
+        "pk": 344,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7039",
+        "name": "NGC 7039",
+        "reddening": 0.13099999725818634,
+        "distance_pc": null,
+        "star_count": 34,
+        "pk": 345,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7062",
+        "name": "NGC 7062",
+        "reddening": 0.4300000071525574,
+        "distance_pc": null,
+        "star_count": 27,
+        "pk": 346,
+        "fe_h": 0.07999999821186066,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7063",
+        "name": "NGC 7063",
+        "reddening": 0.09099999815225601,
+        "distance_pc": null,
+        "star_count": 33,
+        "pk": 347,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7067",
+        "name": "NGC 7067",
+        "reddening": 0.75,
+        "distance_pc": null,
+        "star_count": 29,
+        "pk": 348,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7086",
+        "name": "NGC 7086",
+        "reddening": 0.8069999814033508,
+        "distance_pc": null,
+        "star_count": 30,
+        "pk": 349,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7092",
+        "name": "NGC 7092",
+        "reddening": 0.013000000268220901,
+        "distance_pc": null,
+        "star_count": 88,
+        "pk": 350,
+        "fe_h": 0.009999999776482582,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7128",
+        "name": "NGC 7128",
+        "reddening": 1.0180000066757202,
+        "distance_pc": null,
+        "star_count": 25,
+        "pk": 351,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7129",
+        "name": "NGC 7129",
+        "reddening": 0.9700000286102295,
+        "distance_pc": null,
+        "star_count": 40,
+        "pk": 352,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7142",
+        "name": "NGC 7142",
+        "reddening": 0.3499999940395355,
+        "distance_pc": null,
+        "star_count": 35,
+        "pk": 353,
+        "fe_h": 0.07999999821186066,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7160",
+        "name": "NGC 7160",
+        "reddening": 0.375,
+        "distance_pc": null,
+        "star_count": 48,
+        "pk": 354,
+        "fe_h": 0.1599999964237213,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7209",
+        "name": "NGC 7209",
+        "reddening": 0.1679999977350235,
+        "distance_pc": null,
+        "star_count": 34,
+        "pk": 355,
+        "fe_h": -0.11999999731779099,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7235",
+        "name": "NGC 7235",
+        "reddening": 0.8999999761581421,
+        "distance_pc": null,
+        "star_count": 36,
+        "pk": 356,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7243",
+        "name": "NGC 7243",
+        "reddening": 0.2199999988079071,
+        "distance_pc": null,
+        "star_count": 59,
+        "pk": 357,
+        "fe_h": 0.05999999865889549,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7261",
+        "name": "NGC 7261",
+        "reddening": 0.8799999952316284,
+        "distance_pc": null,
+        "star_count": 31,
+        "pk": 358,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7380",
+        "name": "NGC 7380",
+        "reddening": 0.6019999980926514,
+        "distance_pc": null,
+        "star_count": 35,
+        "pk": 359,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7419",
+        "name": "NGC 7419",
+        "reddening": 2.0199999809265137,
+        "distance_pc": null,
+        "star_count": 27,
+        "pk": 360,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7510",
+        "name": "NGC 7510",
+        "reddening": 0.8999999761581421,
+        "distance_pc": null,
+        "star_count": 23,
+        "pk": 361,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7654",
+        "name": "NGC 7654",
+        "reddening": 0.5699999928474426,
+        "distance_pc": null,
+        "star_count": 92,
+        "pk": 362,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7686",
+        "name": "NGC 7686",
+        "reddening": 0.20000000298023224,
+        "distance_pc": null,
+        "star_count": 39,
+        "pk": 363,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7762",
+        "name": "NGC 7762",
+        "reddening": 0.6600000262260437,
+        "distance_pc": null,
+        "star_count": 18,
+        "pk": 364,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7788",
+        "name": "NGC 7788",
+        "reddening": 0.49000000953674316,
+        "distance_pc": null,
+        "star_count": 5,
+        "pk": 365,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7789",
+        "name": "NGC 7789",
+        "reddening": 0.2800000011920929,
+        "distance_pc": null,
+        "star_count": 84,
+        "pk": 366,
+        "fe_h": 0.019999999552965164,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ngc7790",
+        "name": "NGC 7790",
+        "reddening": 0.531000018119812,
+        "distance_pc": null,
+        "star_count": 50,
+        "pk": 367,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "pis01",
+        "name": "Pismis 1",
+        "reddening": 0.578000009059906,
+        "distance_pc": null,
+        "star_count": 12,
+        "pk": 368,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "pis04",
+        "name": "Pismis 4",
+        "reddening": 0.013000000268220901,
+        "distance_pc": null,
+        "star_count": 16,
+        "pk": 369,
+        "fe_h": -0.20000000298023224,
+        "log_age": null
+    },
+    {
+        "cluster_id": "pis05",
+        "name": "Pismis 5",
+        "reddening": 0.42100000381469727,
+        "distance_pc": null,
+        "star_count": 9,
+        "pk": 370,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "pis08",
+        "name": "Pismis 8",
+        "reddening": 0.7059999704360962,
+        "distance_pc": null,
+        "star_count": 16,
+        "pk": 371,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "pis11",
+        "name": "Pismis 11",
+        "reddening": 1.2000000476837158,
+        "distance_pc": null,
+        "star_count": 17,
+        "pk": 372,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "pis12",
+        "name": "Pismis 12",
+        "reddening": 0.27000001072883606,
+        "distance_pc": null,
+        "star_count": 17,
+        "pk": 373,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "pis16",
+        "name": "Pismis 16",
+        "reddening": 0.5569999814033508,
+        "distance_pc": null,
+        "star_count": 9,
+        "pk": 374,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "pis17",
+        "name": "Pismis 17",
+        "reddening": 0.47099998593330383,
+        "distance_pc": null,
+        "star_count": 9,
+        "pk": 375,
+        "fe_h": -0.14499999582767487,
+        "log_age": null
+    },
+    {
+        "cluster_id": "pis18",
+        "name": "Pismis 18",
+        "reddening": 0.5,
+        "distance_pc": null,
+        "star_count": 6,
+        "pk": 376,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "pis20",
+        "name": "Pismis 20",
+        "reddening": 1.2799999713897705,
+        "distance_pc": null,
+        "star_count": 16,
+        "pk": 377,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "pis21",
+        "name": "Pismis 21",
+        "reddening": 0.625,
+        "distance_pc": null,
+        "star_count": 11,
+        "pk": 378,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "pis22",
+        "name": "Pismis 22",
+        "reddening": 2.0,
+        "distance_pc": null,
+        "star_count": 9,
+        "pk": 379,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "pis24",
+        "name": "Pismis 24",
+        "reddening": 1.7200000286102295,
+        "distance_pc": null,
+        "star_count": 17,
+        "pk": 380,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "pl01",
+        "name": "Platais 1",
+        "reddening": 0.3569999933242798,
+        "distance_pc": null,
+        "star_count": 32,
+        "pk": 381,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ros03",
+        "name": "Roslund 3",
+        "reddening": 0.3479999899864197,
+        "distance_pc": null,
+        "star_count": 13,
+        "pk": 382,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ros04",
+        "name": "Roslund 4",
+        "reddening": 0.9100000262260437,
+        "distance_pc": null,
+        "star_count": 14,
+        "pk": 383,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ros05",
+        "name": "Roslund 5",
+        "reddening": 0.09799999743700027,
+        "distance_pc": null,
+        "star_count": 46,
+        "pk": 384,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru018",
+        "name": "Ruprecht 18",
+        "reddening": 0.699999988079071,
+        "distance_pc": null,
+        "star_count": 20,
+        "pk": 385,
+        "fe_h": -0.009999999776482582,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru020",
+        "name": "Ruprecht 20",
+        "reddening": 0.10000000149011612,
+        "distance_pc": null,
+        "star_count": 11,
+        "pk": 386,
+        "fe_h": -0.28999999165534973,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru032",
+        "name": "Ruprecht 32",
+        "reddening": 0.5,
+        "distance_pc": null,
+        "star_count": 16,
+        "pk": 387,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru034",
+        "name": "Ruprecht 34",
+        "reddening": 0.0,
+        "distance_pc": null,
+        "star_count": 17,
+        "pk": 388,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru036",
+        "name": "Ruprecht 36",
+        "reddening": 0.16599999368190765,
+        "distance_pc": null,
+        "star_count": 9,
+        "pk": 389,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru044",
+        "name": "Ruprecht 44",
+        "reddening": 0.6190000176429749,
+        "distance_pc": null,
+        "star_count": 39,
+        "pk": 390,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru046",
+        "name": "Ruprecht 46",
+        "reddening": 0.07000000029802322,
+        "distance_pc": null,
+        "star_count": 9,
+        "pk": 391,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru047",
+        "name": "Ruprecht 47",
+        "reddening": 0.2800000011920929,
+        "distance_pc": null,
+        "star_count": 10,
+        "pk": 392,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru049",
+        "name": "Ruprecht 49",
+        "reddening": 0.2590000033378601,
+        "distance_pc": null,
+        "star_count": 9,
+        "pk": 393,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru055",
+        "name": "Ruprecht 55",
+        "reddening": 0.44999998807907104,
+        "distance_pc": null,
+        "star_count": 29,
+        "pk": 394,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru059",
+        "name": "Ruprecht 59",
+        "reddening": 0.08799999952316284,
+        "distance_pc": null,
+        "star_count": 21,
+        "pk": 395,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru067",
+        "name": "Ruprecht 67",
+        "reddening": 0.4320000112056732,
+        "distance_pc": null,
+        "star_count": 27,
+        "pk": 396,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru076",
+        "name": "Ruprecht 76",
+        "reddening": 0.37599998712539673,
+        "distance_pc": null,
+        "star_count": 7,
+        "pk": 397,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru079",
+        "name": "Ruprecht 79",
+        "reddening": 0.7170000076293945,
+        "distance_pc": null,
+        "star_count": 50,
+        "pk": 398,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru091",
+        "name": "Ruprecht 91",
+        "reddening": 0.009999999776482582,
+        "distance_pc": null,
+        "star_count": 84,
+        "pk": 399,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru097",
+        "name": "Ruprecht 97",
+        "reddening": 0.2290000021457672,
+        "distance_pc": null,
+        "star_count": 51,
+        "pk": 400,
+        "fe_h": -0.029999999329447746,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru098",
+        "name": "Ruprecht 98",
+        "reddening": 0.16200000047683716,
+        "distance_pc": null,
+        "star_count": 16,
+        "pk": 401,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru107",
+        "name": "Ruprecht 107",
+        "reddening": 0.4580000042915344,
+        "distance_pc": null,
+        "star_count": 17,
+        "pk": 402,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru108",
+        "name": "Ruprecht 108",
+        "reddening": 0.13600000739097595,
+        "distance_pc": null,
+        "star_count": 11,
+        "pk": 403,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru118",
+        "name": "Ruprecht 118",
+        "reddening": 0.4099999964237213,
+        "distance_pc": null,
+        "star_count": 7,
+        "pk": 404,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru119",
+        "name": "Ruprecht 119",
+        "reddening": 0.5699999928474426,
+        "distance_pc": null,
+        "star_count": 13,
+        "pk": 405,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru127",
+        "name": "Ruprecht 127",
+        "reddening": 0.9900000095367432,
+        "distance_pc": null,
+        "star_count": 18,
+        "pk": 406,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru166",
+        "name": "Ruprecht 166",
+        "reddening": null,
+        "distance_pc": null,
+        "star_count": 3,
+        "pk": 407,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ru175",
+        "name": "Ruprecht 175",
+        "reddening": 0.5210000276565552,
+        "distance_pc": null,
+        "star_count": 52,
+        "pk": 408,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "sho01",
+        "name": "Shorlin 1",
+        "reddening": null,
+        "distance_pc": null,
+        "star_count": 12,
+        "pk": 409,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "st01",
+        "name": "Stock 1",
+        "reddening": 0.1599999964237213,
+        "distance_pc": null,
+        "star_count": 18,
+        "pk": 410,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "st02",
+        "name": "Stock 2",
+        "reddening": 0.3799999952316284,
+        "distance_pc": null,
+        "star_count": 173,
+        "pk": 411,
+        "fe_h": -0.14000000059604645,
+        "log_age": null
+    },
+    {
+        "cluster_id": "st07",
+        "name": "Stock 7",
+        "reddening": 0.6060000061988831,
+        "distance_pc": null,
+        "star_count": 9,
+        "pk": 412,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "st08",
+        "name": "Stock 8",
+        "reddening": 0.4000000059604645,
+        "distance_pc": null,
+        "star_count": 23,
+        "pk": 413,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "st13",
+        "name": "Stock 13",
+        "reddening": 0.21799999475479126,
+        "distance_pc": null,
+        "star_count": 23,
+        "pk": 414,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "st14",
+        "name": "Stock 14",
+        "reddening": 0.20999999344348907,
+        "distance_pc": null,
+        "star_count": 65,
+        "pk": 415,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "st16",
+        "name": "Stock 16",
+        "reddening": 0.5199999809265137,
+        "distance_pc": null,
+        "star_count": 35,
+        "pk": 416,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "st17",
+        "name": "Stock 17",
+        "reddening": 0.7360000014305115,
+        "distance_pc": null,
+        "star_count": 10,
+        "pk": 417,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "ste01",
+        "name": "Stephenson 1",
+        "reddening": 0.03999999910593033,
+        "distance_pc": null,
+        "star_count": 75,
+        "pk": 418,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "to01",
+        "name": "Tombaugh 1",
+        "reddening": 0.30300000309944153,
+        "distance_pc": null,
+        "star_count": 25,
+        "pk": 419,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "tr01",
+        "name": "Trumpler 1",
+        "reddening": 0.6800000071525574,
+        "distance_pc": null,
+        "star_count": 43,
+        "pk": 420,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "tr02",
+        "name": "Trumpler 2",
+        "reddening": 0.4000000059604645,
+        "distance_pc": null,
+        "star_count": 30,
+        "pk": 421,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "tr07",
+        "name": "Trumpler 7",
+        "reddening": 0.26600000262260437,
+        "distance_pc": null,
+        "star_count": 16,
+        "pk": 422,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "tr09",
+        "name": "Trumpler 9",
+        "reddening": 0.24799999594688416,
+        "distance_pc": null,
+        "star_count": 34,
+        "pk": 423,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "tr10",
+        "name": "Trumpler 10",
+        "reddening": 0.03400000184774399,
+        "distance_pc": null,
+        "star_count": 30,
+        "pk": 424,
+        "fe_h": -0.12999999523162842,
+        "log_age": null
+    },
+    {
+        "cluster_id": "tr12",
+        "name": "Trumpler 12",
+        "reddening": 0.05000000074505806,
+        "distance_pc": null,
+        "star_count": 3,
+        "pk": 425,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "tr14",
+        "name": "Trumpler 14",
+        "reddening": 0.36000001430511475,
+        "distance_pc": null,
+        "star_count": 60,
+        "pk": 426,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "tr15",
+        "name": "Trumpler 15",
+        "reddening": 0.4339999854564667,
+        "distance_pc": null,
+        "star_count": 37,
+        "pk": 427,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "tr16",
+        "name": "Trumpler 16",
+        "reddening": 0.36000001430511475,
+        "distance_pc": null,
+        "star_count": 147,
+        "pk": 428,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "tr17",
+        "name": "Trumpler 17",
+        "reddening": 0.6050000190734863,
+        "distance_pc": null,
+        "star_count": 6,
+        "pk": 429,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "tr18",
+        "name": "Trumpler 18",
+        "reddening": 0.3149999976158142,
+        "distance_pc": null,
+        "star_count": 128,
+        "pk": 430,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "tr21",
+        "name": "Trumpler 21",
+        "reddening": 0.19699999690055847,
+        "distance_pc": null,
+        "star_count": 24,
+        "pk": 431,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "tr24",
+        "name": "Trumpler 24",
+        "reddening": 0.4180000126361847,
+        "distance_pc": null,
+        "star_count": 40,
+        "pk": 432,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "tr26",
+        "name": "Trumpler 26",
+        "reddening": 0.3499999940395355,
+        "distance_pc": null,
+        "star_count": 45,
+        "pk": 433,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "tr27",
+        "name": "Trumpler 27",
+        "reddening": 1.194000005722046,
+        "distance_pc": null,
+        "star_count": 39,
+        "pk": 434,
+        "fe_h": -0.19300000369548798,
+        "log_age": null
+    },
+    {
+        "cluster_id": "tr28",
+        "name": "Trumpler 28",
+        "reddening": 0.7329999804496765,
+        "distance_pc": null,
+        "star_count": 8,
+        "pk": 435,
+        "fe_h": 0.32600000500679016,
+        "log_age": null
+    },
+    {
+        "cluster_id": "tr33",
+        "name": "Trumpler 33",
+        "reddening": 0.3569999933242798,
+        "distance_pc": null,
+        "star_count": 1,
+        "pk": 436,
+        "fe_h": -1.5440000295639038,
+        "log_age": null
+    },
+    {
+        "cluster_id": "tr35",
+        "name": "Trumpler 35",
+        "reddening": 1.218000054359436,
+        "distance_pc": null,
+        "star_count": 21,
+        "pk": 437,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "tr37",
+        "name": "Trumpler 37",
+        "reddening": 0.4699999988079071,
+        "distance_pc": null,
+        "star_count": 161,
+        "pk": 438,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "tu01",
+        "name": "Turner 1",
+        "reddening": 0.47600001096725464,
+        "distance_pc": null,
+        "star_count": 20,
+        "pk": 439,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "tu09",
+        "name": "Turner 9",
+        "reddening": null,
+        "distance_pc": null,
+        "star_count": 11,
+        "pk": 440,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "up01",
+        "name": "Upgren 1",
+        "reddening": null,
+        "distance_pc": null,
+        "star_count": 7,
+        "pk": 441,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "vdb001",
+        "name": "vdBergh 1",
+        "reddening": 0.7099999785423279,
+        "distance_pc": null,
+        "star_count": 44,
+        "pk": 442,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "wat01",
+        "name": "Waterloo 1",
+        "reddening": 0.9100000262260437,
+        "distance_pc": null,
+        "star_count": 9,
+        "pk": 443,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "wat02",
+        "name": "Waterloo 2",
+        "reddening": 0.17100000381469727,
+        "distance_pc": null,
+        "star_count": 6,
+        "pk": 444,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "wat03",
+        "name": "Waterloo 3",
+        "reddening": 0.3400000035762787,
+        "distance_pc": null,
+        "star_count": 7,
+        "pk": 445,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "wat06",
+        "name": "Waterloo 6",
+        "reddening": 0.24300000071525574,
+        "distance_pc": null,
+        "star_count": 8,
+        "pk": 446,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "wat07",
+        "name": "Waterloo 7",
+        "reddening": 0.41999998688697815,
+        "distance_pc": null,
+        "star_count": 10,
+        "pk": 447,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "wes01",
+        "name": "Westerlund 1",
+        "reddening": 4.349999904632568,
+        "distance_pc": null,
+        "star_count": 1,
+        "pk": 448,
+        "fe_h": null,
+        "log_age": null
+    },
+    {
+        "cluster_id": "wes02",
+        "name": "Westerlund 2",
+        "reddening": 1.649999976158142,
+        "distance_pc": null,
+        "star_count": 9,
+        "pk": 449,
+        "fe_h": null,
+        "log_age": null
+    }
+]
